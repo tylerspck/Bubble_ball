@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,500&display=swap");
+
+@font-face {
+    font-family: "BOOTERFF.ttf";
+    src: url("Fonts/BOOTERFF.ttf") format("ttf"),
+         url("Fonts/BOOTEROF.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul{
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255,255,255,.3);
+}
+.main-header{
+    background-color: rgba(0,0,0,.6);
+    background-image: url("Image/header-basketball.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+    font-weight:bold;
+}
+
+.team-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "BOOTERFF.ttf";
+    font-weight: normal;
+    color: white;
+}
+.team-name-large {
+    font-size: 6em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 1;
+    padding: 0 ;
+}
+
+.section-header {
+    font-family: "Piazzolla";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+}
+
+.about-team-image {
+    float: left;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color:lightblue;
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 0;
+    font-size: 1em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover{
+    background-color: rgba(255,255,255,.3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.game-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.game-row:last-child {
+    border-bottom : none;
+}
+
+.game-item {
+    display: inline-block;
+    padding-right: .5em;
+
+}
+
+.game-date {
+    color: #555;
+    font-weight: bold;
+    width: 11%
+}
+
+.game-team-name {
+    width: 24%;
+}
+
+.game-score {
+    width: 42%;
+}
+
+.game-btn {
+    max-width:19%;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color: #2D9CDB;
+}
