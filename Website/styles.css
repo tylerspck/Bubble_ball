@@ -13,12 +13,19 @@
     font-family: Raleway;
     color: #777;
 }
-
-html, body {
-    margin: 0;
-    padding: 0;
+body {
+    padding: 2em;
+    text-align: center;
+} 
+h1 {
+    margin-bottom: 1em;
+}  
+  select {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
-
 .nav ul{
     margin: 0;
 }
