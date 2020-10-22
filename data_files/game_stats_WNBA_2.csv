@@ -3,7 +3,7 @@
 1,1,51ada2d4-5260-4c88-9fed-af4bf50130ab,08ed8274-e29f-4248-bc2e-83cc8ed18d75,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,New York Liberty,Atlanta Dream,2015-06-05T23:30:00+00:00,82,73,Fri Jun 5 2015
 2,2,8c504e6b-663d-40a1-a902-2cae4d9c4470,6f017f37-be96-4bdc-b6d3-0a0429c72e89,5f0b5caf-708b-4300-92f2-53b51d83ec06,Minnesota Lynx,Tulsa Shock,2015-06-06T00:00:00+00:00,83,74,Fri Jun 5 2015
 3,3,fea52768-68e5-4af0-92f1-0c415c7b71a0,3c409388-ab73-4c7f-953d-3a71062240f6,f073a15f-0486-4179-b0a3-dfd0294eb595,Chicago Sky,Indiana Fever,2015-06-06T00:30:00+00:00,95,72,Fri Jun 5 2015
-4,4,cae9c07b-96d8-48c4-9ad8-f280218846be,0699edf3-5993-4182-b9b4-ec935cbd4fcc,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Phoenix Mercury,San Antonio Stars,2015-06-06T02:00:00+00:00,76,71,Fri Jun 5 2015
+4,4,cae9c07b-96d8-48c4-9ad8-f280218846be,0699edf3-5993-4182-b9b4-ec935cbd4fcc,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Phoenix Mercury,San Antonio Silver Stars,2015-06-06T02:00:00+00:00,76,71,Fri Jun 5 2015
 5,5,2ebfa00b-5e4d-4e56-905b-af8baee748b5,f073a15f-0486-4179-b0a3-dfd0294eb595,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Indiana Fever,Minnesota Lynx,2015-06-06T23:00:00+00:00,69,78,Sat Jun 6 2015
 6,6,d288c503-8651-4790-ae08-c5c7a0f6650f,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Washington Mystics,New York Liberty,2015-06-06T23:00:00+00:00,67,62,Sat Jun 6 2015
 7,7,ea3dd788-1700-47ca-abc4-16eaea61c07a,5f0b5caf-708b-4300-92f2-53b51d83ec06,3c409388-ab73-4c7f-953d-3a71062240f6,Tulsa Shock,Chicago Sky,2015-06-07T00:00:00+00:00,101,93,Sat Jun 6 2015
@@ -13,87 +13,87 @@
 11,11,1c310b95-0b91-4bce-ab06-b3c273dfe9cf,5f0b5caf-708b-4300-92f2-53b51d83ec06,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Tulsa Shock,Seattle Storm,2015-06-10T00:00:00+00:00,68,45,Tue Jun 9 2015
 12,12,190037cb-4223-4948-9695-6e1ce0ad4815,08ed8274-e29f-4248-bc2e-83cc8ed18d75,0699edf3-5993-4182-b9b4-ec935cbd4fcc,New York Liberty,Phoenix Mercury,2015-06-11T23:00:00+00:00,68,57,Thu Jun 11 2015
 13,13,43fee822-936f-42f6-bf82-e23ad07a747e,a015b02d-845c-40c1-8ef4-844984f47e4d,3c409388-ab73-4c7f-953d-3a71062240f6,Connecticut Sun,Chicago Sky,2015-06-11T23:00:00+00:00,67,65,Thu Jun 11 2015
-14,14,85f3b011-4b09-4ae0-9ddc-e3f4718f03d0,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Atlanta Dream,San Antonio Stars,2015-06-11T23:00:00+00:00,72,69,Thu Jun 11 2015
+14,14,85f3b011-4b09-4ae0-9ddc-e3f4718f03d0,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Atlanta Dream,San Antonio Silver Stars,2015-06-11T23:00:00+00:00,72,69,Thu Jun 11 2015
 15,15,485f6c2b-feb8-4573-a4c6-9de1299b1dab,6f017f37-be96-4bdc-b6d3-0a0429c72e89,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Minnesota Lynx,Seattle Storm,2015-06-12T00:00:00+00:00,94,70,Thu Jun 11 2015
 16,16,4720db4c-bd9e-417d-ba69-0dd349d38a19,f073a15f-0486-4179-b0a3-dfd0294eb595,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Indiana Fever,Phoenix Mercury,2015-06-12T23:00:00+00:00,77,74,Fri Jun 12 2015
 17,17,ea6db48f-1611-4097-b882-baf9e03927a2,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Washington Mystics,Atlanta Dream,2015-06-12T23:00:00+00:00,61,64,Fri Jun 12 2015
 18,18,8a1ce526-276b-4a30-b093-da3e785f52dd,f073a15f-0486-4179-b0a3-dfd0294eb595,3c409388-ab73-4c7f-953d-3a71062240f6,Indiana Fever,Chicago Sky,2015-06-14T17:00:00+00:00,72,98,Sun Jun 14 2015
 19,19,3bf2083f-2a04-4645-a133-e65a1efb243b,0699edf3-5993-4182-b9b4-ec935cbd4fcc,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Phoenix Mercury,Minnesota Lynx,2015-06-14T19:00:00+00:00,81,66,Sun Jun 14 2015
 20,20,ace51453-5f2c-41f8-b1fd-7d25f77c7d75,a015b02d-845c-40c1-8ef4-844984f47e4d,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Connecticut Sun,Atlanta Dream,2015-06-14T19:00:00+00:00,82,64,Sun Jun 14 2015
-21,21,05193803-6f3b-49e0-a113-5d7e1bd99994,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5f0b5caf-708b-4300-92f2-53b51d83ec06,San Antonio Stars,Tulsa Shock,2015-06-14T20:30:00+00:00,62,73,Sun Jun 14 2015
+21,21,05193803-6f3b-49e0-a113-5d7e1bd99994,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5f0b5caf-708b-4300-92f2-53b51d83ec06,San Antonio Silver Stars,Tulsa Shock,2015-06-14T20:30:00+00:00,62,73,Sun Jun 14 2015
 22,22,b408b01e-2062-4247-86aa-6e1f129f7aab,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Los Angeles Sparks,Seattle Storm,2015-06-14T21:00:00+00:00,54,60,Sun Jun 14 2015
 23,23,772209b5-e1ab-4469-8482-a0d262a7fde1,08ed8274-e29f-4248-bc2e-83cc8ed18d75,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,New York Liberty,Washington Mystics,2015-06-14T22:00:00+00:00,59,74,Sun Jun 14 2015
 24,24,76f1fcdf-f2dc-4da1-b788-9c6f1f62c208,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,f073a15f-0486-4179-b0a3-dfd0294eb595,Atlanta Dream,Indiana Fever,2015-06-16T16:00:00+00:00,79,90,Tue Jun 16 2015
-25,25,b090eda1-79cc-4828-9ba6-7789625606b5,5f0b5caf-708b-4300-92f2-53b51d83ec06,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Tulsa Shock,San Antonio Stars,2015-06-16T16:30:00+00:00,na,na,Tue Jun 16 2015
+25,25,b090eda1-79cc-4828-9ba6-7789625606b5,5f0b5caf-708b-4300-92f2-53b51d83ec06,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Tulsa Shock,San Antonio Silver Stars,2015-06-16T16:30:00+00:00,na,na,Tue Jun 16 2015
 26,26,d100c505-98eb-455b-9f04-b19af3109d60,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,a015b02d-845c-40c1-8ef4-844984f47e4d,Seattle Storm,Connecticut Sun,2015-06-17T02:00:00+00:00,na,na,Tue Jun 16 2015
 27,27,c6580d81-a7c7-4030-8f49-1fe3f4957a35,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Los Angeles Sparks,Minnesota Lynx,2015-06-17T02:30:00+00:00,na,na,Tue Jun 16 2015
 28,28,8d49e3cf-53ff-46e6-9af9-0e9defd81a4e,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,5f0b5caf-708b-4300-92f2-53b51d83ec06,Washington Mystics,Tulsa Shock,2015-06-19T23:00:00+00:00,82,86,Fri Jun 19 2015
 29,29,a2ccdcaa-2e3f-4813-807d-ceeb75fc5791,08ed8274-e29f-4248-bc2e-83cc8ed18d75,f073a15f-0486-4179-b0a3-dfd0294eb595,New York Liberty,Indiana Fever,2015-06-19T23:30:00+00:00,63,80,Fri Jun 19 2015
 30,30,bc555ba4-b54f-4beb-9389-25f87f4f988b,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,3c409388-ab73-4c7f-953d-3a71062240f6,Atlanta Dream,Chicago Sky,2015-06-19T23:30:00+00:00,74,73,Fri Jun 19 2015
-31,31,fda7e656-dd47-4aed-95eb-261692bcbd6a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,6f017f37-be96-4bdc-b6d3-0a0429c72e89,San Antonio Stars,Minnesota Lynx,2015-06-20T00:00:00+00:00,na,na,Fri Jun 19 2015
+31,31,fda7e656-dd47-4aed-95eb-261692bcbd6a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,6f017f37-be96-4bdc-b6d3-0a0429c72e89,San Antonio Silver Stars,Minnesota Lynx,2015-06-20T00:00:00+00:00,na,na,Fri Jun 19 2015
 32,32,e2c70ed1-ddf5-4110-87ec-1cf798dfa349,0699edf3-5993-4182-b9b4-ec935cbd4fcc,a015b02d-845c-40c1-8ef4-844984f47e4d,Phoenix Mercury,Connecticut Sun,2015-06-20T02:00:00+00:00,na,na,Fri Jun 19 2015
 33,33,5bd94201-ca94-49f0-a3a5-599997b29017,f073a15f-0486-4179-b0a3-dfd0294eb595,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Indiana Fever,Washington Mystics,2015-06-20T23:00:00+00:00,75,87,Sat Jun 20 2015
-34,34,15cc3634-ccf0-4f77-9f83-9352c9b4b37a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,3c409388-ab73-4c7f-953d-3a71062240f6,San Antonio Stars,Chicago Sky,2015-06-21T00:00:00+00:00,na,na,Sat Jun 20 2015
+34,34,15cc3634-ccf0-4f77-9f83-9352c9b4b37a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,3c409388-ab73-4c7f-953d-3a71062240f6,San Antonio Silver Stars,Chicago Sky,2015-06-21T00:00:00+00:00,na,na,Sat Jun 20 2015
 35,35,14927ddd-7af7-4e10-ac6c-46f59eac6b0c,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Atlanta Dream,New York Liberty,2015-06-21T19:00:00+00:00,64,73,Sun Jun 21 2015
 36,36,c077e0ce-9bfa-4369-9e93-f25325a88b10,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,a015b02d-845c-40c1-8ef4-844984f47e4d,Los Angeles Sparks,Connecticut Sun,2015-06-21T21:00:00+00:00,68,76,Sun Jun 21 2015
 37,37,a86a1395-71d8-457d-a2c6-90cd3b87f2c8,6f017f37-be96-4bdc-b6d3-0a0429c72e89,5f0b5caf-708b-4300-92f2-53b51d83ec06,Minnesota Lynx,Tulsa Shock,2015-06-21T23:00:00+00:00,78,86,Sun Jun 21 2015
 38,38,d6d52a6a-c103-4d37-85b5-fe05a9e10b10,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Seattle Storm,Phoenix Mercury,2015-06-22T01:00:00+00:00,na,na,Sun Jun 21 2015
 39,39,6e6025ca-a6e1-49c8-be7a-83822339106f,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Washington Mystics,Los Angeles Sparks,2015-06-24T00:00:00+00:00,na,na,Tue Jun 23 2015
 40,40,10ce1e8d-a564-406e-8862-065c5e3398ec,3c409388-ab73-4c7f-953d-3a71062240f6,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Chicago Sky,Atlanta Dream,2015-06-24T16:30:00+00:00,100,96,Wed Jun 24 2015
-41,41,1f1d3ba6-2729-412c-b4a6-e9086b86673a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0699edf3-5993-4182-b9b4-ec935cbd4fcc,San Antonio Stars,Phoenix Mercury,2015-06-26T00:00:00+00:00,na,na,Thu Jun 25 2015
+41,41,1f1d3ba6-2729-412c-b4a6-e9086b86673a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0699edf3-5993-4182-b9b4-ec935cbd4fcc,San Antonio Silver Stars,Phoenix Mercury,2015-06-26T00:00:00+00:00,na,na,Thu Jun 25 2015
 42,42,df32e819-d2cd-4c3a-9478-118ca5d8f2ef,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Seattle Storm,Minnesota Lynx,2015-06-26T02:00:00+00:00,na,na,Thu Jun 25 2015
 43,43,c9ea295b-8ced-4126-8633-fc7b0f56c7a8,f073a15f-0486-4179-b0a3-dfd0294eb595,3c409388-ab73-4c7f-953d-3a71062240f6,Indiana Fever,Chicago Sky,2015-06-26T23:00:00+00:00,77,83,Fri Jun 26 2015
 44,44,f6f1b668-73d3-4a07-9fa1-95f148313e6f,a015b02d-845c-40c1-8ef4-844984f47e4d,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Connecticut Sun,Los Angeles Sparks,2015-06-26T23:00:00+00:00,80,76,Fri Jun 26 2015
 45,45,b623aed3-4252-4405-93a5-bf8942253302,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Atlanta Dream,Washington Mystics,2015-06-26T23:30:00+00:00,72,69,Fri Jun 26 2015
 46,46,fae3d9c8-91a5-4518-9629-d1d8f989dde4,5f0b5caf-708b-4300-92f2-53b51d83ec06,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Tulsa Shock,New York Liberty,2015-06-27T00:00:00+00:00,na,na,Fri Jun 26 2015
-47,47,5838e712-4da2-4eec-9687-f8e9fe3fbfda,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,San Antonio Stars,Seattle Storm,2015-06-28T00:00:00+00:00,na,na,Sat Jun 27 2015
+47,47,5838e712-4da2-4eec-9687-f8e9fe3fbfda,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,San Antonio Silver Stars,Seattle Storm,2015-06-28T00:00:00+00:00,na,na,Sat Jun 27 2015
 48,48,d6621d52-1dbe-4e8c-aa03-b576ba991f58,6f017f37-be96-4bdc-b6d3-0a0429c72e89,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Minnesota Lynx,Phoenix Mercury,2015-06-28T00:00:00+00:00,na,na,Sat Jun 27 2015
 49,49,7a9ad6f0-918a-4e24-9c46-4d7f8a2a217d,08ed8274-e29f-4248-bc2e-83cc8ed18d75,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,New York Liberty,Los Angeles Sparks,2015-06-28T19:00:00+00:00,79,70,Sun Jun 28 2015
 50,50,135a96be-8904-46d0-8594-221655ce7a6d,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,3c409388-ab73-4c7f-953d-3a71062240f6,Washington Mystics,Chicago Sky,2015-06-28T20:00:00+00:00,86,71,Sun Jun 28 2015
 51,51,31d34fcb-2242-470e-910f-84ff45eb6b36,5f0b5caf-708b-4300-92f2-53b51d83ec06,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Tulsa Shock,Seattle Storm,2015-06-28T23:00:00+00:00,93,89,Sun Jun 28 2015
 52,52,e621da0a-e763-4ff6-a198-a5bdb039d89c,a015b02d-845c-40c1-8ef4-844984f47e4d,f073a15f-0486-4179-b0a3-dfd0294eb595,Connecticut Sun,Indiana Fever,2015-06-30T23:00:00+00:00,84,92,Tue Jun 30 2015
 53,53,5971d3ce-573b-45c8-abb2-488e5d779a12,3c409388-ab73-4c7f-953d-3a71062240f6,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Chicago Sky,New York Liberty,2015-07-01T00:00:00+00:00,na,na,Tue Jun 30 2015
-54,54,4b9a679e-8345-4553-8650-e96116edc1cc,0699edf3-5993-4182-b9b4-ec935cbd4fcc,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Phoenix Mercury,San Antonio Stars,2015-07-01T02:00:00+00:00,na,na,Tue Jun 30 2015
+54,54,4b9a679e-8345-4553-8650-e96116edc1cc,0699edf3-5993-4182-b9b4-ec935cbd4fcc,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Phoenix Mercury,San Antonio Silver Stars,2015-07-01T02:00:00+00:00,na,na,Tue Jun 30 2015
 55,55,575a283b-c31e-497f-a9e5-a726bd24f1aa,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,5f0b5caf-708b-4300-92f2-53b51d83ec06,Seattle Storm,Tulsa Shock,2015-07-01T02:00:00+00:00,na,na,Tue Jun 30 2015
 56,56,37c647db-e58b-4583-93b6-5b8cb730cbab,f073a15f-0486-4179-b0a3-dfd0294eb595,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Indiana Fever,Washington Mystics,2015-07-02T23:00:00+00:00,73,50,Thu Jul 2 2015
 57,57,f4cab0f3-673f-48ab-8923-d6d1672d8635,a015b02d-845c-40c1-8ef4-844984f47e4d,3c409388-ab73-4c7f-953d-3a71062240f6,Connecticut Sun,Chicago Sky,2015-07-02T23:00:00+00:00,74,77,Thu Jul 2 2015
 58,58,7f7c9b34-cec7-4d6a-ba8e-481cfc848878,0699edf3-5993-4182-b9b4-ec935cbd4fcc,5f0b5caf-708b-4300-92f2-53b51d83ec06,Phoenix Mercury,Tulsa Shock,2015-07-03T02:00:00+00:00,na,na,Thu Jul 2 2015
-59,59,1d2cb486-d1a6-4231-bd54-195fdeb05d69,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Los Angeles Sparks,San Antonio Stars,2015-07-03T02:30:00+00:00,na,na,Thu Jul 2 2015
+59,59,1d2cb486-d1a6-4231-bd54-195fdeb05d69,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Los Angeles Sparks,San Antonio Silver Stars,2015-07-03T02:30:00+00:00,na,na,Thu Jul 2 2015
 60,60,1af09fed-6d5f-4ee8-b2ba-3f9c11823484,6f017f37-be96-4bdc-b6d3-0a0429c72e89,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Minnesota Lynx,Seattle Storm,2015-07-04T00:00:00+00:00,na,na,Fri Jul 3 2015
 61,61,69971430-8ab6-4be8-aa9e-961ea7aa731a,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,5f0b5caf-708b-4300-92f2-53b51d83ec06,Los Angeles Sparks,Tulsa Shock,2015-07-04T02:30:00+00:00,na,na,Fri Jul 3 2015
 62,62,8f63bd75-7f86-419d-a4c3-61ac1c103393,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Atlanta Dream,Seattle Storm,2015-07-05T19:00:00+00:00,72,64,Sun Jul 5 2015
 63,63,967290ff-30d2-4e8e-9c3e-4ea55c4f5937,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Los Angeles Sparks,Phoenix Mercury,2015-07-05T21:00:00+00:00,91,94,Sun Jul 5 2015
 64,64,6adb6aed-af65-427a-919f-9013bac25bcf,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,5f0b5caf-708b-4300-92f2-53b51d83ec06,Atlanta Dream,Tulsa Shock,2015-07-08T00:00:00+00:00,na,na,Tue Jul 7 2015
 65,65,498c3f06-5d5e-4c01-b2f4-c393c5f9be01,f073a15f-0486-4179-b0a3-dfd0294eb595,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Indiana Fever,Seattle Storm,2015-07-08T16:00:00+00:00,88,65,Wed Jul 8 2015
-66,66,17b06ca3-9f9b-4adf-a4a0-7f0e92806948,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,San Antonio Stars,Los Angeles Sparks,2015-07-09T00:00:00+00:00,na,na,Wed Jul 8 2015
+66,66,17b06ca3-9f9b-4adf-a4a0-7f0e92806948,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,San Antonio Silver Stars,Los Angeles Sparks,2015-07-09T00:00:00+00:00,na,na,Wed Jul 8 2015
 67,67,a6928cce-08c3-4c4a-a7da-26f4db2b31b1,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Washington Mystics,New York Liberty,2015-07-09T15:30:00+00:00,76,79,Thu Jul 9 2015
-68,68,5bf4ab5f-56d6-43f5-a976-4ccf30e9368c,f073a15f-0486-4179-b0a3-dfd0294eb595,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Indiana Fever,San Antonio Stars,2015-07-10T23:00:00+00:00,na,na,Fri Jul 10 2015
+68,68,5bf4ab5f-56d6-43f5-a976-4ccf30e9368c,f073a15f-0486-4179-b0a3-dfd0294eb595,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Indiana Fever,San Antonio Silver Stars,2015-07-10T23:00:00+00:00,na,na,Fri Jul 10 2015
 69,69,cfbbd617-fbb5-47d6-a6c5-165d920880a3,3c409388-ab73-4c7f-953d-3a71062240f6,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Chicago Sky,Minnesota Lynx,2015-07-11T00:30:00+00:00,na,na,Fri Jul 10 2015
 70,70,466d05c8-0a65-4ec6-b472-0df977749ece,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Seattle Storm,Phoenix Mercury,2015-07-11T02:00:00+00:00,na,na,Fri Jul 10 2015
 71,71,51588f63-b302-49cf-a4c4-5a212bf4d71f,5f0b5caf-708b-4300-92f2-53b51d83ec06,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Tulsa Shock,Los Angeles Sparks,2015-07-12T00:00:00+00:00,na,na,Sat Jul 11 2015
 72,72,16d4f0de-694c-4221-89be-256bf96a32d4,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Atlanta Dream,New York Liberty,2015-07-12T19:00:00+00:00,84,76,Sun Jul 12 2015
 73,73,9af2b7f4-bde0-4762-bcd2-be1206fdeff3,3c409388-ab73-4c7f-953d-3a71062240f6,a015b02d-845c-40c1-8ef4-844984f47e4d,Chicago Sky,Connecticut Sun,2015-07-12T22:00:00+00:00,96,76,Sun Jul 12 2015
 74,74,dc1a00d8-b994-4a38-a729-f2fbdc84770d,0699edf3-5993-4182-b9b4-ec935cbd4fcc,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Phoenix Mercury,Seattle Storm,2015-07-12T22:00:00+00:00,70,60,Sun Jul 12 2015
-75,75,2504fecd-6bbe-4a7c-9263-54a7080fc2f8,6f017f37-be96-4bdc-b6d3-0a0429c72e89,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Minnesota Lynx,San Antonio Stars,2015-07-12T23:00:00+00:00,na,na,Sun Jul 12 2015
+75,75,2504fecd-6bbe-4a7c-9263-54a7080fc2f8,6f017f37-be96-4bdc-b6d3-0a0429c72e89,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Minnesota Lynx,San Antonio Silver Stars,2015-07-12T23:00:00+00:00,na,na,Sun Jul 12 2015
 76,76,42ef4bd5-af9a-4042-9ba7-05900d837cee,a015b02d-845c-40c1-8ef4-844984f47e4d,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Connecticut Sun,Minnesota Lynx,2015-07-14T23:00:00+00:00,79,85,Tue Jul 14 2015
 77,77,f65ef04d-a24f-42bc-90c4-36f635a92711,0699edf3-5993-4182-b9b4-ec935cbd4fcc,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Phoenix Mercury,Atlanta Dream,2015-07-15T02:00:00+00:00,na,na,Tue Jul 14 2015
-78,78,6b85eb61-28bd-4651-8d6d-aa35c8ae0294,08ed8274-e29f-4248-bc2e-83cc8ed18d75,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,New York Liberty,San Antonio Stars,2015-07-15T15:00:00+00:00,na,na,Wed Jul 15 2015
+78,78,6b85eb61-28bd-4651-8d6d-aa35c8ae0294,08ed8274-e29f-4248-bc2e-83cc8ed18d75,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,New York Liberty,San Antonio Silver Stars,2015-07-15T15:00:00+00:00,na,na,Wed Jul 15 2015
 79,79,c37b20c7-d697-422c-818e-2f7a07706100,3c409388-ab73-4c7f-953d-3a71062240f6,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Chicago Sky,Washington Mystics,2015-07-15T16:30:00+00:00,85,57,Wed Jul 15 2015
 80,80,5aef9cd5-5585-4344-bf51-af62cf1a9ed7,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Seattle Storm,Los Angeles Sparks,2015-07-15T19:00:00+00:00,68,61,Wed Jul 15 2015
 81,81,5b058ded-5432-4310-8040-3b35d67df401,f073a15f-0486-4179-b0a3-dfd0294eb595,5f0b5caf-708b-4300-92f2-53b51d83ec06,Indiana Fever,Tulsa Shock,2015-07-15T23:00:00+00:00,83,80,Wed Jul 15 2015
 82,82,973fadab-4a74-4469-9c8e-0f14468d0272,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Los Angeles Sparks,Atlanta Dream,2015-07-16T19:30:00+00:00,72,76,Thu Jul 16 2015
 83,83,a4ee7046-1b48-422a-babd-50c0184ffef7,08ed8274-e29f-4248-bc2e-83cc8ed18d75,a015b02d-845c-40c1-8ef4-844984f47e4d,New York Liberty,Connecticut Sun,2015-07-16T23:00:00+00:00,64,57,Thu Jul 16 2015
 84,84,fb3605cc-e2c7-4ae7-9827-aa884c7073c8,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,f073a15f-0486-4179-b0a3-dfd0294eb595,Washington Mystics,Indiana Fever,2015-07-17T23:00:00+00:00,68,50,Fri Jul 17 2015
-85,85,10097670-7563-4f11-bb49-94590a0e5a76,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5f0b5caf-708b-4300-92f2-53b51d83ec06,San Antonio Stars,Tulsa Shock,2015-07-18T00:00:00+00:00,na,na,Fri Jul 17 2015
+85,85,10097670-7563-4f11-bb49-94590a0e5a76,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5f0b5caf-708b-4300-92f2-53b51d83ec06,San Antonio Silver Stars,Tulsa Shock,2015-07-18T00:00:00+00:00,na,na,Fri Jul 17 2015
 86,86,9943a5c4-f2cc-486d-9bcd-d2de37ca46a6,6f017f37-be96-4bdc-b6d3-0a0429c72e89,3c409388-ab73-4c7f-953d-3a71062240f6,Minnesota Lynx,Chicago Sky,2015-07-18T00:00:00+00:00,na,na,Fri Jul 17 2015
 87,87,8ad5876f-6888-4499-8635-6e433e3823d2,a015b02d-845c-40c1-8ef4-844984f47e4d,f073a15f-0486-4179-b0a3-dfd0294eb595,Connecticut Sun,Indiana Fever,2015-07-18T23:00:00+00:00,na,na,Sat Jul 18 2015
 88,88,a2cf1100-a12c-408e-a395-f02217bc3aa9,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Seattle Storm,Atlanta Dream,2015-07-19T01:00:00+00:00,na,na,Sat Jul 18 2015
 89,89,0b3726f1-ae61-4d2e-b5d6-515b97e3e59e,0699edf3-5993-4182-b9b4-ec935cbd4fcc,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Phoenix Mercury,New York Liberty,2015-07-19T02:00:00+00:00,na,na,Sat Jul 18 2015
 90,90,e1a15cf3-4715-4129-9992-47f77c912537,5f0b5caf-708b-4300-92f2-53b51d83ec06,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Tulsa Shock,Minnesota Lynx,2015-07-19T20:30:00+00:00,72,79,Sun Jul 19 2015
-91,91,34aa781e-84d0-4e1d-a599-3a5035e91258,3c409388-ab73-4c7f-953d-3a71062240f6,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Chicago Sky,San Antonio Stars,2015-07-19T22:00:00+00:00,na,na,Sun Jul 19 2015
+91,91,34aa781e-84d0-4e1d-a599-3a5035e91258,3c409388-ab73-4c7f-953d-3a71062240f6,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Chicago Sky,San Antonio Silver Stars,2015-07-19T22:00:00+00:00,na,na,Sun Jul 19 2015
 92,92,4dc912c8-3ada-42df-84a8-9fc91e2c1f86,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,a015b02d-845c-40c1-8ef4-844984f47e4d,Washington Mystics,Connecticut Sun,2015-07-19T23:00:00+00:00,89,82,Sun Jul 19 2015
 93,93,2a1292c8-4d74-4540-8f06-d85888d96260,5f0b5caf-708b-4300-92f2-53b51d83ec06,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Tulsa Shock,Washington Mystics,2015-07-21T16:30:00+00:00,69,76,Tue Jul 21 2015
-94,94,79210623-0c29-4c8a-821f-c220657125f7,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,f073a15f-0486-4179-b0a3-dfd0294eb595,San Antonio Stars,Indiana Fever,2015-07-21T16:30:00+00:00,na,na,Tue Jul 21 2015
+94,94,79210623-0c29-4c8a-821f-c220657125f7,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,f073a15f-0486-4179-b0a3-dfd0294eb595,San Antonio Silver Stars,Indiana Fever,2015-07-21T16:30:00+00:00,na,na,Tue Jul 21 2015
 95,95,21452280-3b7a-4b0c-994c-4d8af191bcd4,3c409388-ab73-4c7f-953d-3a71062240f6,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Chicago Sky,Atlanta Dream,2015-07-22T00:00:00+00:00,na,na,Tue Jul 21 2015
 96,96,b46091b6-b2ba-4e36-969b-245da0328d87,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Seattle Storm,New York Liberty,2015-07-22T02:00:00+00:00,na,na,Tue Jul 21 2015
 97,97,bdc51b47-6f2d-40cd-a0b3-233b79ceac43,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Los Angeles Sparks,Phoenix Mercury,2015-07-22T03:00:00+00:00,na,na,Tue Jul 21 2015
@@ -105,36 +105,36 @@
 103,103,4218b747-2509-4548-ac8b-e5898aed6620,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Washington Mystics,Seattle Storm,2015-07-29T15:30:00+00:00,87,74,Wed Jul 29 2015
 104,104,43a02b0d-9d76-40c1-88b1-224039d62bd4,f073a15f-0486-4179-b0a3-dfd0294eb595,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Indiana Fever,New York Liberty,2015-07-29T23:00:00+00:00,84,72,Wed Jul 29 2015
 105,105,59eb02cf-5b14-43b3-9019-32f5db5fa7bd,6f017f37-be96-4bdc-b6d3-0a0429c72e89,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Minnesota Lynx,Los Angeles Sparks,2015-07-30T00:00:00+00:00,na,na,Wed Jul 29 2015
-106,106,6e95ded4-3552-4ac8-bf23-f7caa371772e,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,San Antonio Stars,Atlanta Dream,2015-07-30T00:00:00+00:00,na,na,Wed Jul 29 2015
+106,106,6e95ded4-3552-4ac8-bf23-f7caa371772e,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,San Antonio Silver Stars,Atlanta Dream,2015-07-30T00:00:00+00:00,na,na,Wed Jul 29 2015
 107,107,b6acb5fb-623b-4e7d-9922-945df44cbfad,5f0b5caf-708b-4300-92f2-53b51d83ec06,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Tulsa Shock,Phoenix Mercury,2015-07-31T00:00:00+00:00,na,na,Thu Jul 30 2015
 108,108,99bdd057-5dce-489c-8c71-03ea39d4dfa9,a015b02d-845c-40c1-8ef4-844984f47e4d,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Connecticut Sun,Seattle Storm,2015-07-31T23:00:00+00:00,67,66,Fri Jul 31 2015
 109,109,0f355d0c-e93c-49e3-afd2-b72f8b969a04,6f017f37-be96-4bdc-b6d3-0a0429c72e89,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Minnesota Lynx,Atlanta Dream,2015-08-01T00:00:00+00:00,na,na,Fri Jul 31 2015
-110,110,c6cbabd5-5114-4dd1-b202-b0c442f30ffc,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,San Antonio Stars,Washington Mystics,2015-08-01T00:00:00+00:00,na,na,Fri Jul 31 2015
+110,110,c6cbabd5-5114-4dd1-b202-b0c442f30ffc,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,San Antonio Silver Stars,Washington Mystics,2015-08-01T00:00:00+00:00,na,na,Fri Jul 31 2015
 111,111,2d70d9db-d7cb-4131-afbe-574f8c3c614e,3c409388-ab73-4c7f-953d-3a71062240f6,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Chicago Sky,Los Angeles Sparks,2015-08-01T00:30:00+00:00,na,na,Fri Jul 31 2015
 112,112,f59d0bd6-ceef-43fb-9a5e-e9942ae5c28c,5f0b5caf-708b-4300-92f2-53b51d83ec06,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Tulsa Shock,Minnesota Lynx,2015-08-02T00:00:00+00:00,na,na,Sat Aug 1 2015
 113,113,318209c9-1d6b-41fe-9a23-3e652b398757,08ed8274-e29f-4248-bc2e-83cc8ed18d75,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,New York Liberty,Seattle Storm,2015-08-02T19:00:00+00:00,78,62,Sun Aug 2 2015
 114,114,ee2400ab-ddff-44ff-ba28-111493845e3c,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Atlanta Dream,Phoenix Mercury,2015-08-02T19:00:00+00:00,68,71,Sun Aug 2 2015
-115,115,8467315b-e464-429b-a230-4bf7e5fc8db7,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,San Antonio Stars,Los Angeles Sparks,2015-08-02T20:30:00+00:00,na,na,Sun Aug 2 2015
+115,115,8467315b-e464-429b-a230-4bf7e5fc8db7,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,San Antonio Silver Stars,Los Angeles Sparks,2015-08-02T20:30:00+00:00,na,na,Sun Aug 2 2015
 116,116,a45793d7-41e4-4249-8129-764fd19e16f7,f073a15f-0486-4179-b0a3-dfd0294eb595,a015b02d-845c-40c1-8ef4-844984f47e4d,Indiana Fever,Connecticut Sun,2015-08-02T22:00:00+00:00,83,70,Sun Aug 2 2015
 117,117,c1cbb2de-bb93-4e04-bf6c-df030d59b787,3c409388-ab73-4c7f-953d-3a71062240f6,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Chicago Sky,Washington Mystics,2015-08-02T22:00:00+00:00,71,68,Sun Aug 2 2015
-118,118,f702b081-6f44-4c37-9c52-92317f535f03,a015b02d-845c-40c1-8ef4-844984f47e4d,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Connecticut Sun,San Antonio Stars,2015-08-04T23:00:00+00:00,na,na,Tue Aug 4 2015
+118,118,f702b081-6f44-4c37-9c52-92317f535f03,a015b02d-845c-40c1-8ef4-844984f47e4d,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Connecticut Sun,San Antonio Silver Stars,2015-08-04T23:00:00+00:00,na,na,Tue Aug 4 2015
 119,119,3bc6b7a7-f771-4491-b232-56bbc2f46a71,3c409388-ab73-4c7f-953d-3a71062240f6,f073a15f-0486-4179-b0a3-dfd0294eb595,Chicago Sky,Indiana Fever,2015-08-05T00:00:00+00:00,na,na,Tue Aug 4 2015
 120,120,0b4a9f9d-10df-4156-9ddc-3355ba755068,0699edf3-5993-4182-b9b4-ec935cbd4fcc,5f0b5caf-708b-4300-92f2-53b51d83ec06,Phoenix Mercury,Tulsa Shock,2015-08-05T02:00:00+00:00,na,na,Tue Aug 4 2015
 121,121,32f7c59f-a077-45fc-b423-f9388c23529d,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Los Angeles Sparks,Minnesota Lynx,2015-08-05T02:00:00+00:00,na,na,Tue Aug 4 2015
-122,122,10581680-8911-40a5-ac03-c7699d930d73,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Washington Mystics,San Antonio Stars,2015-08-05T23:00:00+00:00,na,na,Wed Aug 5 2015
+122,122,10581680-8911-40a5-ac03-c7699d930d73,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Washington Mystics,San Antonio Silver Stars,2015-08-05T23:00:00+00:00,na,na,Wed Aug 5 2015
 123,123,15432e87-7ac0-48c5-8fbf-3da0f437d72a,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,5f0b5caf-708b-4300-92f2-53b51d83ec06,Los Angeles Sparks,Tulsa Shock,2015-08-07T02:30:00+00:00,na,na,Thu Aug 6 2015
 124,124,34b4b132-5439-4599-a6e9-f74146268536,f073a15f-0486-4179-b0a3-dfd0294eb595,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Indiana Fever,Atlanta Dream,2015-08-07T23:00:00+00:00,106,77,Fri Aug 7 2015
 125,125,a9813cec-6e52-4e81-bcb2-619fb6682928,a015b02d-845c-40c1-8ef4-844984f47e4d,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Connecticut Sun,Washington Mystics,2015-08-07T23:00:00+00:00,86,72,Fri Aug 7 2015
 126,126,b7d30002-f11f-48a0-9f5c-acd958ab65ff,3c409388-ab73-4c7f-953d-3a71062240f6,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Chicago Sky,New York Liberty,2015-08-08T00:30:00+00:00,na,na,Fri Aug 7 2015
 127,127,8c051558-2f1f-4f19-a4f5-bc291f5c714a,0699edf3-5993-4182-b9b4-ec935cbd4fcc,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Phoenix Mercury,Minnesota Lynx,2015-08-08T02:00:00+00:00,na,na,Fri Aug 7 2015
-128,128,5b061c98-f8d4-4c26-9825-a8b205c7f9f3,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,San Antonio Stars,Seattle Storm,2015-08-09T00:00:00+00:00,na,na,Sat Aug 8 2015
+128,128,5b061c98-f8d4-4c26-9825-a8b205c7f9f3,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,San Antonio Silver Stars,Seattle Storm,2015-08-09T00:00:00+00:00,na,na,Sat Aug 8 2015
 129,129,8141a2bd-66df-4d58-aaa7-b6cfbf8f9bf3,3c409388-ab73-4c7f-953d-3a71062240f6,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Chicago Sky,Phoenix Mercury,2015-08-09T18:00:00+00:00,74,64,Sun Aug 9 2015
 130,130,b85d5d47-045f-4cd5-9029-0a9f09302cfd,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,a015b02d-845c-40c1-8ef4-844984f47e4d,Washington Mystics,Connecticut Sun,2015-08-09T20:00:00+00:00,84,73,Sun Aug 9 2015
 131,131,f4c0dd83-d394-401b-b141-89df1d926b76,5f0b5caf-708b-4300-92f2-53b51d83ec06,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Tulsa Shock,Atlanta Dream,2015-08-09T20:30:00+00:00,90,98,Sun Aug 9 2015
 132,132,ef949bbc-5c94-41ca-965c-8681ec9f0acd,6f017f37-be96-4bdc-b6d3-0a0429c72e89,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Minnesota Lynx,Los Angeles Sparks,2015-08-09T23:00:00+00:00,72,64,Sun Aug 9 2015
 133,133,07a38728-f2b3-4d4d-a701-2438eb5ca8e1,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,f073a15f-0486-4179-b0a3-dfd0294eb595,Washington Mystics,Indiana Fever,2015-08-11T23:00:00+00:00,62,73,Tue Aug 11 2015
 134,134,4e7bbce9-884b-4639-869d-855c5e61fff9,08ed8274-e29f-4248-bc2e-83cc8ed18d75,3c409388-ab73-4c7f-953d-3a71062240f6,New York Liberty,Chicago Sky,2015-08-11T23:00:00+00:00,84,63,Tue Aug 11 2015
-135,135,4d8eaa60-9839-49e2-a1d2-d365348bdbfe,6f017f37-be96-4bdc-b6d3-0a0429c72e89,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Minnesota Lynx,San Antonio Stars,2015-08-12T00:00:00+00:00,na,na,Tue Aug 11 2015
+135,135,4d8eaa60-9839-49e2-a1d2-d365348bdbfe,6f017f37-be96-4bdc-b6d3-0a0429c72e89,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Minnesota Lynx,San Antonio Silver Stars,2015-08-12T00:00:00+00:00,na,na,Tue Aug 11 2015
 136,136,56d490bf-3137-44a8-b4c8-dc98816b4c8c,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Los Angeles Sparks,Seattle Storm,2015-08-12T02:30:00+00:00,na,na,Tue Aug 11 2015
 137,137,7c2be9e0-18c5-4b0b-b0fa-d0da3252a05c,a015b02d-845c-40c1-8ef4-844984f47e4d,5f0b5caf-708b-4300-92f2-53b51d83ec06,Connecticut Sun,Tulsa Shock,2015-08-12T23:00:00+00:00,80,74,Wed Aug 12 2015
 138,138,7f4c1677-3d04-4930-ac26-32a942bb9cd4,0699edf3-5993-4182-b9b4-ec935cbd4fcc,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Phoenix Mercury,Seattle Storm,2015-08-13T02:00:00+00:00,na,na,Wed Aug 12 2015
@@ -146,19 +146,19 @@
 144,144,bd3a0c8b-e020-4d12-b64c-2f38fcfef8f8,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Washington Mystics,Minnesota Lynx,2015-08-16T20:00:00+00:00,77,69,Sun Aug 16 2015
 145,145,60fa7dd2-0684-4a4f-9b92-cd678e68a077,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,3c409388-ab73-4c7f-953d-3a71062240f6,Los Angeles Sparks,Chicago Sky,2015-08-16T21:00:00+00:00,76,64,Sun Aug 16 2015
 146,146,c3f99d7b-75c9-4844-83f9-813290f0513b,0699edf3-5993-4182-b9b4-ec935cbd4fcc,f073a15f-0486-4179-b0a3-dfd0294eb595,Phoenix Mercury,Indiana Fever,2015-08-17T00:00:00+00:00,na,na,Sun Aug 16 2015
-147,147,692dd331-2401-42f7-a0b1-8aa8b2a54323,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Seattle Storm,San Antonio Stars,2015-08-17T01:00:00+00:00,na,na,Sun Aug 16 2015
+147,147,692dd331-2401-42f7-a0b1-8aa8b2a54323,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Seattle Storm,San Antonio Silver Stars,2015-08-17T01:00:00+00:00,na,na,Sun Aug 16 2015
 148,148,37b7a449-3989-4d5a-80a1-0094c707c486,5f0b5caf-708b-4300-92f2-53b51d83ec06,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Tulsa Shock,Phoenix Mercury,2015-08-19T00:00:00+00:00,na,na,Tue Aug 18 2015
 149,149,2f084433-62a5-4b27-b2f3-586c3c48750c,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,f073a15f-0486-4179-b0a3-dfd0294eb595,Los Angeles Sparks,Indiana Fever,2015-08-19T02:30:00+00:00,na,na,Tue Aug 18 2015
 150,150,02b0ee3b-4774-4509-9974-abdd51e4c62a,6f017f37-be96-4bdc-b6d3-0a0429c72e89,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Minnesota Lynx,Washington Mystics,2015-08-20T00:00:00+00:00,na,na,Wed Aug 19 2015
-151,151,8f93fb3d-9cd5-457b-923f-faf22142ab83,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,08ed8274-e29f-4248-bc2e-83cc8ed18d75,San Antonio Stars,New York Liberty,2015-08-20T00:00:00+00:00,na,na,Wed Aug 19 2015
+151,151,8f93fb3d-9cd5-457b-923f-faf22142ab83,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,08ed8274-e29f-4248-bc2e-83cc8ed18d75,San Antonio Silver Stars,New York Liberty,2015-08-20T00:00:00+00:00,na,na,Wed Aug 19 2015
 152,152,f1bcbfd1-4403-48f9-9b06-574c8db31edb,08ed8274-e29f-4248-bc2e-83cc8ed18d75,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,New York Liberty,Atlanta Dream,2015-08-21T23:30:00+00:00,78,67,Fri Aug 21 2015
-153,153,3af15063-b53d-421a-8300-8496135c0439,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,6f017f37-be96-4bdc-b6d3-0a0429c72e89,San Antonio Stars,Minnesota Lynx,2015-08-22T00:00:00+00:00,na,na,Fri Aug 21 2015
+153,153,3af15063-b53d-421a-8300-8496135c0439,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,6f017f37-be96-4bdc-b6d3-0a0429c72e89,San Antonio Silver Stars,Minnesota Lynx,2015-08-22T00:00:00+00:00,na,na,Fri Aug 21 2015
 154,154,49689ada-a2b7-4913-8e8e-e0405929d79f,5f0b5caf-708b-4300-92f2-53b51d83ec06,a015b02d-845c-40c1-8ef4-844984f47e4d,Tulsa Shock,Connecticut Sun,2015-08-22T00:00:00+00:00,na,na,Fri Aug 21 2015
 155,155,edbbfc90-8bf1-4fc5-9e07-a7cdabb1ba5c,3c409388-ab73-4c7f-953d-3a71062240f6,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Chicago Sky,Washington Mystics,2015-08-22T00:30:00+00:00,na,na,Fri Aug 21 2015
 156,156,1fde166e-016d-4740-a7ee-82b1aba99679,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,f073a15f-0486-4179-b0a3-dfd0294eb595,Seattle Storm,Indiana Fever,2015-08-22T02:00:00+00:00,na,na,Fri Aug 21 2015
 157,157,545ab3c0-f1e2-487a-84e0-2a468d26048d,0699edf3-5993-4182-b9b4-ec935cbd4fcc,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Phoenix Mercury,Los Angeles Sparks,2015-08-22T02:00:00+00:00,na,na,Fri Aug 21 2015
 158,158,a1b90dba-01a5-4bed-8bb1-071f9f18834b,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,3c409388-ab73-4c7f-953d-3a71062240f6,Washington Mystics,Chicago Sky,2015-08-23T20:00:00+00:00,64,66,Sun Aug 23 2015
-159,159,5e54d6d3-64c6-4649-b832-b484616e7ca6,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,San Antonio Stars,Los Angeles Sparks,2015-08-23T20:30:00+00:00,na,na,Sun Aug 23 2015
+159,159,5e54d6d3-64c6-4649-b832-b484616e7ca6,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,San Antonio Silver Stars,Los Angeles Sparks,2015-08-23T20:30:00+00:00,na,na,Sun Aug 23 2015
 160,160,1ccd5218-d076-430e-8a31-3f0f85f207a0,f073a15f-0486-4179-b0a3-dfd0294eb595,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Indiana Fever,New York Liberty,2015-08-23T22:00:00+00:00,80,79,Sun Aug 23 2015
 161,161,9e70bd7e-c7aa-417d-af2d-9501dde68348,a015b02d-845c-40c1-8ef4-844984f47e4d,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Connecticut Sun,Atlanta Dream,2015-08-23T22:00:00+00:00,92,102,Sun Aug 23 2015
 162,162,d9636cd4-f8cf-4326-9f9e-7d07e524b343,0699edf3-5993-4182-b9b4-ec935cbd4fcc,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Phoenix Mercury,Minnesota Lynx,2015-08-23T22:00:00+00:00,79,67,Sun Aug 23 2015
@@ -169,12 +169,12 @@
 167,167,aa1cce2d-cd0e-4241-98ae-fcdeab708f4a,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Washington Mystics,Phoenix Mercury,2015-08-28T23:00:00+00:00,71,63,Fri Aug 28 2015
 168,168,15099b5b-1e38-4d62-8723-8e55bfe21cc8,08ed8274-e29f-4248-bc2e-83cc8ed18d75,6f017f37-be96-4bdc-b6d3-0a0429c72e89,New York Liberty,Minnesota Lynx,2015-08-28T23:30:00+00:00,81,68,Fri Aug 28 2015
 169,169,315fc76c-dee5-4c30-a942-bcc17a7c3757,5f0b5caf-708b-4300-92f2-53b51d83ec06,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Tulsa Shock,Los Angeles Sparks,2015-08-29T00:00:00+00:00,na,na,Fri Aug 28 2015
-170,170,5011a20f-3edb-4457-aff0-0a42649b9a40,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Seattle Storm,San Antonio Stars,2015-08-29T02:00:00+00:00,na,na,Fri Aug 28 2015
+170,170,5011a20f-3edb-4457-aff0-0a42649b9a40,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Seattle Storm,San Antonio Silver Stars,2015-08-29T02:00:00+00:00,na,na,Fri Aug 28 2015
 171,171,0a087a4e-ab27-4b53-bcb3-cf3ac12113d4,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,3c409388-ab73-4c7f-953d-3a71062240f6,Atlanta Dream,Chicago Sky,2015-08-29T23:00:00+00:00,96,98,Sat Aug 29 2015
 172,172,cf8211f4-570e-41fc-9ba8-43be4bcc803c,a015b02d-845c-40c1-8ef4-844984f47e4d,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Connecticut Sun,New York Liberty,2015-08-29T23:00:00+00:00,66,80,Sat Aug 29 2015
 173,173,f3bca316-77f0-45d7-911a-ddb7f11545a8,5f0b5caf-708b-4300-92f2-53b51d83ec06,f073a15f-0486-4179-b0a3-dfd0294eb595,Tulsa Shock,Indiana Fever,2015-08-30T20:30:00+00:00,76,70,Sun Aug 30 2015
 174,174,1e0021d8-1b19-4d30-a5e1-6dd5023a320e,3c409388-ab73-4c7f-953d-3a71062240f6,a015b02d-845c-40c1-8ef4-844984f47e4d,Chicago Sky,Connecticut Sun,2015-08-30T23:00:00+00:00,68,72,Sun Aug 30 2015
-175,175,5fb4aec6-5a70-430e-a7fd-a88138f3c480,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Los Angeles Sparks,San Antonio Stars,2015-08-30T23:00:00+00:00,na,na,Sun Aug 30 2015
+175,175,5fb4aec6-5a70-430e-a7fd-a88138f3c480,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Los Angeles Sparks,San Antonio Silver Stars,2015-08-30T23:00:00+00:00,na,na,Sun Aug 30 2015
 176,176,be4ee34a-91fb-4e5f-a70d-93034d3733ad,6f017f37-be96-4bdc-b6d3-0a0429c72e89,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Minnesota Lynx,Phoenix Mercury,2015-08-30T23:00:00+00:00,71,61,Sun Aug 30 2015
 177,177,be2d0c52-6b62-4d21-88d4-49310f29494b,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Seattle Storm,Washington Mystics,2015-08-31T01:00:00+00:00,na,na,Sun Aug 30 2015
 178,178,330c5a5c-ebf1-4ebe-9a7f-5c1d562cb61e,f073a15f-0486-4179-b0a3-dfd0294eb595,a015b02d-845c-40c1-8ef4-844984f47e4d,Indiana Fever,Connecticut Sun,2015-09-01T23:00:00+00:00,81,51,Tue Sep 1 2015
@@ -184,14 +184,14 @@
 182,182,379601ac-4562-4094-b98c-c82dc769856c,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,5f0b5caf-708b-4300-92f2-53b51d83ec06,Seattle Storm,Tulsa Shock,2015-09-04T02:00:00+00:00,na,na,Thu Sep 3 2015
 183,183,6b3397be-3e4f-4147-bb75-d08a50a38f4d,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Los Angeles Sparks,Washington Mystics,2015-09-04T02:30:00+00:00,na,na,Thu Sep 3 2015
 184,184,29333f0f-38ec-40cc-aeba-115b19a89aad,6f017f37-be96-4bdc-b6d3-0a0429c72e89,f073a15f-0486-4179-b0a3-dfd0294eb595,Minnesota Lynx,Indiana Fever,2015-09-05T00:00:00+00:00,na,na,Fri Sep 4 2015
-185,185,7fa3ef2a-e795-4378-bb3c-2e7219f408fb,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,a015b02d-845c-40c1-8ef4-844984f47e4d,San Antonio Stars,Connecticut Sun,2015-09-05T00:00:00+00:00,na,na,Fri Sep 4 2015
-186,186,8acd1aad-3c26-432f-a697-44894d362b38,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0699edf3-5993-4182-b9b4-ec935cbd4fcc,San Antonio Stars,Phoenix Mercury,2015-09-06T00:00:00+00:00,na,na,Sat Sep 5 2015
+185,185,7fa3ef2a-e795-4378-bb3c-2e7219f408fb,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,a015b02d-845c-40c1-8ef4-844984f47e4d,San Antonio Silver Stars,Connecticut Sun,2015-09-05T00:00:00+00:00,na,na,Fri Sep 4 2015
+186,186,8acd1aad-3c26-432f-a697-44894d362b38,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0699edf3-5993-4182-b9b4-ec935cbd4fcc,San Antonio Silver Stars,Phoenix Mercury,2015-09-06T00:00:00+00:00,na,na,Sat Sep 5 2015
 187,187,e9158e08-7fd3-4e2e-bb7b-47bf01303221,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Atlanta Dream,Washington Mystics,2015-09-06T19:00:00+00:00,73,67,Sun Sep 6 2015
 188,188,fcd4b642-805a-4643-9492-bd8a2797e300,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,5f0b5caf-708b-4300-92f2-53b51d83ec06,Los Angeles Sparks,Tulsa Shock,2015-09-06T21:00:00+00:00,92,73,Sun Sep 6 2015
 189,189,a1816f6e-896c-41e1-9fd4-b76b87937501,3c409388-ab73-4c7f-953d-3a71062240f6,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Chicago Sky,Seattle Storm,2015-09-06T22:00:00+00:00,93,65,Sun Sep 6 2015
 190,190,c623607d-244c-4d91-9536-42575bdd7e5a,6f017f37-be96-4bdc-b6d3-0a0429c72e89,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Minnesota Lynx,New York Liberty,2015-09-06T23:00:00+00:00,71,75,Sun Sep 6 2015
 191,191,1d94a2d0-0a70-4bbc-a7bd-56794554c6de,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,f073a15f-0486-4179-b0a3-dfd0294eb595,Washington Mystics,Indiana Fever,2015-09-08T23:00:00+00:00,76,72,Tue Sep 8 2015
-192,192,acab7fb9-2e4f-4c96-8d6b-40b4c113eff8,5f0b5caf-708b-4300-92f2-53b51d83ec06,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Tulsa Shock,San Antonio Stars,2015-09-09T00:00:00+00:00,na,na,Tue Sep 8 2015
+192,192,acab7fb9-2e4f-4c96-8d6b-40b4c113eff8,5f0b5caf-708b-4300-92f2-53b51d83ec06,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Tulsa Shock,San Antonio Silver Stars,2015-09-09T00:00:00+00:00,na,na,Tue Sep 8 2015
 193,193,d2f7367c-b15a-4e1d-8da1-b02c048152a3,6f017f37-be96-4bdc-b6d3-0a0429c72e89,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Minnesota Lynx,Seattle Storm,2015-09-09T00:00:00+00:00,na,na,Tue Sep 8 2015
 194,194,07020d68-f496-4038-8050-048110ad6dba,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Atlanta Dream,Los Angeles Sparks,2015-09-09T23:00:00+00:00,90,60,Wed Sep 9 2015
 195,195,2024eb08-0f05-4eec-a6c5-092d4925226d,08ed8274-e29f-4248-bc2e-83cc8ed18d75,a015b02d-845c-40c1-8ef4-844984f47e4d,New York Liberty,Connecticut Sun,2015-09-09T23:00:00+00:00,74,64,Wed Sep 9 2015
@@ -204,24 +204,24 @@
 202,202,2b1291f3-1807-43aa-83b1-8fe2c6f3b713,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Washington Mystics,Atlanta Dream,2015-09-13T20:00:00+00:00,71,73,Sun Sep 13 2015
 203,203,aaea3b9e-315d-465e-937a-cb8805e6d61c,5f0b5caf-708b-4300-92f2-53b51d83ec06,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Tulsa Shock,Phoenix Mercury,2015-09-13T20:30:00+00:00,91,87,Sun Sep 13 2015
 204,204,8d9c6482-af88-4d6a-a605-5872a124510b,f073a15f-0486-4179-b0a3-dfd0294eb595,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Indiana Fever,New York Liberty,2015-09-13T21:00:00+00:00,81,76,Sun Sep 13 2015
-205,205,def75f62-c9e6-4ff7-ad54-1405959d9b38,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Seattle Storm,San Antonio Stars,2015-09-14T01:00:00+00:00,na,na,Sun Sep 13 2015
+205,205,def75f62-c9e6-4ff7-ad54-1405959d9b38,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Seattle Storm,San Antonio Silver Stars,2015-09-14T01:00:00+00:00,na,na,Sun Sep 13 2015
 206,206,78963bc4-3a47-48a2-baf8-d009715bb6b6,f073a15f-0486-4179-b0a3-dfd0294eb595,5f0b5caf-708b-4300-92f2-53b51d83ec06,Indiana Fever,Dallas Wings,2016-05-14T22:00:00+00:00,79,90,Sat May 14 2016
 207,207,3ba5b659-8984-411f-bc05-117f12aed9ac,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Washington Mystics,New York Liberty,2016-05-14T23:00:00+00:00,76,87,Sat May 14 2016
 208,208,9b9c729b-d13c-4106-8e28-42e33dcd8ca6,6f017f37-be96-4bdc-b6d3-0a0429c72e89,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Minnesota Lynx,Phoenix Mercury,2016-05-14T23:30:00+00:00,95,76,Sat May 14 2016
 209,209,7e89b438-f1ec-4ee3-a634-0fdce330173d,3c409388-ab73-4c7f-953d-3a71062240f6,a015b02d-845c-40c1-8ef4-844984f47e4d,Chicago Sky,Connecticut Sun,2016-05-15T00:00:00+00:00,na,na,Sat May 14 2016
-210,210,c0f96b8a-6096-4e4e-80dd-77ec229d9126,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,San Antonio Stars,Atlanta Dream,2016-05-15T00:00:00+00:00,na,na,Sat May 14 2016
+210,210,c0f96b8a-6096-4e4e-80dd-77ec229d9126,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,San Antonio Silver Stars,Atlanta Dream,2016-05-15T00:00:00+00:00,na,na,Sat May 14 2016
 211,211,3cc6b09b-4e38-4a4c-8078-9a21f9d3138d,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Los Angeles Sparks,Seattle Storm,2016-05-15T21:00:00+00:00,96,66,Sun May 15 2016
 212,212,714a8334-bd6c-4108-9dae-e6901a2ca812,08ed8274-e29f-4248-bc2e-83cc8ed18d75,5f0b5caf-708b-4300-92f2-53b51d83ec06,New York Liberty,Dallas Wings,2016-05-15T21:00:00+00:00,79,71,Sun May 15 2016
 213,213,8caa8686-ac40-4323-a952-6f09d1a6a45e,3c409388-ab73-4c7f-953d-3a71062240f6,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Chicago Sky,Minnesota Lynx,2016-05-18T16:30:00+00:00,80,97,Wed May 18 2016
 214,214,7e657cbf-c6cd-49ca-992b-72691619c3ac,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,5f0b5caf-708b-4300-92f2-53b51d83ec06,Washington Mystics,Dallas Wings,2016-05-18T23:00:00+00:00,77,87,Wed May 18 2016
 215,215,82e147b1-87d8-4c98-9391-e77c4ed20aa1,f073a15f-0486-4179-b0a3-dfd0294eb595,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Indiana Fever,Phoenix Mercury,2016-05-18T23:00:00+00:00,97,93,Wed May 18 2016
-216,216,3e0e1ed8-123f-4114-8bb5-95aa82599cd6,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,a015b02d-845c-40c1-8ef4-844984f47e4d,San Antonio Stars,Connecticut Sun,2016-05-19T16:00:00+00:00,na,na,Thu May 19 2016
+216,216,3e0e1ed8-123f-4114-8bb5-95aa82599cd6,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,a015b02d-845c-40c1-8ef4-844984f47e4d,San Antonio Silver Stars,Connecticut Sun,2016-05-19T16:00:00+00:00,na,na,Thu May 19 2016
 217,217,1aff2653-8d79-4a71-a311-ef700a5281a4,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Washington Mystics,Los Angeles Sparks,2016-05-20T23:00:00+00:00,67,97,Fri May 20 2016
 218,218,f94ddd7a-bb14-403c-baca-796e7bfd9cf1,f073a15f-0486-4179-b0a3-dfd0294eb595,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Indiana Fever,Atlanta Dream,2016-05-20T23:00:00+00:00,94,85,Fri May 20 2016
 219,219,d188a54b-af74-40bc-ad50-daf36440c877,0699edf3-5993-4182-b9b4-ec935cbd4fcc,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Phoenix Mercury,Seattle Storm,2016-05-21T02:00:00+00:00,na,na,Fri May 20 2016
 220,220,6627df3c-30dc-4ce7-a8f2-4a7d78ccc5c6,08ed8274-e29f-4248-bc2e-83cc8ed18d75,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,New York Liberty,Los Angeles Sparks,2016-05-21T22:00:00+00:00,72,79,Sat May 21 2016
 221,221,04a7cefc-34fb-4e20-9c60-06595a6bb582,a015b02d-845c-40c1-8ef4-844984f47e4d,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Connecticut Sun,Washington Mystics,2016-05-21T23:00:00+00:00,76,84,Sat May 21 2016
-222,222,d22f8552-0342-4d80-bd71-b19fec6fddff,5f0b5caf-708b-4300-92f2-53b51d83ec06,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Dallas Wings,San Antonio Stars,2016-05-22T00:30:00+00:00,na,na,Sat May 21 2016
+222,222,d22f8552-0342-4d80-bd71-b19fec6fddff,5f0b5caf-708b-4300-92f2-53b51d83ec06,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Dallas Wings,San Antonio Silver Stars,2016-05-22T00:30:00+00:00,na,na,Sat May 21 2016
 223,223,3f51fb36-9c63-4b34-b1ef-d20eec06ba6e,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,3c409388-ab73-4c7f-953d-3a71062240f6,Atlanta Dream,Chicago Sky,2016-05-22T19:00:00+00:00,87,81,Sun May 22 2016
 224,224,bd85a1ec-42ab-4689-9286-ac0c56f5811b,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Seattle Storm,Minnesota Lynx,2016-05-22T23:00:00+00:00,71,78,Sun May 22 2016
 225,225,9e94f8f3-3f94-4872-b8d7-ffa043dceec4,08ed8274-e29f-4248-bc2e-83cc8ed18d75,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,New York Liberty,Atlanta Dream,2016-05-24T15:00:00+00:00,79,85,Tue May 24 2016
@@ -229,7 +229,7 @@
 227,227,3c51496e-83cb-4093-902a-e5892fa4f8b7,0699edf3-5993-4182-b9b4-ec935cbd4fcc,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Phoenix Mercury,Minnesota Lynx,2016-05-26T02:00:00+00:00,na,na,Wed May 25 2016
 228,228,e20948e8-7390-4e55-bfbf-2d8038940902,a015b02d-845c-40c1-8ef4-844984f47e4d,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Connecticut Sun,Los Angeles Sparks,2016-05-26T23:00:00+00:00,72,77,Thu May 26 2016
 229,229,14f46afe-db45-47b0-ba39-34c134db6c77,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Seattle Storm,Washington Mystics,2016-05-27T02:00:00+00:00,na,na,Thu May 26 2016
-230,230,36660da0-1531-4a39-9fa1-ca1a54b4df23,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,3c409388-ab73-4c7f-953d-3a71062240f6,San Antonio Stars,Chicago Sky,2016-05-28T00:00:00+00:00,na,na,Fri May 27 2016
+230,230,36660da0-1531-4a39-9fa1-ca1a54b4df23,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,3c409388-ab73-4c7f-953d-3a71062240f6,San Antonio Silver Stars,Chicago Sky,2016-05-28T00:00:00+00:00,na,na,Fri May 27 2016
 231,231,e2a23bf5-8880-4ce4-95cd-7629cfafa970,6f017f37-be96-4bdc-b6d3-0a0429c72e89,f073a15f-0486-4179-b0a3-dfd0294eb595,Minnesota Lynx,Indiana Fever,2016-05-28T00:00:00+00:00,na,na,Fri May 27 2016
 232,232,9d5f7340-f1ad-4a87-8092-f17b2b1560d4,5f0b5caf-708b-4300-92f2-53b51d83ec06,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Dallas Wings,Atlanta Dream,2016-05-28T00:30:00+00:00,na,na,Fri May 27 2016
 233,233,c34a8cdd-a0c7-4758-8fec-545291da7f9a,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,a015b02d-845c-40c1-8ef4-844984f47e4d,Seattle Storm,Connecticut Sun,2016-05-29T02:00:00+00:00,na,na,Sat May 28 2016
@@ -240,12 +240,12 @@
 238,238,49ad1257-95fd-44fa-9024-64da5b8cc652,0699edf3-5993-4182-b9b4-ec935cbd4fcc,a015b02d-845c-40c1-8ef4-844984f47e4d,Phoenix Mercury,Connecticut Sun,2016-06-01T02:00:00+00:00,na,na,Tue May 31 2016
 239,239,ce684bb7-a179-4c9c-b275-5b63fe56b8a4,f073a15f-0486-4179-b0a3-dfd0294eb595,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Indiana Fever,Seattle Storm,2016-06-01T23:00:00+00:00,85,75,Wed Jun 1 2016
 240,240,f96c602f-4a04-435b-bdf4-5417cff45572,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,3c409388-ab73-4c7f-953d-3a71062240f6,Washington Mystics,Chicago Sky,2016-06-01T23:00:00+00:00,78,86,Wed Jun 1 2016
-241,241,bb683dd8-423a-4e33-a3e5-69aa5d60e8a4,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Los Angeles Sparks,San Antonio Stars,2016-06-03T02:30:00+00:00,na,na,Thu Jun 2 2016
+241,241,bb683dd8-423a-4e33-a3e5-69aa5d60e8a4,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Los Angeles Sparks,San Antonio Silver Stars,2016-06-03T02:30:00+00:00,na,na,Thu Jun 2 2016
 242,242,9eebd7b7-114e-46e7-ad12-ede990d50a7b,a015b02d-845c-40c1-8ef4-844984f47e4d,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Connecticut Sun,Atlanta Dream,2016-06-03T23:00:00+00:00,77,83,Fri Jun 3 2016
 243,243,47fcc325-4b74-4e29-8a9b-053db11fd34a,08ed8274-e29f-4248-bc2e-83cc8ed18d75,f073a15f-0486-4179-b0a3-dfd0294eb595,New York Liberty,Indiana Fever,2016-06-03T23:30:00+00:00,91,59,Fri Jun 3 2016
 244,244,71ed5edd-81dc-4ca8-93fb-a6f2400271fe,3c409388-ab73-4c7f-953d-3a71062240f6,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Chicago Sky,Washington Mystics,2016-06-04T00:30:00+00:00,na,na,Fri Jun 3 2016
 245,245,39074926-d94b-4849-8ffd-9171de75119e,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Seattle Storm,Phoenix Mercury,2016-06-04T02:00:00+00:00,na,na,Fri Jun 3 2016
-246,246,26fb2537-447f-490d-8ac8-b89372c921cf,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,San Antonio Stars,Los Angeles Sparks,2016-06-05T00:00:00+00:00,na,na,Sat Jun 4 2016
+246,246,26fb2537-447f-490d-8ac8-b89372c921cf,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,San Antonio Silver Stars,Los Angeles Sparks,2016-06-05T00:00:00+00:00,na,na,Sat Jun 4 2016
 247,247,dfe9f542-f4b9-4814-a454-e2ba6a40781a,6f017f37-be96-4bdc-b6d3-0a0429c72e89,5f0b5caf-708b-4300-92f2-53b51d83ec06,Minnesota Lynx,Dallas Wings,2016-06-05T00:00:00+00:00,na,na,Sat Jun 4 2016
 248,248,0fdf03c5-98a2-4b8d-9c59-7771fed2c61e,a015b02d-845c-40c1-8ef4-844984f47e4d,f073a15f-0486-4179-b0a3-dfd0294eb595,Connecticut Sun,Indiana Fever,2016-06-05T19:00:00+00:00,77,88,Sun Jun 5 2016
 249,249,7156414f-d835-4111-86be-28ea994589a9,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Atlanta Dream,Washington Mystics,2016-06-05T19:00:00+00:00,79,86,Sun Jun 5 2016
@@ -253,58 +253,58 @@
 251,251,c974a2f5-da37-4f50-83c2-f7224364fb3f,6f017f37-be96-4bdc-b6d3-0a0429c72e89,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Minnesota Lynx,Phoenix Mercury,2016-06-08T00:00:00+00:00,na,na,Tue Jun 7 2016
 252,252,a82b9092-11a1-4c27-b200-5b1c92026789,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Los Angeles Sparks,New York Liberty,2016-06-08T02:00:00+00:00,na,na,Tue Jun 7 2016
 253,253,1c9fd20d-815d-4421-ab37-01f810352132,5f0b5caf-708b-4300-92f2-53b51d83ec06,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Dallas Wings,Washington Mystics,2016-06-09T00:30:00+00:00,na,na,Wed Jun 8 2016
-254,254,4ef317c0-631c-480d-a8c6-54ecf006445d,0699edf3-5993-4182-b9b4-ec935cbd4fcc,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Phoenix Mercury,San Antonio Stars,2016-06-10T02:00:00+00:00,na,na,Thu Jun 9 2016
+254,254,4ef317c0-631c-480d-a8c6-54ecf006445d,0699edf3-5993-4182-b9b4-ec935cbd4fcc,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Phoenix Mercury,San Antonio Silver Stars,2016-06-10T02:00:00+00:00,na,na,Thu Jun 9 2016
 255,255,079e74d5-efdb-4c0c-a523-4c7e04f1f30a,f073a15f-0486-4179-b0a3-dfd0294eb595,3c409388-ab73-4c7f-953d-3a71062240f6,Indiana Fever,Chicago Sky,2016-06-10T23:00:00+00:00,64,73,Fri Jun 10 2016
 256,256,a2c60190-3f0e-4bbe-a07e-ec95dc2027f3,a015b02d-845c-40c1-8ef4-844984f47e4d,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Connecticut Sun,Seattle Storm,2016-06-10T23:00:00+00:00,77,76,Fri Jun 10 2016
 257,257,c5712abc-0cbf-48b5-a6a9-dcb3c3258d39,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Atlanta Dream,Minnesota Lynx,2016-06-10T23:30:00+00:00,78,110,Fri Jun 10 2016
 258,258,6f4caee9-d7b4-4fdc-9ad0-1833481646bc,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Washington Mystics,Minnesota Lynx,2016-06-11T23:00:00+00:00,76,83,Sat Jun 11 2016
-259,259,9728b030-4e35-43d5-9806-b7fd0bbad8ca,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,08ed8274-e29f-4248-bc2e-83cc8ed18d75,San Antonio Stars,New York Liberty,2016-06-12T00:00:00+00:00,na,na,Sat Jun 11 2016
+259,259,9728b030-4e35-43d5-9806-b7fd0bbad8ca,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,08ed8274-e29f-4248-bc2e-83cc8ed18d75,San Antonio Silver Stars,New York Liberty,2016-06-12T00:00:00+00:00,na,na,Sat Jun 11 2016
 260,260,c4f81d5b-a271-45ef-b854-2bd205556760,5f0b5caf-708b-4300-92f2-53b51d83ec06,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Dallas Wings,Los Angeles Sparks,2016-06-12T00:30:00+00:00,na,na,Sat Jun 11 2016
 261,261,46d4ef1d-c8d0-4808-a237-81d42b9a5e82,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,a015b02d-845c-40c1-8ef4-844984f47e4d,Atlanta Dream,Connecticut Sun,2016-06-12T19:00:00+00:00,93,87,Sun Jun 12 2016
 262,262,9e546976-3378-4d13-89d9-2863817989d3,f073a15f-0486-4179-b0a3-dfd0294eb595,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Indiana Fever,Seattle Storm,2016-06-12T22:00:00+00:00,88,90,Sun Jun 12 2016
 263,263,c3ac064b-fd20-4f58-8906-ca73a2974314,0699edf3-5993-4182-b9b4-ec935cbd4fcc,3c409388-ab73-4c7f-953d-3a71062240f6,Phoenix Mercury,Chicago Sky,2016-06-12T22:00:00+00:00,86,80,Sun Jun 12 2016
 264,264,4ab6d5e9-ebff-4f37-b62b-8e68978546fe,a015b02d-845c-40c1-8ef4-844984f47e4d,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Connecticut Sun,Washington Mystics,2016-06-14T23:00:00+00:00,106,109,Tue Jun 14 2016
 265,265,ba2eda90-ff72-4a5f-8c95-b859890430dc,08ed8274-e29f-4248-bc2e-83cc8ed18d75,5f0b5caf-708b-4300-92f2-53b51d83ec06,New York Liberty,Dallas Wings,2016-06-14T23:00:00+00:00,91,88,Tue Jun 14 2016
-266,266,37127f7c-3f6b-4c3a-a896-f90f0ded370d,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,San Antonio Stars,Seattle Storm,2016-06-15T00:00:00+00:00,na,na,Tue Jun 14 2016
+266,266,37127f7c-3f6b-4c3a-a896-f90f0ded370d,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,San Antonio Silver Stars,Seattle Storm,2016-06-15T00:00:00+00:00,na,na,Tue Jun 14 2016
 267,267,db32c6a6-cb14-4670-8f47-e38475a4eb1e,6f017f37-be96-4bdc-b6d3-0a0429c72e89,f073a15f-0486-4179-b0a3-dfd0294eb595,Minnesota Lynx,Indiana Fever,2016-06-15T00:00:00+00:00,na,na,Tue Jun 14 2016
 268,268,2c0c90d3-824c-411d-b60f-5b4fff79db1f,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,3c409388-ab73-4c7f-953d-3a71062240f6,Los Angeles Sparks,Chicago Sky,2016-06-15T02:30:00+00:00,na,na,Tue Jun 14 2016
 269,269,31ee6ba3-7c3e-4316-802a-65df6e9f9bcb,a015b02d-845c-40c1-8ef4-844984f47e4d,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Connecticut Sun,New York Liberty,2016-06-16T23:00:00+00:00,72,80,Thu Jun 16 2016
 270,270,75bb72d5-be6d-4200-8436-4dc5512334a8,5f0b5caf-708b-4300-92f2-53b51d83ec06,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Dallas Wings,Seattle Storm,2016-06-17T00:30:00+00:00,na,na,Thu Jun 16 2016
 271,271,ba0f1aff-7174-49c8-92cc-fa9e24f3060a,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,3c409388-ab73-4c7f-953d-3a71062240f6,Atlanta Dream,Chicago Sky,2016-06-17T23:30:00+00:00,101,97,Fri Jun 17 2016
-272,272,2c81b035-4ed6-403e-bbc8-f5ea53a09228,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,f073a15f-0486-4179-b0a3-dfd0294eb595,San Antonio Stars,Indiana Fever,2016-06-18T00:00:00+00:00,na,na,Fri Jun 17 2016
+272,272,2c81b035-4ed6-403e-bbc8-f5ea53a09228,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,f073a15f-0486-4179-b0a3-dfd0294eb595,San Antonio Silver Stars,Indiana Fever,2016-06-18T00:00:00+00:00,na,na,Fri Jun 17 2016
 273,273,53e71cc5-77b6-4771-8370-5a47e8f2769e,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Los Angeles Sparks,Phoenix Mercury,2016-06-18T02:30:00+00:00,na,na,Fri Jun 17 2016
 274,274,9846b71a-a8f1-42e0-877e-ed88887083f7,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Washington Mystics,Atlanta Dream,2016-06-18T23:00:00+00:00,95,65,Sat Jun 18 2016
 275,275,4d2ebd0c-1285-47f0-ba5c-1e2eb79bf86e,0699edf3-5993-4182-b9b4-ec935cbd4fcc,5f0b5caf-708b-4300-92f2-53b51d83ec06,Phoenix Mercury,Dallas Wings,2016-06-19T02:00:00+00:00,na,na,Sat Jun 18 2016
-276,276,9ad6596a-61a1-4f8b-8996-aa44b560fbd5,a015b02d-845c-40c1-8ef4-844984f47e4d,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Connecticut Sun,San Antonio Stars,2016-06-19T17:00:00+00:00,na,na,Sun Jun 19 2016
+276,276,9ad6596a-61a1-4f8b-8996-aa44b560fbd5,a015b02d-845c-40c1-8ef4-844984f47e4d,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Connecticut Sun,San Antonio Silver Stars,2016-06-19T17:00:00+00:00,na,na,Sun Jun 19 2016
 277,277,75363dc7-5150-4b04-a50d-06d442745471,f073a15f-0486-4179-b0a3-dfd0294eb595,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Indiana Fever,New York Liberty,2016-06-19T18:00:00+00:00,75,78,Sun Jun 19 2016
 278,278,848b348d-ad6e-4f07-b516-a0c62f16bee7,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Seattle Storm,Minnesota Lynx,2016-06-19T23:00:00+00:00,84,96,Sun Jun 19 2016
 279,279,fcc2aa2c-26a3-4e18-af1a-d14d1682dd94,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Los Angeles Sparks,Minnesota Lynx,2016-06-21T19:30:00+00:00,69,72,Tue Jun 21 2016
 280,280,c0503776-206b-44ba-9260-1f68b4023038,5f0b5caf-708b-4300-92f2-53b51d83ec06,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Dallas Wings,Phoenix Mercury,2016-06-22T00:00:00+00:00,na,na,Tue Jun 21 2016
-281,281,e9c3db82-e963-4cad-a422-ea76b2e9c2c4,3c409388-ab73-4c7f-953d-3a71062240f6,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Chicago Sky,San Antonio Stars,2016-06-22T00:00:00+00:00,na,na,Tue Jun 21 2016
+281,281,e9c3db82-e963-4cad-a422-ea76b2e9c2c4,3c409388-ab73-4c7f-953d-3a71062240f6,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Chicago Sky,San Antonio Silver Stars,2016-06-22T00:00:00+00:00,na,na,Tue Jun 21 2016
 282,282,6ef326cf-e0fa-497b-8ff1-d2e921c376ea,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Atlanta Dream,New York Liberty,2016-06-22T16:00:00+00:00,79,90,Wed Jun 22 2016
 283,283,af8a1cdf-1876-4698-b1d6-0b078a6912e1,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,f073a15f-0486-4179-b0a3-dfd0294eb595,Washington Mystics,Indiana Fever,2016-06-22T23:00:00+00:00,76,62,Wed Jun 22 2016
-284,284,bf343370-dc9e-4a2b-a5c0-9cf7ad9b7b24,5f0b5caf-708b-4300-92f2-53b51d83ec06,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Dallas Wings,San Antonio Stars,2016-06-24T00:30:00+00:00,na,na,Thu Jun 23 2016
+284,284,bf343370-dc9e-4a2b-a5c0-9cf7ad9b7b24,5f0b5caf-708b-4300-92f2-53b51d83ec06,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Dallas Wings,San Antonio Silver Stars,2016-06-24T00:30:00+00:00,na,na,Thu Jun 23 2016
 285,285,b7041fb1-148e-437b-8cab-fb564fc13149,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Washington Mystics,Phoenix Mercury,2016-06-24T23:00:00+00:00,79,91,Fri Jun 24 2016
 286,286,6ca92313-3c76-4e81-99f7-d727e32a2865,08ed8274-e29f-4248-bc2e-83cc8ed18d75,3c409388-ab73-4c7f-953d-3a71062240f6,New York Liberty,Chicago Sky,2016-06-24T23:30:00+00:00,80,79,Fri Jun 24 2016
 287,287,977c788c-1b4c-4fe9-b9b3-b582aff9bff2,6f017f37-be96-4bdc-b6d3-0a0429c72e89,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Minnesota Lynx,Los Angeles Sparks,2016-06-25T00:00:00+00:00,na,na,Fri Jun 24 2016
 288,288,c2dece60-12aa-4577-bff0-2e26af67d36f,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,a015b02d-845c-40c1-8ef4-844984f47e4d,Seattle Storm,Connecticut Sun,2016-06-25T02:00:00+00:00,na,na,Fri Jun 24 2016
-289,289,99d4058b-6e96-4ff0-b6d5-f58bfe6f3019,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,San Antonio Stars,Atlanta Dream,2016-06-26T00:00:00+00:00,na,na,Sat Jun 25 2016
+289,289,99d4058b-6e96-4ff0-b6d5-f58bfe6f3019,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,San Antonio Silver Stars,Atlanta Dream,2016-06-26T00:00:00+00:00,na,na,Sat Jun 25 2016
 290,290,60a17d7f-e02a-472c-a491-6e83dc60641d,5f0b5caf-708b-4300-92f2-53b51d83ec06,f073a15f-0486-4179-b0a3-dfd0294eb595,Dallas Wings,Indiana Fever,2016-06-26T00:30:00+00:00,na,na,Sat Jun 25 2016
 291,291,804a5ada-0e06-434e-bc21-a69f106c712f,08ed8274-e29f-4248-bc2e-83cc8ed18d75,0699edf3-5993-4182-b9b4-ec935cbd4fcc,New York Liberty,Phoenix Mercury,2016-06-26T19:00:00+00:00,97,104,Sun Jun 26 2016
 292,292,af37110f-91a8-44a8-9f40-6033e19a0718,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Washington Mystics,Minnesota Lynx,2016-06-26T20:00:00+00:00,87,63,Sun Jun 26 2016
 293,293,0d4b03a3-9568-4c34-841e-3ab9a5d5e205,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,a015b02d-845c-40c1-8ef4-844984f47e4d,Los Angeles Sparks,Connecticut Sun,2016-06-26T21:00:00+00:00,80,73,Sun Jun 26 2016
 294,294,0c1279ce-2d18-4124-9cc5-2dbcc88051e4,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Seattle Storm,Atlanta Dream,2016-06-29T02:00:00+00:00,na,na,Tue Jun 28 2016
 295,295,2a54ad5d-8c62-4bfc-bfac-36f7caf8c8e5,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,5f0b5caf-708b-4300-92f2-53b51d83ec06,Los Angeles Sparks,Dallas Wings,2016-06-29T02:00:00+00:00,na,na,Tue Jun 28 2016
-296,296,75ea83f4-acb5-4619-b5d9-701e3dd159ab,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Washington Mystics,San Antonio Stars,2016-06-29T15:30:00+00:00,na,na,Wed Jun 29 2016
+296,296,75ea83f4-acb5-4619-b5d9-701e3dd159ab,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Washington Mystics,San Antonio Silver Stars,2016-06-29T15:30:00+00:00,na,na,Wed Jun 29 2016
 297,297,5a98655e-648e-4dc5-b54d-bbb277e39ea0,3c409388-ab73-4c7f-953d-3a71062240f6,f073a15f-0486-4179-b0a3-dfd0294eb595,Chicago Sky,Indiana Fever,2016-06-29T16:30:00+00:00,83,95,Wed Jun 29 2016
 298,298,7cf8bcbf-4167-4045-8db4-a0991baadf95,6f017f37-be96-4bdc-b6d3-0a0429c72e89,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Minnesota Lynx,New York Liberty,2016-06-30T00:00:00+00:00,na,na,Wed Jun 29 2016
 299,299,628ac0e0-cfec-4c44-9d86-63826d38f583,0699edf3-5993-4182-b9b4-ec935cbd4fcc,a015b02d-845c-40c1-8ef4-844984f47e4d,Phoenix Mercury,Connecticut Sun,2016-06-30T02:00:00+00:00,na,na,Wed Jun 29 2016
 300,300,8442a568-883c-4399-8a75-1157d0ea1380,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Los Angeles Sparks,Atlanta Dream,2016-06-30T19:30:00+00:00,84,75,Thu Jun 30 2016
 301,301,0cc02016-a2c2-40ad-8752-fec8520c5468,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,5f0b5caf-708b-4300-92f2-53b51d83ec06,Seattle Storm,Dallas Wings,2016-07-01T02:00:00+00:00,na,na,Thu Jun 30 2016
-302,302,ba2afd1f-6ebd-43b1-a9d2-072c184f6806,f073a15f-0486-4179-b0a3-dfd0294eb595,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Indiana Fever,San Antonio Stars,2016-07-01T23:00:00+00:00,na,na,Fri Jul 1 2016
+302,302,ba2afd1f-6ebd-43b1-a9d2-072c184f6806,f073a15f-0486-4179-b0a3-dfd0294eb595,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Indiana Fever,San Antonio Silver Stars,2016-07-01T23:00:00+00:00,na,na,Fri Jul 1 2016
 303,303,124a8b01-db97-4fc7-a695-08a6e99ae32d,3c409388-ab73-4c7f-953d-3a71062240f6,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Chicago Sky,Washington Mystics,2016-07-02T00:30:00+00:00,na,na,Fri Jul 1 2016
 304,304,d838f0ec-6a9c-4cd9-b2ad-42be67a20dd9,0699edf3-5993-4182-b9b4-ec935cbd4fcc,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Phoenix Mercury,New York Liberty,2016-07-02T02:00:00+00:00,na,na,Fri Jul 1 2016
-305,305,c4d6a237-1601-48b9-a101-151a0b85a967,6f017f37-be96-4bdc-b6d3-0a0429c72e89,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Minnesota Lynx,San Antonio Stars,2016-07-03T00:00:00+00:00,na,na,Sat Jul 2 2016
+305,305,c4d6a237-1601-48b9-a101-151a0b85a967,6f017f37-be96-4bdc-b6d3-0a0429c72e89,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Minnesota Lynx,San Antonio Silver Stars,2016-07-03T00:00:00+00:00,na,na,Sat Jul 2 2016
 306,306,8c83746a-fd6b-4f99-8eb9-ef8d3c2e7abd,5f0b5caf-708b-4300-92f2-53b51d83ec06,a015b02d-845c-40c1-8ef4-844984f47e4d,Dallas Wings,Connecticut Sun,2016-07-03T00:30:00+00:00,na,na,Sat Jul 2 2016
 307,307,73d8a2e9-fa49-43a9-b2b2-ca1d4999093c,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Los Angeles Sparks,New York Liberty,2016-07-03T21:00:00+00:00,77,67,Sun Jul 3 2016
 308,308,80ad6f3b-e223-46a5-89f5-b898a17e70f0,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Atlanta Dream,Phoenix Mercury,2016-07-03T22:00:00+00:00,87,95,Sun Jul 3 2016
@@ -312,20 +312,20 @@
 310,310,3e541a29-5628-41f2-a174-023a4e30493a,6f017f37-be96-4bdc-b6d3-0a0429c72e89,3c409388-ab73-4c7f-953d-3a71062240f6,Minnesota Lynx,Chicago Sky,2016-07-06T00:00:00+00:00,na,na,Tue Jul 5 2016
 311,311,869a171a-4096-4372-a0ab-489bf33c6399,5f0b5caf-708b-4300-92f2-53b51d83ec06,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Dallas Wings,Phoenix Mercury,2016-07-06T00:30:00+00:00,na,na,Tue Jul 5 2016
 312,312,a7717e2f-ae80-44b3-962b-a9cf4ab2637d,08ed8274-e29f-4248-bc2e-83cc8ed18d75,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,New York Liberty,Seattle Storm,2016-07-06T23:00:00+00:00,78,74,Wed Jul 6 2016
-313,313,f615fc08-938f-40f7-83b9-13bcbb067256,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,San Antonio Stars,Washington Mystics,2016-07-07T00:00:00+00:00,na,na,Wed Jul 6 2016
+313,313,f615fc08-938f-40f7-83b9-13bcbb067256,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,San Antonio Silver Stars,Washington Mystics,2016-07-07T00:00:00+00:00,na,na,Wed Jul 6 2016
 314,314,fa1f121f-0a31-46fc-8c5c-c8d9dc8bfdde,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,f073a15f-0486-4179-b0a3-dfd0294eb595,Los Angeles Sparks,Indiana Fever,2016-07-07T02:30:00+00:00,na,na,Wed Jul 6 2016
 315,315,f3467296-cb95-4e9a-9459-8c692e9b4f35,a015b02d-845c-40c1-8ef4-844984f47e4d,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Connecticut Sun,Minnesota Lynx,2016-07-07T23:00:00+00:00,93,89,Thu Jul 7 2016
 316,316,6af23d3d-d106-4c22-82e3-15da2b21fbc4,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,5f0b5caf-708b-4300-92f2-53b51d83ec06,Atlanta Dream,Dallas Wings,2016-07-08T23:30:00+00:00,95,90,Fri Jul 8 2016
 317,317,e425c46b-0c23-4803-a206-549770e178e9,3c409388-ab73-4c7f-953d-3a71062240f6,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Chicago Sky,New York Liberty,2016-07-09T00:30:00+00:00,na,na,Fri Jul 8 2016
-318,318,405e2be4-cfd6-4026-b10a-9c53a6e0b45b,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,San Antonio Stars,Seattle Storm,2016-07-09T01:00:00+00:00,na,na,Fri Jul 8 2016
+318,318,405e2be4-cfd6-4026-b10a-9c53a6e0b45b,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,San Antonio Silver Stars,Seattle Storm,2016-07-09T01:00:00+00:00,na,na,Fri Jul 8 2016
 319,319,5df94286-cc47-4f8c-802c-5d3a937e3cea,0699edf3-5993-4182-b9b4-ec935cbd4fcc,f073a15f-0486-4179-b0a3-dfd0294eb595,Phoenix Mercury,Indiana Fever,2016-07-09T02:00:00+00:00,na,na,Fri Jul 8 2016
 320,320,62ad54cd-3ff0-47f3-854c-3a403f7e726d,6f017f37-be96-4bdc-b6d3-0a0429c72e89,5f0b5caf-708b-4300-92f2-53b51d83ec06,Minnesota Lynx,Dallas Wings,2016-07-10T00:00:00+00:00,na,na,Sat Jul 9 2016
 321,321,cf1694d8-dbaf-4d56-af74-fbb74eed93b7,a015b02d-845c-40c1-8ef4-844984f47e4d,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Connecticut Sun,Atlanta Dream,2016-07-10T17:00:00+00:00,63,67,Sun Jul 10 2016
-322,322,73e9e59b-5234-4b97-9ef6-94771e6c7cd5,08ed8274-e29f-4248-bc2e-83cc8ed18d75,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,New York Liberty,San Antonio Stars,2016-07-10T19:00:00+00:00,na,na,Sun Jul 10 2016
+322,322,73e9e59b-5234-4b97-9ef6-94771e6c7cd5,08ed8274-e29f-4248-bc2e-83cc8ed18d75,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,New York Liberty,San Antonio Silver Stars,2016-07-10T19:00:00+00:00,na,na,Sun Jul 10 2016
 323,323,7ba053a1-5d9f-4399-8ce0-678039b46a8c,3c409388-ab73-4c7f-953d-3a71062240f6,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Chicago Sky,Phoenix Mercury,2016-07-10T22:00:00+00:00,100,95,Sun Jul 10 2016
 324,324,ce62437a-8129-4c98-909a-c4edfb41562b,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,f073a15f-0486-4179-b0a3-dfd0294eb595,Seattle Storm,Indiana Fever,2016-07-10T23:00:00+00:00,82,93,Sun Jul 10 2016
 325,325,f41e9474-101e-4e4f-b3fd-b5f81e6cd0f4,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Los Angeles Sparks,Washington Mystics,2016-07-10T23:00:00+00:00,93,82,Sun Jul 10 2016
-326,326,d5707a7c-ae7e-47c7-bb37-45fd3fd8877c,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,6f017f37-be96-4bdc-b6d3-0a0429c72e89,San Antonio Stars,Minnesota Lynx,2016-07-12T16:30:00+00:00,na,na,Mon Jul 11 2016
+326,326,d5707a7c-ae7e-47c7-bb37-45fd3fd8877c,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,6f017f37-be96-4bdc-b6d3-0a0429c72e89,San Antonio Silver Stars,Minnesota Lynx,2016-07-12T16:30:00+00:00,na,na,Mon Jul 11 2016
 327,327,d46f7fec-26c2-4762-975f-74eb00e70e11,08ed8274-e29f-4248-bc2e-83cc8ed18d75,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,New York Liberty,Atlanta Dream,2016-07-13T15:00:00+00:00,86,62,Wed Jul 13 2016
 328,328,3de03f61-883e-4430-954f-15d2c0293466,f073a15f-0486-4179-b0a3-dfd0294eb595,a015b02d-845c-40c1-8ef4-844984f47e4d,Indiana Fever,Connecticut Sun,2016-07-13T16:00:00+00:00,64,86,Wed Jul 13 2016
 329,329,79663d5d-2d48-484d-94dc-84088750b86a,3c409388-ab73-4c7f-953d-3a71062240f6,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Chicago Sky,Los Angeles Sparks,2016-07-13T16:30:00+00:00,67,77,Wed Jul 13 2016
@@ -335,7 +335,7 @@
 333,333,28790e4e-4ba9-40ae-9c43-bd31eef20be3,6f017f37-be96-4bdc-b6d3-0a0429c72e89,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Minnesota Lynx,New York Liberty,2016-07-16T00:00:00+00:00,na,na,Fri Jul 15 2016
 334,334,7fd993fa-9f8f-4e20-ac80-dbbb7c91103c,3c409388-ab73-4c7f-953d-3a71062240f6,5f0b5caf-708b-4300-92f2-53b51d83ec06,Chicago Sky,Dallas Wings,2016-07-16T00:30:00+00:00,na,na,Fri Jul 15 2016
 335,335,ff119f3b-0e1f-4336-982b-c153799995cf,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Seattle Storm,Washington Mystics,2016-07-16T02:00:00+00:00,na,na,Fri Jul 15 2016
-336,336,42906a30-087f-4888-bf18-3bd51c7c8a7b,0699edf3-5993-4182-b9b4-ec935cbd4fcc,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Phoenix Mercury,San Antonio Stars,2016-07-17T02:00:00+00:00,na,na,Sat Jul 16 2016
+336,336,42906a30-087f-4888-bf18-3bd51c7c8a7b,0699edf3-5993-4182-b9b4-ec935cbd4fcc,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Phoenix Mercury,San Antonio Silver Stars,2016-07-17T02:00:00+00:00,na,na,Sat Jul 16 2016
 337,337,2349ee6f-54d0-4113-bc6e-62512c17de61,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Atlanta Dream,Los Angeles Sparks,2016-07-17T19:00:00+00:00,91,74,Sun Jul 17 2016
 338,338,80f77421-bb66-41ba-859b-2cd30c012b5e,08ed8274-e29f-4248-bc2e-83cc8ed18d75,a015b02d-845c-40c1-8ef4-844984f47e4d,New York Liberty,Connecticut Sun,2016-07-17T19:00:00+00:00,83,76,Sun Jul 17 2016
 339,339,7b064ebd-b563-4174-b86c-9fb5f4f13223,5f0b5caf-708b-4300-92f2-53b51d83ec06,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Dallas Wings,Minnesota Lynx,2016-07-17T20:30:00+00:00,97,98,Sun Jul 17 2016
@@ -345,40 +345,40 @@
 343,343,e534846b-0ee7-4d01-ba57-555cf8872613,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Washington Mystics,New York Liberty,2016-07-20T15:30:00+00:00,81,88,Wed Jul 20 2016
 344,344,336b2f37-339e-4d89-8181-775f5ae6dba1,5f0b5caf-708b-4300-92f2-53b51d83ec06,a015b02d-845c-40c1-8ef4-844984f47e4d,Dallas Wings,Connecticut Sun,2016-07-20T16:30:00+00:00,78,89,Wed Jul 20 2016
 345,345,20996132-0699-4741-b05f-4ed9bec11b39,6f017f37-be96-4bdc-b6d3-0a0429c72e89,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Minnesota Lynx,Atlanta Dream,2016-07-20T17:00:00+00:00,83,65,Wed Jul 20 2016
-346,346,cf3bbe1f-89d8-4ff3-9107-fb6902dbc51d,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Seattle Storm,San Antonio Stars,2016-07-20T19:00:00+00:00,na,na,Wed Jul 20 2016
+346,346,cf3bbe1f-89d8-4ff3-9107-fb6902dbc51d,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Seattle Storm,San Antonio Silver Stars,2016-07-20T19:00:00+00:00,na,na,Wed Jul 20 2016
 347,347,74640410-dbe7-400d-b4aa-813f03aef7a1,08ed8274-e29f-4248-bc2e-83cc8ed18d75,f073a15f-0486-4179-b0a3-dfd0294eb595,New York Liberty,Indiana Fever,2016-07-21T15:00:00+00:00,70,82,Thu Jul 21 2016
 348,348,4a759e55-4445-46eb-89bb-05ba0fdb101d,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Washington Mystics,Los Angeles Sparks,2016-07-22T23:00:00+00:00,75,95,Fri Jul 22 2016
 349,349,8ed5f3d1-5ad1-43ad-8f4f-6476f3d0e42e,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,5f0b5caf-708b-4300-92f2-53b51d83ec06,Atlanta Dream,Dallas Wings,2016-07-22T23:30:00+00:00,93,88,Fri Jul 22 2016
 350,350,6915bc0b-80c4-4f46-b6ad-3a5a3ebf3744,6f017f37-be96-4bdc-b6d3-0a0429c72e89,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Minnesota Lynx,Seattle Storm,2016-07-23T00:00:00+00:00,na,na,Fri Jul 22 2016
 351,351,d63ed12a-ef8d-40bb-b498-3cc31dae1f21,3c409388-ab73-4c7f-953d-3a71062240f6,a015b02d-845c-40c1-8ef4-844984f47e4d,Chicago Sky,Connecticut Sun,2016-07-23T00:30:00+00:00,na,na,Fri Jul 22 2016
 352,352,ae49ff65-eddf-411b-9e41-594a664be07f,a015b02d-845c-40c1-8ef4-844984f47e4d,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Connecticut Sun,Minnesota Lynx,2016-08-26T23:00:00+00:00,84,80,Fri Aug 26 2016
-353,353,5a447e5c-fbd7-40b2-8149-a5f8a3b3bf60,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,08ed8274-e29f-4248-bc2e-83cc8ed18d75,San Antonio Stars,New York Liberty,2016-08-27T00:00:00+00:00,na,na,Fri Aug 26 2016
+353,353,5a447e5c-fbd7-40b2-8149-a5f8a3b3bf60,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,08ed8274-e29f-4248-bc2e-83cc8ed18d75,San Antonio Silver Stars,New York Liberty,2016-08-27T00:00:00+00:00,na,na,Fri Aug 26 2016
 354,354,b3edc8e6-a0f0-4ca1-bf14-46b99a21234f,3c409388-ab73-4c7f-953d-3a71062240f6,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Chicago Sky,Atlanta Dream,2016-08-27T00:30:00+00:00,na,na,Fri Aug 26 2016
 355,355,03bf21b7-ee62-4614-ac58-eeeb7f28ac1f,0699edf3-5993-4182-b9b4-ec935cbd4fcc,5f0b5caf-708b-4300-92f2-53b51d83ec06,Phoenix Mercury,Dallas Wings,2016-08-27T02:00:00+00:00,na,na,Fri Aug 26 2016
 356,356,34754ca1-2957-416e-ba20-16513c776572,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Seattle Storm,Los Angeles Sparks,2016-08-27T02:00:00+00:00,na,na,Fri Aug 26 2016
 357,357,565b0ed3-22ed-4b48-9dab-6464dcc7e9ad,f073a15f-0486-4179-b0a3-dfd0294eb595,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Indiana Fever,Washington Mystics,2016-08-27T23:00:00+00:00,69,92,Sat Aug 27 2016
 358,358,11f50656-0e44-4ea0-8693-d631636a790f,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,a015b02d-845c-40c1-8ef4-844984f47e4d,Atlanta Dream,Connecticut Sun,2016-08-28T19:00:00+00:00,87,73,Sun Aug 28 2016
 359,359,177577b2-4d92-4624-b38a-71692fdc89e4,5f0b5caf-708b-4300-92f2-53b51d83ec06,3c409388-ab73-4c7f-953d-3a71062240f6,Dallas Wings,Chicago Sky,2016-08-28T20:30:00+00:00,85,92,Sun Aug 28 2016
-360,360,7d22ead2-12b4-4a48-83a2-709759170526,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Washington Mystics,San Antonio Stars,2016-08-28T23:00:00+00:00,na,na,Sun Aug 28 2016
+360,360,7d22ead2-12b4-4a48-83a2-709759170526,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Washington Mystics,San Antonio Silver Stars,2016-08-28T23:00:00+00:00,na,na,Sun Aug 28 2016
 361,361,8834bb31-ad6e-4702-b597-3fbc80047d4d,6f017f37-be96-4bdc-b6d3-0a0429c72e89,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Minnesota Lynx,Seattle Storm,2016-08-28T23:00:00+00:00,92,80,Sun Aug 28 2016
 362,362,60716d73-6c78-4c81-b8fd-60321be85e7f,0699edf3-5993-4182-b9b4-ec935cbd4fcc,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Phoenix Mercury,Los Angeles Sparks,2016-08-29T01:00:00+00:00,na,na,Sun Aug 28 2016
 363,363,bc833372-e35e-4acd-b1db-f22962968388,f073a15f-0486-4179-b0a3-dfd0294eb595,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Indiana Fever,Phoenix Mercury,2016-08-30T23:00:00+00:00,65,79,Tue Aug 30 2016
-364,364,e05f6391-1c2f-4f58-8588-64cac6336fa6,a015b02d-845c-40c1-8ef4-844984f47e4d,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Connecticut Sun,San Antonio Stars,2016-08-30T23:00:00+00:00,na,na,Tue Aug 30 2016
+364,364,e05f6391-1c2f-4f58-8588-64cac6336fa6,a015b02d-845c-40c1-8ef4-844984f47e4d,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Connecticut Sun,San Antonio Silver Stars,2016-08-30T23:00:00+00:00,na,na,Tue Aug 30 2016
 365,365,11dff200-6285-452c-9ac1-b09e214d84e4,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,5f0b5caf-708b-4300-92f2-53b51d83ec06,Seattle Storm,Dallas Wings,2016-09-01T02:00:00+00:00,na,na,Wed Aug 31 2016
 366,366,7dffcfe1-a7d2-444b-9d78-19ad59002136,f073a15f-0486-4179-b0a3-dfd0294eb595,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Indiana Fever,New York Liberty,2016-09-01T23:00:00+00:00,98,77,Thu Sep 1 2016
-367,367,79e8f2d6-c6b4-4924-8827-529b2131bc38,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,San Antonio Stars,Los Angeles Sparks,2016-09-02T00:00:00+00:00,na,na,Thu Sep 1 2016
+367,367,79e8f2d6-c6b4-4924-8827-529b2131bc38,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,San Antonio Silver Stars,Los Angeles Sparks,2016-09-02T00:00:00+00:00,na,na,Thu Sep 1 2016
 368,368,66688a28-4a91-4b24-a4e0-515df6bdc4dd,a015b02d-845c-40c1-8ef4-844984f47e4d,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Connecticut Sun,Phoenix Mercury,2016-09-02T23:00:00+00:00,87,74,Fri Sep 2 2016
 369,369,61dad1c5-891f-498d-b2cb-8b74ff1c2aee,6f017f37-be96-4bdc-b6d3-0a0429c72e89,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Minnesota Lynx,Washington Mystics,2016-09-03T00:00:00+00:00,na,na,Fri Sep 2 2016
 370,370,2d8d7a67-61dd-4874-991f-e3446c601ecf,5f0b5caf-708b-4300-92f2-53b51d83ec06,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Dallas Wings,Los Angeles Sparks,2016-09-03T00:30:00+00:00,na,na,Fri Sep 2 2016
 371,371,ac77c5bd-db90-4f4c-921e-50a49e71b4a9,3c409388-ab73-4c7f-953d-3a71062240f6,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Chicago Sky,Seattle Storm,2016-09-03T00:30:00+00:00,na,na,Fri Sep 2 2016
 372,372,b4e3b6d0-37f7-4030-aef2-d3127bad6aea,08ed8274-e29f-4248-bc2e-83cc8ed18d75,0699edf3-5993-4182-b9b4-ec935cbd4fcc,New York Liberty,Phoenix Mercury,2016-09-03T22:00:00+00:00,92,70,Sat Sep 3 2016
 373,373,b94fb9f3-c5e4-48d7-8d2e-fd5786a14143,5f0b5caf-708b-4300-92f2-53b51d83ec06,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Dallas Wings,Washington Mystics,2016-09-04T20:30:00+00:00,83,88,Sun Sep 4 2016
-374,374,026641dd-814e-4da4-8f57-5bedcceaa9f4,3c409388-ab73-4c7f-953d-3a71062240f6,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Chicago Sky,San Antonio Stars,2016-09-04T22:00:00+00:00,na,na,Sun Sep 4 2016
+374,374,026641dd-814e-4da4-8f57-5bedcceaa9f4,3c409388-ab73-4c7f-953d-3a71062240f6,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Chicago Sky,San Antonio Silver Stars,2016-09-04T22:00:00+00:00,na,na,Sun Sep 4 2016
 375,375,9f1f4031-f69d-4ae6-8704-9f0959ed90bc,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Atlanta Dream,Seattle Storm,2016-09-04T22:00:00+00:00,82,91,Sun Sep 4 2016
 376,376,1c4be219-9f3d-482d-9b1e-73d25af7a0a5,6f017f37-be96-4bdc-b6d3-0a0429c72e89,a015b02d-845c-40c1-8ef4-844984f47e4d,Minnesota Lynx,Connecticut Sun,2016-09-04T23:00:00+00:00,93,79,Sun Sep 4 2016
 377,377,3181ba35-1ddd-4c90-90b4-67523ff5baa3,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,f073a15f-0486-4179-b0a3-dfd0294eb595,Los Angeles Sparks,Indiana Fever,2016-09-04T23:00:00+00:00,88,81,Sun Sep 4 2016
 378,378,8e6e30e9-d346-4654-815f-cc5a4a612605,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Atlanta Dream,Phoenix Mercury,2016-09-06T23:00:00+00:00,91,87,Tue Sep 6 2016
-379,379,2dd3d9db-d169-4f7b-bd75-fc969b6d8ddd,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,f073a15f-0486-4179-b0a3-dfd0294eb595,San Antonio Stars,Indiana Fever,2016-09-07T00:00:00+00:00,na,na,Tue Sep 6 2016
+379,379,2dd3d9db-d169-4f7b-bd75-fc969b6d8ddd,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,f073a15f-0486-4179-b0a3-dfd0294eb595,San Antonio Silver Stars,Indiana Fever,2016-09-07T00:00:00+00:00,na,na,Tue Sep 6 2016
 380,380,38869e8e-63cb-4019-91db-e65a540c55f8,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Los Angeles Sparks,Minnesota Lynx,2016-09-07T02:00:00+00:00,na,na,Tue Sep 6 2016
 381,381,47547b48-13b0-49b6-801a-47426d602913,08ed8274-e29f-4248-bc2e-83cc8ed18d75,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,New York Liberty,Seattle Storm,2016-09-07T23:00:00+00:00,78,102,Wed Sep 7 2016
 382,382,c157b4a2-8a1a-4186-a113-d1d3835c88ac,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,3c409388-ab73-4c7f-953d-3a71062240f6,Washington Mystics,Chicago Sky,2016-09-07T23:00:00+00:00,118,81,Wed Sep 7 2016
@@ -386,15 +386,15 @@
 384,384,1faa3692-7758-4144-b899-e4067174bac9,f073a15f-0486-4179-b0a3-dfd0294eb595,3c409388-ab73-4c7f-953d-3a71062240f6,Indiana Fever,Chicago Sky,2016-09-09T23:00:00+00:00,95,88,Fri Sep 9 2016
 385,385,e56e253e-5871-49a2-badf-d5ffd68fcca6,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Washington Mystics,Seattle Storm,2016-09-09T23:00:00+00:00,76,81,Fri Sep 9 2016
 386,386,aad243a0-14f7-447b-8b05-a6ebcde13d59,08ed8274-e29f-4248-bc2e-83cc8ed18d75,a015b02d-845c-40c1-8ef4-844984f47e4d,New York Liberty,Connecticut Sun,2016-09-09T23:30:00+00:00,89,82,Fri Sep 9 2016
-387,387,aaaeb1a3-e419-4026-9e88-6b5f36f58c80,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5f0b5caf-708b-4300-92f2-53b51d83ec06,San Antonio Stars,Dallas Wings,2016-09-10T00:00:00+00:00,na,na,Fri Sep 9 2016
+387,387,aaaeb1a3-e419-4026-9e88-6b5f36f58c80,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5f0b5caf-708b-4300-92f2-53b51d83ec06,San Antonio Silver Stars,Dallas Wings,2016-09-10T00:00:00+00:00,na,na,Fri Sep 9 2016
 388,388,e1c14c66-e453-491b-8130-803acff61b32,a015b02d-845c-40c1-8ef4-844984f47e4d,3c409388-ab73-4c7f-953d-3a71062240f6,Connecticut Sun,Chicago Sky,2016-09-11T17:00:00+00:00,86,96,Sun Sep 11 2016
 389,389,f9d086bd-358b-461d-b0cc-c329c6d669c5,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,f073a15f-0486-4179-b0a3-dfd0294eb595,Washington Mystics,Indiana Fever,2016-09-11T20:00:00+00:00,73,80,Sun Sep 11 2016
-390,390,0bd49c91-3d3d-4d8b-9c4d-542cfa1dd35f,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,6f017f37-be96-4bdc-b6d3-0a0429c72e89,San Antonio Stars,Minnesota Lynx,2016-09-11T20:30:00+00:00,na,na,Sun Sep 11 2016
+390,390,0bd49c91-3d3d-4d8b-9c4d-542cfa1dd35f,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,6f017f37-be96-4bdc-b6d3-0a0429c72e89,San Antonio Silver Stars,Minnesota Lynx,2016-09-11T20:30:00+00:00,na,na,Sun Sep 11 2016
 391,391,8c3a9df0-e625-4194-8e0a-aaefbfa515c3,5f0b5caf-708b-4300-92f2-53b51d83ec06,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Dallas Wings,New York Liberty,2016-09-11T20:30:00+00:00,84,81,Sun Sep 11 2016
 392,392,40cad184-3956-4369-91fe-6cc5a26807e4,0699edf3-5993-4182-b9b4-ec935cbd4fcc,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Phoenix Mercury,Atlanta Dream,2016-09-11T22:00:00+00:00,86,75,Sun Sep 11 2016
 393,393,cc9af1d9-2832-4f5d-94c8-3d83d9db9340,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Seattle Storm,Los Angeles Sparks,2016-09-11T23:00:00+00:00,78,60,Sun Sep 11 2016
 394,394,1598590b-9dcc-43ca-a024-2c76b996db7f,08ed8274-e29f-4248-bc2e-83cc8ed18d75,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,New York Liberty,Washington Mystics,2016-09-13T23:00:00+00:00,62,75,Tue Sep 13 2016
-395,395,2eb8bbbc-57ec-4d8e-b28d-db0f10f8ef85,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Atlanta Dream,San Antonio Stars,2016-09-13T23:00:00+00:00,na,na,Tue Sep 13 2016
+395,395,2eb8bbbc-57ec-4d8e-b28d-db0f10f8ef85,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Atlanta Dream,San Antonio Silver Stars,2016-09-13T23:00:00+00:00,na,na,Tue Sep 13 2016
 396,396,a7033435-5d9b-41ab-beb0-f770a84a3211,a015b02d-845c-40c1-8ef4-844984f47e4d,f073a15f-0486-4179-b0a3-dfd0294eb595,Connecticut Sun,Indiana Fever,2016-09-13T23:00:00+00:00,89,87,Tue Sep 13 2016
 397,397,631fe7f3-ae85-4d08-a828-d09b5cd2051a,3c409388-ab73-4c7f-953d-3a71062240f6,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Chicago Sky,Minnesota Lynx,2016-09-14T00:00:00+00:00,na,na,Tue Sep 13 2016
 398,398,92d7a8dc-bc28-4f23-8276-aefcb102e33d,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Los Angeles Sparks,Phoenix Mercury,2016-09-14T02:30:00+00:00,na,na,Tue Sep 13 2016
@@ -403,22 +403,22 @@
 401,401,ac59c432-0ebd-4e88-b592-d80809d9eb52,f073a15f-0486-4179-b0a3-dfd0294eb595,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Indiana Fever,Minnesota Lynx,2016-09-16T23:00:00+00:00,75,82,Fri Sep 16 2016
 402,402,ffc3d418-b4e1-4aff-b130-cd9b155f9f3c,a015b02d-845c-40c1-8ef4-844984f47e4d,5f0b5caf-708b-4300-92f2-53b51d83ec06,Connecticut Sun,Dallas Wings,2016-09-16T23:00:00+00:00,107,74,Fri Sep 16 2016
 403,403,d639fb3c-c854-47a7-9004-cc36a267d8dd,3c409388-ab73-4c7f-953d-3a71062240f6,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Chicago Sky,New York Liberty,2016-09-17T00:30:00+00:00,na,na,Fri Sep 16 2016
-404,404,af0c19c8-6bf7-4069-a7f9-8a228c08142f,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Los Angeles Sparks,San Antonio Stars,2016-09-17T02:30:00+00:00,na,na,Fri Sep 16 2016
+404,404,af0c19c8-6bf7-4069-a7f9-8a228c08142f,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Los Angeles Sparks,San Antonio Silver Stars,2016-09-17T02:30:00+00:00,na,na,Fri Sep 16 2016
 405,405,bfab5240-11ed-46df-835c-28e7a8239d55,6f017f37-be96-4bdc-b6d3-0a0429c72e89,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Minnesota Lynx,Atlanta Dream,2016-09-18T00:00:00+00:00,na,na,Mon Sep 19 2016
 406,406,00fcaf14-4bc7-4240-84a4-0a2e1a911ed2,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,a015b02d-845c-40c1-8ef4-844984f47e4d,Washington Mystics,Connecticut Sun,2016-09-18T20:00:00+00:00,78,87,Sun Sep 18 2016
 407,407,1723bd7a-021f-420c-bbf5-76f4e226e7aa,f073a15f-0486-4179-b0a3-dfd0294eb595,5f0b5caf-708b-4300-92f2-53b51d83ec06,Indiana Fever,Dallas Wings,2016-09-18T20:00:00+00:00,83,60,Sun Sep 18 2016
-408,408,5f271876-20dc-40be-8846-07a9600a3de6,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0699edf3-5993-4182-b9b4-ec935cbd4fcc,San Antonio Stars,Phoenix Mercury,2016-09-18T20:30:00+00:00,na,na,Sun Sep 18 2016
+408,408,5f271876-20dc-40be-8846-07a9600a3de6,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0699edf3-5993-4182-b9b4-ec935cbd4fcc,San Antonio Silver Stars,Phoenix Mercury,2016-09-18T20:30:00+00:00,na,na,Sun Sep 18 2016
 409,409,ad3c64ea-63a1-40bf-b378-1862a136a4d7,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,3c409388-ab73-4c7f-953d-3a71062240f6,Seattle Storm,Chicago Sky,2016-09-18T23:00:00+00:00,88,75,Sun Sep 18 2016
-410,410,0d837e00-0944-43a1-88b9-72662d82a6c8,08ed8274-e29f-4248-bc2e-83cc8ed18d75,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,New York Liberty,San Antonio Stars,2017-05-13T19:00:00+00:00,73,64,Sat May 13 2017
+410,410,0d837e00-0944-43a1-88b9-72662d82a6c8,08ed8274-e29f-4248-bc2e-83cc8ed18d75,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,New York Liberty,San Antonio Silver Stars,2017-05-13T19:00:00+00:00,73,64,Sat May 13 2017
 411,411,957c5f53-188e-4836-ba55-7513dc28c9a4,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Los Angeles Sparks,Seattle Storm,2017-05-13T21:00:00+00:00,78,68,Sat May 13 2017
 412,412,9688ed87-0376-49ff-a9f0-78a7e11b817b,a015b02d-845c-40c1-8ef4-844984f47e4d,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Connecticut Sun,Atlanta Dream,2017-05-13T23:00:00+00:00,74,81,Sat May 13 2017
-413,413,336e03ae-e067-45ea-9bf0-10fe2ae567a5,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Washington Mystics,San Antonio Stars,2017-05-14T19:00:00+00:00,89,74,Sun May 14 2017
+413,413,336e03ae-e067-45ea-9bf0-10fe2ae567a5,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Washington Mystics,San Antonio Silver Stars,2017-05-14T19:00:00+00:00,89,74,Sun May 14 2017
 414,414,5f2b1fbf-c77c-4944-b84d-43cc7d6d91bf,0699edf3-5993-4182-b9b4-ec935cbd4fcc,5f0b5caf-708b-4300-92f2-53b51d83ec06,Phoenix Mercury,Dallas Wings,2017-05-14T22:00:00+00:00,58,68,Sun May 14 2017
 415,415,348cc82c-42f1-4fca-bf59-3f11b9d54989,6f017f37-be96-4bdc-b6d3-0a0429c72e89,3c409388-ab73-4c7f-953d-3a71062240f6,Minnesota Lynx,Chicago Sky,2017-05-14T23:00:00+00:00,70,61,Sun May 14 2017
 416,416,a9e516f1-22c3-4b5b-9092-bf92f1eecab4,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,f073a15f-0486-4179-b0a3-dfd0294eb595,Seattle Storm,Indiana Fever,2017-05-14T23:00:00+00:00,87,82,Sun May 14 2017
 417,417,00cbdea9-d05b-4095-a513-aadf720983b6,0699edf3-5993-4182-b9b4-ec935cbd4fcc,f073a15f-0486-4179-b0a3-dfd0294eb595,Phoenix Mercury,Indiana Fever,2017-05-18T02:00:00+00:00,85,62,Thu May 18 2017
 418,418,17c3b022-9b58-4afe-b739-23e09fe59c52,08ed8274-e29f-4248-bc2e-83cc8ed18d75,6f017f37-be96-4bdc-b6d3-0a0429c72e89,New York Liberty,Minnesota Lynx,2017-05-18T23:00:00+00:00,71,90,Thu May 18 2017
-419,419,d85a41a1-d9ec-40c5-860d-0e51ca6fa41a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0699edf3-5993-4182-b9b4-ec935cbd4fcc,San Antonio Stars,Phoenix Mercury,2017-05-20T00:00:00+00:00,72,78,Sat May 20 2017
+419,419,d85a41a1-d9ec-40c5-860d-0e51ca6fa41a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0699edf3-5993-4182-b9b4-ec935cbd4fcc,San Antonio Silver Stars,Phoenix Mercury,2017-05-20T00:00:00+00:00,72,78,Sat May 20 2017
 420,420,9cb81013-3631-4d73-908f-ff1409acf1d8,3c409388-ab73-4c7f-953d-3a71062240f6,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Chicago Sky,Atlanta Dream,2017-05-20T00:30:00+00:00,83,91,Sat May 20 2017
 421,421,c2a5ff5d-2f1e-4147-9a1c-93e1f4d5c1a1,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Los Angeles Sparks,Washington Mystics,2017-05-20T02:30:00+00:00,99,89,Sat May 20 2017
 422,422,24671d6d-844f-4538-b94b-832bb60003aa,f073a15f-0486-4179-b0a3-dfd0294eb595,a015b02d-845c-40c1-8ef4-844984f47e4d,Indiana Fever,Connecticut Sun,2017-05-20T23:00:00+00:00,81,79,Sat May 20 2017
@@ -429,7 +429,7 @@
 427,427,344cbdd8-3087-4e9b-90bc-6de521c9657c,0699edf3-5993-4182-b9b4-ec935cbd4fcc,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Phoenix Mercury,New York Liberty,2017-05-24T02:00:00+00:00,67,69,Wed May 24 2017
 428,428,7dc1ca5f-7461-486c-8cea-ebd0a2e9239e,3c409388-ab73-4c7f-953d-3a71062240f6,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Chicago Sky,Washington Mystics,2017-05-24T16:30:00+00:00,67,82,Wed May 24 2017
 429,429,1b41d15f-456c-4b35-bf72-51b824b4aaf6,f073a15f-0486-4179-b0a3-dfd0294eb595,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Indiana Fever,Los Angeles Sparks,2017-05-24T23:00:00+00:00,93,90,Wed May 24 2017
-430,430,41d23ead-9578-4da9-adbd-ac36b2f2019d,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5f0b5caf-708b-4300-92f2-53b51d83ec06,San Antonio Stars,Dallas Wings,2017-05-25T16:00:00+00:00,82,94,Thu May 25 2017
+430,430,41d23ead-9578-4da9-adbd-ac36b2f2019d,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5f0b5caf-708b-4300-92f2-53b51d83ec06,San Antonio Silver Stars,Dallas Wings,2017-05-25T16:00:00+00:00,82,94,Thu May 25 2017
 431,431,373eec22-780a-4f2a-92b0-a990f48d2da2,a015b02d-845c-40c1-8ef4-844984f47e4d,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Connecticut Sun,Minnesota Lynx,2017-05-26T23:00:00+00:00,68,82,Fri May 26 2017
 432,432,9828d8f7-0c94-497d-83fc-790cffc0aec8,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,3c409388-ab73-4c7f-953d-3a71062240f6,Washington Mystics,Chicago Sky,2017-05-26T23:00:00+00:00,88,79,Fri May 26 2017
 433,433,c500e0c3-d853-4f83-966d-ceac7e9416b2,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Seattle Storm,New York Liberty,2017-05-27T02:00:00+00:00,87,81,Sat May 27 2017
@@ -437,20 +437,20 @@
 435,435,4da2ce7c-2fed-433b-adce-0d7c65950464,0699edf3-5993-4182-b9b4-ec935cbd4fcc,5f0b5caf-708b-4300-92f2-53b51d83ec06,Phoenix Mercury,Dallas Wings,2017-05-28T02:00:00+00:00,107,65,Sun May 28 2017
 436,436,35b1d218-6320-4ed9-9b48-70e7fbd39ad8,3c409388-ab73-4c7f-953d-3a71062240f6,a015b02d-845c-40c1-8ef4-844984f47e4d,Chicago Sky,Connecticut Sun,2017-05-28T22:00:00+00:00,79,97,Sun May 28 2017
 437,437,d5145f01-24f5-4783-a5b5-5ad19fae23c2,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,f073a15f-0486-4179-b0a3-dfd0294eb595,Seattle Storm,Indiana Fever,2017-05-28T23:00:00+00:00,94,70,Sun May 28 2017
-438,438,f7950628-c5b3-4b5a-8a56-3d63c89e6a2d,6f017f37-be96-4bdc-b6d3-0a0429c72e89,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Minnesota Lynx,San Antonio Stars,2017-05-28T23:00:00+00:00,80,66,Sun May 28 2017
+438,438,f7950628-c5b3-4b5a-8a56-3d63c89e6a2d,6f017f37-be96-4bdc-b6d3-0a0429c72e89,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Minnesota Lynx,San Antonio Silver Stars,2017-05-28T23:00:00+00:00,80,66,Sun May 28 2017
 439,439,b14ccaec-73e6-4a1c-9326-d6be543792a2,08ed8274-e29f-4248-bc2e-83cc8ed18d75,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,New York Liberty,Los Angeles Sparks,2017-05-30T23:00:00+00:00,75,90,Tue May 30 2017
 440,440,0acf7746-9bb6-47b0-bb40-3232779ab51a,5f0b5caf-708b-4300-92f2-53b51d83ec06,f073a15f-0486-4179-b0a3-dfd0294eb595,Dallas Wings,Indiana Fever,2017-05-31T00:00:00+00:00,89,62,Wed May 31 2017
-441,441,b20275b2-4a65-407b-b68d-169f68dc5653,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Atlanta Dream,San Antonio Stars,2017-05-31T15:30:00+00:00,77,70,Wed May 31 2017
+441,441,b20275b2-4a65-407b-b68d-169f68dc5653,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Atlanta Dream,San Antonio Silver Stars,2017-05-31T15:30:00+00:00,77,70,Wed May 31 2017
 442,442,cc1855a9-7ca6-4e8d-8207-f4d54939e44c,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,a015b02d-845c-40c1-8ef4-844984f47e4d,Washington Mystics,Connecticut Sun,2017-05-31T15:30:00+00:00,78,76,Wed May 31 2017
 443,443,85c7ff11-23ea-4344-af5a-0a10df0b1966,3c409388-ab73-4c7f-953d-3a71062240f6,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Chicago Sky,Phoenix Mercury,2017-06-02T00:00:00+00:00,91,99,Fri Jun 2 2017
 444,444,84d2906b-daab-4fcd-b129-f822ac85523c,08ed8274-e29f-4248-bc2e-83cc8ed18d75,5f0b5caf-708b-4300-92f2-53b51d83ec06,New York Liberty,Dallas Wings,2017-06-02T23:30:00+00:00,93,89,Fri Jun 2 2017
 445,445,317a1e5e-755a-4e41-bd9f-a4615a2669e7,f073a15f-0486-4179-b0a3-dfd0294eb595,5f0b5caf-708b-4300-92f2-53b51d83ec06,Indiana Fever,Dallas Wings,2017-06-03T23:00:00+00:00,91,85,Sat Jun 3 2017
-446,446,78a4df95-b696-468e-9564-9ebdf809e051,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,a015b02d-845c-40c1-8ef4-844984f47e4d,San Antonio Stars,Connecticut Sun,2017-06-04T00:00:00+00:00,77,85,Sun Jun 4 2017
+446,446,78a4df95-b696-468e-9564-9ebdf809e051,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,a015b02d-845c-40c1-8ef4-844984f47e4d,San Antonio Silver Stars,Connecticut Sun,2017-06-04T00:00:00+00:00,77,85,Sun Jun 4 2017
 447,447,3d39969d-7a9c-408a-a7e0-d7bd527f4bf2,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Seattle Storm,Minnesota Lynx,2017-06-04T01:00:00+00:00,77,100,Sun Jun 4 2017
 448,448,01a2b729-0b87-4842-af32-536c9df0b47c,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Washington Mystics,Atlanta Dream,2017-06-04T19:00:00+00:00,78,72,Sun Jun 4 2017
 449,449,058f40a9-86e5-4f3d-991c-dc4bf0bb55ce,08ed8274-e29f-4248-bc2e-83cc8ed18d75,0699edf3-5993-4182-b9b4-ec935cbd4fcc,New York Liberty,Phoenix Mercury,2017-06-04T19:00:00+00:00,88,72,Sun Jun 4 2017
 450,450,02e6cfe2-4396-41a8-8fb0-f846c414d8f2,5f0b5caf-708b-4300-92f2-53b51d83ec06,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Dallas Wings,Washington Mystics,2017-06-07T00:00:00+00:00,89,101,Wed Jun 7 2017
-451,451,5924f021-be6e-401a-bb69-80f346869e05,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,San Antonio Stars,Seattle Storm,2017-06-07T00:00:00+00:00,76,85,Wed Jun 7 2017
+451,451,5924f021-be6e-401a-bb69-80f346869e05,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,San Antonio Silver Stars,Seattle Storm,2017-06-07T00:00:00+00:00,76,85,Wed Jun 7 2017
 452,452,932ac6c5-3bd5-41b5-905e-1ef5785b4c13,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,3c409388-ab73-4c7f-953d-3a71062240f6,Los Angeles Sparks,Chicago Sky,2017-06-07T02:00:00+00:00,79,70,Wed Jun 7 2017
 453,453,57825d89-824c-4f1e-9215-02dec16ebe27,08ed8274-e29f-4248-bc2e-83cc8ed18d75,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,New York Liberty,Atlanta Dream,2017-06-07T15:00:00+00:00,76,61,Wed Jun 7 2017
 454,454,a32fd5cc-3f23-41ad-80cb-ba99a8c28d01,f073a15f-0486-4179-b0a3-dfd0294eb595,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Indiana Fever,Phoenix Mercury,2017-06-07T23:00:00+00:00,90,98,Wed Jun 7 2017
@@ -458,7 +458,7 @@
 456,456,d06b485d-07be-4689-9c0c-d33e9f4cd51f,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Washington Mystics,Minnesota Lynx,2017-06-09T23:00:00+00:00,73,98,Fri Jun 9 2017
 457,457,e3e08fb2-db9e-4954-b577-f91202f5e40a,5f0b5caf-708b-4300-92f2-53b51d83ec06,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Dallas Wings,Los Angeles Sparks,2017-06-10T00:00:00+00:00,96,90,Sat Jun 10 2017
 458,458,a1ed1ae4-d726-4231-b617-76cd71a4027c,a015b02d-845c-40c1-8ef4-844984f47e4d,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Connecticut Sun,Atlanta Dream,2017-06-10T23:00:00+00:00,104,71,Sat Jun 10 2017
-459,459,f98a603d-af61-4162-9b90-196fb6fac4be,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,3c409388-ab73-4c7f-953d-3a71062240f6,San Antonio Stars,Chicago Sky,2017-06-11T00:00:00+00:00,81,85,Sun Jun 11 2017
+459,459,f98a603d-af61-4162-9b90-196fb6fac4be,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,3c409388-ab73-4c7f-953d-3a71062240f6,San Antonio Silver Stars,Chicago Sky,2017-06-11T00:00:00+00:00,81,85,Sun Jun 11 2017
 460,460,8f3c03be-b486-42fe-909e-fe9145bf0fc4,0699edf3-5993-4182-b9b4-ec935cbd4fcc,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Phoenix Mercury,Los Angeles Sparks,2017-06-11T02:00:00+00:00,87,89,Sun Jun 11 2017
 461,461,4c398fda-e016-456e-96df-d536d53919d0,08ed8274-e29f-4248-bc2e-83cc8ed18d75,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,New York Liberty,Seattle Storm,2017-06-11T19:00:00+00:00,94,86,Sun Jun 11 2017
 462,462,832b3ba2-46d8-4a49-8193-c45db1d783a1,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,f073a15f-0486-4179-b0a3-dfd0294eb595,Washington Mystics,Indiana Fever,2017-06-11T19:00:00+00:00,88,70,Sun Jun 11 2017
@@ -467,49 +467,49 @@
 465,465,f2ed50d6-99b0-453d-a456-33133fce46e2,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,5f0b5caf-708b-4300-92f2-53b51d83ec06,Los Angeles Sparks,Dallas Wings,2017-06-14T02:00:00+00:00,97,87,Wed Jun 14 2017
 466,466,427797f7-c1e3-4799-809f-d0996f8f26e3,a015b02d-845c-40c1-8ef4-844984f47e4d,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Connecticut Sun,New York Liberty,2017-06-14T23:00:00+00:00,96,76,Wed Jun 14 2017
 467,467,0d3588b4-1b39-455e-a42f-089ac261fc51,f073a15f-0486-4179-b0a3-dfd0294eb595,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Indiana Fever,Atlanta Dream,2017-06-15T23:00:00+00:00,85,74,Thu Jun 15 2017
-468,468,914107a4-f3fd-446b-98c2-13c4326533ba,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Los Angeles Sparks,San Antonio Stars,2017-06-16T02:30:00+00:00,80,75,Fri Jun 16 2017
+468,468,914107a4-f3fd-446b-98c2-13c4326533ba,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Los Angeles Sparks,San Antonio Silver Stars,2017-06-16T02:30:00+00:00,80,75,Fri Jun 16 2017
 469,469,66e6ca6a-4bc0-461e-b776-f705e4b7ba3e,5f0b5caf-708b-4300-92f2-53b51d83ec06,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Dallas Wings,New York Liberty,2017-06-17T00:00:00+00:00,93,102,Sat Jun 17 2017
 470,470,881c8d89-eea1-45a5-99c6-6c6493453533,0699edf3-5993-4182-b9b4-ec935cbd4fcc,3c409388-ab73-4c7f-953d-3a71062240f6,Phoenix Mercury,Chicago Sky,2017-06-17T02:00:00+00:00,86,78,Sat Jun 17 2017
 471,471,c5d294d4-3c92-43da-9ad8-58d070b100d0,6f017f37-be96-4bdc-b6d3-0a0429c72e89,a015b02d-845c-40c1-8ef4-844984f47e4d,Minnesota Lynx,Connecticut Sun,2017-06-18T00:00:00+00:00,93,98,Sun Jun 18 2017
 472,472,30a381ec-7d22-4865-9836-2f08a598fef4,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,5f0b5caf-708b-4300-92f2-53b51d83ec06,Washington Mystics,Dallas Wings,2017-06-18T19:00:00+00:00,83,87,Sun Jun 18 2017
 473,473,9d785c8f-080f-45fd-b062-6f91a1f28246,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Los Angeles Sparks,Phoenix Mercury,2017-06-18T21:00:00+00:00,90,59,Sun Jun 18 2017
 474,474,0a828549-c0a6-492c-94c6-e26c3f59ce89,3c409388-ab73-4c7f-953d-3a71062240f6,f073a15f-0486-4179-b0a3-dfd0294eb595,Chicago Sky,Indiana Fever,2017-06-18T22:00:00+00:00,79,91,Sun Jun 18 2017
-475,475,6c156a18-e304-426c-a007-9bfa13538201,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Seattle Storm,San Antonio Stars,2017-06-18T23:00:00+00:00,75,57,Sun Jun 18 2017
-476,476,c835e281-f977-46f1-8c5b-c97816d81218,5f0b5caf-708b-4300-92f2-53b51d83ec06,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Dallas Wings,San Antonio Stars,2017-06-21T17:00:00+00:00,81,78,Wed Jun 21 2017
+475,475,6c156a18-e304-426c-a007-9bfa13538201,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Seattle Storm,San Antonio Silver Stars,2017-06-18T23:00:00+00:00,75,57,Sun Jun 18 2017
+476,476,c835e281-f977-46f1-8c5b-c97816d81218,5f0b5caf-708b-4300-92f2-53b51d83ec06,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Dallas Wings,San Antonio Silver Stars,2017-06-21T17:00:00+00:00,81,78,Wed Jun 21 2017
 477,477,1cdc1e9d-d5bb-4f81-bca6-fe8819ba9a0b,08ed8274-e29f-4248-bc2e-83cc8ed18d75,a015b02d-845c-40c1-8ef4-844984f47e4d,New York Liberty,Connecticut Sun,2017-06-23T23:30:00+00:00,89,94,Fri Jun 23 2017
 478,478,747f075f-f7ea-42aa-ae16-a585d2a3dce0,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,3c409388-ab73-4c7f-953d-3a71062240f6,Atlanta Dream,Chicago Sky,2017-06-23T23:30:00+00:00,78,82,Fri Jun 23 2017
 479,479,0f3552be-7411-4b85-b27b-1b635587f06c,6f017f37-be96-4bdc-b6d3-0a0429c72e89,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Minnesota Lynx,Washington Mystics,2017-06-24T00:00:00+00:00,93,76,Sat Jun 24 2017
-480,480,2678bf76-1b04-4c1a-bc09-ccd845bf5d7a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5f0b5caf-708b-4300-92f2-53b51d83ec06,San Antonio Stars,Dallas Wings,2017-06-24T00:00:00+00:00,69,81,Sat Jun 24 2017
+480,480,2678bf76-1b04-4c1a-bc09-ccd845bf5d7a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5f0b5caf-708b-4300-92f2-53b51d83ec06,San Antonio Silver Stars,Dallas Wings,2017-06-24T00:00:00+00:00,69,81,Sat Jun 24 2017
 481,481,d1e223dc-92bd-4bf3-92a4-d70dc69a3fbe,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Seattle Storm,Phoenix Mercury,2017-06-24T02:00:00+00:00,82,85,Sat Jun 24 2017
 482,482,9eae901e-78b8-459a-95aa-0f11044d4ebe,f073a15f-0486-4179-b0a3-dfd0294eb595,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Indiana Fever,Los Angeles Sparks,2017-06-24T23:00:00+00:00,73,84,Sat Jun 24 2017
 483,483,3868b68d-ff7e-4d0a-8760-8a1ea85e8a3a,5f0b5caf-708b-4300-92f2-53b51d83ec06,a015b02d-845c-40c1-8ef4-844984f47e4d,Dallas Wings,Connecticut Sun,2017-06-25T20:30:00+00:00,96,82,Sun Jun 25 2017
 484,484,e8ea14bc-73a2-478e-a775-fa30d2931ef3,3c409388-ab73-4c7f-953d-3a71062240f6,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Chicago Sky,Washington Mystics,2017-06-25T22:00:00+00:00,63,97,Sun Jun 25 2017
-485,485,824ad7c2-c521-412a-9f64-a17c5508b946,6f017f37-be96-4bdc-b6d3-0a0429c72e89,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Minnesota Lynx,San Antonio Stars,2017-06-25T23:00:00+00:00,87,78,Sun Jun 25 2017
+485,485,824ad7c2-c521-412a-9f64-a17c5508b946,6f017f37-be96-4bdc-b6d3-0a0429c72e89,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Minnesota Lynx,San Antonio Silver Stars,2017-06-25T23:00:00+00:00,87,78,Sun Jun 25 2017
 486,486,e4fcb473-947d-4205-b1c0-75ddcb6212ac,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Washington Mystics,Seattle Storm,2017-06-27T16:00:00+00:00,100,70,Tue Jun 27 2017
 487,487,3f0af05e-6628-45dc-bab4-ee8fecb2761a,a015b02d-845c-40c1-8ef4-844984f47e4d,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Connecticut Sun,Los Angeles Sparks,2017-06-27T23:00:00+00:00,79,87,Tue Jun 27 2017
 488,488,822d5654-02f7-4896-bce8-47dccd4e465f,3c409388-ab73-4c7f-953d-3a71062240f6,f073a15f-0486-4179-b0a3-dfd0294eb595,Chicago Sky,Indiana Fever,2017-06-28T16:30:00+00:00,75,82,Wed Jun 28 2017
 489,489,97fcf972-4750-4132-a2d0-3562442c2989,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Washington Mystics,New York Liberty,2017-06-29T23:00:00+00:00,67,54,Thu Jun 29 2017
 490,490,5237492a-53ba-4cc4-af37-be6a128318db,a015b02d-845c-40c1-8ef4-844984f47e4d,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Connecticut Sun,Seattle Storm,2017-06-30T00:00:00+00:00,96,89,Fri Jun 30 2017
 491,491,3ccacde3-6339-4b9d-9618-938eeb2e1c07,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Atlanta Dream,Los Angeles Sparks,2017-06-30T23:30:00+00:00,76,85,Fri Jun 30 2017
-492,492,cfd2c52f-d8cd-4585-bd05-4333d346fef9,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,3c409388-ab73-4c7f-953d-3a71062240f6,San Antonio Stars,Chicago Sky,2017-07-01T00:00:00+00:00,89,82,Sat Jul 1 2017
+492,492,cfd2c52f-d8cd-4585-bd05-4333d346fef9,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,3c409388-ab73-4c7f-953d-3a71062240f6,San Antonio Silver Stars,Chicago Sky,2017-07-01T00:00:00+00:00,89,82,Sat Jul 1 2017
 493,493,d858d584-9fdf-4895-b849-03190ab3bd13,0699edf3-5993-4182-b9b4-ec935cbd4fcc,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Phoenix Mercury,Minnesota Lynx,2017-07-01T02:00:00+00:00,83,91,Sat Jul 1 2017
 494,494,4973ceab-8362-4218-af05-8a5c93ea8cc4,f073a15f-0486-4179-b0a3-dfd0294eb595,a015b02d-845c-40c1-8ef4-844984f47e4d,Indiana Fever,Connecticut Sun,2017-07-01T20:00:00+00:00,85,91,Sat Jul 1 2017
 495,495,d251138a-a748-478a-b39c-0d4549ca83f5,5f0b5caf-708b-4300-92f2-53b51d83ec06,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Dallas Wings,Seattle Storm,2017-07-02T00:00:00+00:00,69,89,Sun Jul 2 2017
 496,496,18fee890-136e-4a6e-a92f-6937bfb27f6e,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Los Angeles Sparks,Washington Mystics,2017-07-02T21:00:00+00:00,76,69,Sun Jul 2 2017
 497,497,0fc307d3-1416-40b2-8609-734660ce7e6c,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Atlanta Dream,New York Liberty,2017-07-02T22:00:00+00:00,81,72,Sun Jul 2 2017
-498,498,1870fc1c-44c5-461b-8e72-4668767f6a4f,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,a015b02d-845c-40c1-8ef4-844984f47e4d,San Antonio Stars,Connecticut Sun,2017-07-06T00:00:00+00:00,56,89,Thu Jul 6 2017
+498,498,1870fc1c-44c5-461b-8e72-4668767f6a4f,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,a015b02d-845c-40c1-8ef4-844984f47e4d,San Antonio Silver Stars,Connecticut Sun,2017-07-06T00:00:00+00:00,56,89,Thu Jul 6 2017
 499,499,473a03bd-78b4-4247-b9c5-901e35356c3d,5f0b5caf-708b-4300-92f2-53b51d83ec06,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Dallas Wings,Atlanta Dream,2017-07-06T00:00:00+00:00,94,84,Thu Jul 6 2017
 500,500,45f94a7a-041e-4367-9c83-614f761c6f31,0699edf3-5993-4182-b9b4-ec935cbd4fcc,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Phoenix Mercury,Washington Mystics,2017-07-06T02:00:00+00:00,88,80,Thu Jul 6 2017
 501,501,c4401a7a-3e64-4185-baf8-843905975fe2,6f017f37-be96-4bdc-b6d3-0a0429c72e89,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Minnesota Lynx,Los Angeles Sparks,2017-07-07T00:00:00+00:00,88,77,Fri Jul 7 2017
 502,502,754ae7d2-bee9-4f5f-8c37-94600e979566,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Seattle Storm,New York Liberty,2017-07-07T02:00:00+00:00,70,79,Fri Jul 7 2017
 503,503,a24cc8f0-81a1-4f5c-bfe6-f5d65d19ec4c,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,f073a15f-0486-4179-b0a3-dfd0294eb595,Atlanta Dream,Indiana Fever,2017-07-07T23:30:00+00:00,89,68,Fri Jul 7 2017
-504,504,45168aeb-2183-49ee-98de-5cdbd44de427,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0699edf3-5993-4182-b9b4-ec935cbd4fcc,San Antonio Stars,Phoenix Mercury,2017-07-08T00:00:00+00:00,77,92,Sat Jul 8 2017
+504,504,45168aeb-2183-49ee-98de-5cdbd44de427,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0699edf3-5993-4182-b9b4-ec935cbd4fcc,San Antonio Silver Stars,Phoenix Mercury,2017-07-08T00:00:00+00:00,77,92,Sat Jul 8 2017
 505,505,163a700a-4dcc-4e08-9982-b62318e2ad80,a015b02d-845c-40c1-8ef4-844984f47e4d,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Connecticut Sun,Washington Mystics,2017-07-08T23:00:00+00:00,96,92,Sat Jul 8 2017
 506,506,d381f198-4fad-4a75-ac22-b10384f9bcd9,3c409388-ab73-4c7f-953d-3a71062240f6,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Chicago Sky,Minnesota Lynx,2017-07-09T00:00:00+00:00,100,76,Sun Jul 9 2017
 507,507,f3ef0453-5468-4efc-9287-01f22c7455c1,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Seattle Storm,Los Angeles Sparks,2017-07-09T01:00:00+00:00,81,69,Sun Jul 9 2017
 508,508,a2eb4db7-9ff0-4526-a06a-75f887df3dde,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,5f0b5caf-708b-4300-92f2-53b51d83ec06,Atlanta Dream,Dallas Wings,2017-07-09T19:00:00+00:00,98,78,Sun Jul 9 2017
 509,509,364fd38a-f9e0-421b-847a-fd4dc710ff37,0699edf3-5993-4182-b9b4-ec935cbd4fcc,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Phoenix Mercury,New York Liberty,2017-07-09T22:00:00+00:00,81,69,Sun Jul 9 2017
-510,510,140157ab-b45c-41bd-b0a8-3e1307ae31b4,f073a15f-0486-4179-b0a3-dfd0294eb595,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Indiana Fever,San Antonio Stars,2017-07-12T16:00:00+00:00,72,79,Wed Jul 12 2017
+510,510,140157ab-b45c-41bd-b0a8-3e1307ae31b4,f073a15f-0486-4179-b0a3-dfd0294eb595,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Indiana Fever,San Antonio Silver Stars,2017-07-12T16:00:00+00:00,72,79,Wed Jul 12 2017
 511,511,8ae1894c-55c0-4ee2-98f8-5dc5f16e124f,3c409388-ab73-4c7f-953d-3a71062240f6,5f0b5caf-708b-4300-92f2-53b51d83ec06,Chicago Sky,Dallas Wings,2017-07-12T16:30:00+00:00,90,84,Wed Jul 12 2017
 512,512,aab70ad8-de76-4256-9b37-66e8ee5205dd,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,a015b02d-845c-40c1-8ef4-844984f47e4d,Seattle Storm,Connecticut Sun,2017-07-12T19:00:00+00:00,79,83,Wed Jul 12 2017
 513,513,00ca5617-63d8-4ce1-8d39-5b387c6b4bf0,0699edf3-5993-4182-b9b4-ec935cbd4fcc,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Phoenix Mercury,Atlanta Dream,2017-07-13T02:00:00+00:00,89,84,Thu Jul 13 2017
@@ -518,21 +518,21 @@
 516,516,e98e91af-aab3-43c7-a7b4-6228264c09dd,08ed8274-e29f-4248-bc2e-83cc8ed18d75,3c409388-ab73-4c7f-953d-3a71062240f6,New York Liberty,Chicago Sky,2017-07-14T23:30:00+00:00,68,78,Fri Jul 14 2017
 517,517,ea6056d5-25ce-4173-9842-d1ed24fe1bc4,0699edf3-5993-4182-b9b4-ec935cbd4fcc,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Phoenix Mercury,Minnesota Lynx,2017-07-15T02:00:00+00:00,71,88,Sat Jul 15 2017
 518,518,b23cc07b-dcee-4043-9a76-f35ed4f2782c,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Seattle Storm,Atlanta Dream,2017-07-16T01:00:00+00:00,90,84,Sun Jul 16 2017
-519,519,f383082a-c7b2-4828-91a1-49f45ff22c93,a015b02d-845c-40c1-8ef4-844984f47e4d,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Connecticut Sun,San Antonio Stars,2017-07-16T19:00:00+00:00,89,75,Sun Jul 16 2017
+519,519,f383082a-c7b2-4828-91a1-49f45ff22c93,a015b02d-845c-40c1-8ef4-844984f47e4d,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Connecticut Sun,San Antonio Silver Stars,2017-07-16T19:00:00+00:00,89,75,Sun Jul 16 2017
 520,520,f7829c9c-c5fc-4a8a-91af-cbf7d5c363af,08ed8274-e29f-4248-bc2e-83cc8ed18d75,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,New York Liberty,Washington Mystics,2017-07-16T19:00:00+00:00,85,55,Sun Jul 16 2017
 521,521,923b7321-9ba0-494e-8d67-3c076d4beac4,5f0b5caf-708b-4300-92f2-53b51d83ec06,3c409388-ab73-4c7f-953d-3a71062240f6,Dallas Wings,Chicago Sky,2017-07-16T20:30:00+00:00,112,106,Sun Jul 16 2017
 522,522,06b30c82-95a8-4f87-9e4f-6ed21b20a5fe,6f017f37-be96-4bdc-b6d3-0a0429c72e89,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Minnesota Lynx,Phoenix Mercury,2017-07-16T23:00:00+00:00,81,66,Sun Jul 16 2017
 523,523,8ecfc23f-551b-49ff-9d25-e7a17b2ea36f,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,f073a15f-0486-4179-b0a3-dfd0294eb595,Los Angeles Sparks,Indiana Fever,2017-07-18T02:30:00+00:00,80,62,Tue Jul 18 2017
-524,524,fb5b0903-dc17-4e4f-a0aa-799c7273c9ad,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Atlanta Dream,San Antonio Stars,2017-07-18T15:30:00+00:00,88,75,Tue Jul 18 2017
+524,524,fb5b0903-dc17-4e4f-a0aa-799c7273c9ad,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Atlanta Dream,San Antonio Silver Stars,2017-07-18T15:30:00+00:00,88,75,Tue Jul 18 2017
 525,525,73bd6937-52f5-44e7-a671-ffbc2d01fb60,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,3c409388-ab73-4c7f-953d-3a71062240f6,Seattle Storm,Chicago Sky,2017-07-19T01:00:00+00:00,83,94,Wed Jul 19 2017
 526,526,ae6ba1c0-edfd-4a91-8ef2-3dc333708748,08ed8274-e29f-4248-bc2e-83cc8ed18d75,a015b02d-845c-40c1-8ef4-844984f47e4d,New York Liberty,Connecticut Sun,2017-07-19T15:00:00+00:00,96,80,Wed Jul 19 2017
 527,527,dabbdcaa-32a4-4af1-9701-f55d50184865,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Washington Mystics,Atlanta Dream,2017-07-19T15:30:00+00:00,100,96,Wed Jul 19 2017
 528,528,87c4004a-a59e-477f-ab11-f0fa9d1d78a7,6f017f37-be96-4bdc-b6d3-0a0429c72e89,5f0b5caf-708b-4300-92f2-53b51d83ec06,Minnesota Lynx,Dallas Wings,2017-07-19T17:00:00+00:00,100,74,Wed Jul 19 2017
 529,529,77a4ac16-f585-4a74-9bf5-ee8fd773f82b,0699edf3-5993-4182-b9b4-ec935cbd4fcc,f073a15f-0486-4179-b0a3-dfd0294eb595,Phoenix Mercury,Indiana Fever,2017-07-19T19:30:00+00:00,77,84,Wed Jul 19 2017
 530,530,cc438285-0782-4954-9021-084bcd6bc98b,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,3c409388-ab73-4c7f-953d-3a71062240f6,Los Angeles Sparks,Chicago Sky,2017-07-20T19:30:00+00:00,80,82,Thu Jul 20 2017
-531,531,b5972038-5d92-4e99-8fac-e1301268aaa3,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,f073a15f-0486-4179-b0a3-dfd0294eb595,San Antonio Stars,Indiana Fever,2017-07-21T00:00:00+00:00,85,61,Fri Jul 21 2017
+531,531,b5972038-5d92-4e99-8fac-e1301268aaa3,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,f073a15f-0486-4179-b0a3-dfd0294eb595,San Antonio Silver Stars,Indiana Fever,2017-07-21T00:00:00+00:00,85,61,Fri Jul 21 2017
 532,532,0b6a58d4-d92f-4382-9588-099a26842600,def10df3-55b6-4cc0-8289-7c84b6857294,7b2a9727-a239-41d9-a185-7f912f0e1267,Western Conference,Eastern Conference,2017-07-22T19:30:00+00:00,130,121,Sat Jul 22 2017
-533,533,546e222d-665d-477f-b0f3-1091d2a42a04,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,San Antonio Stars,Washington Mystics,2017-07-25T16:30:00+00:00,76,85,Tue Jul 25 2017
+533,533,546e222d-665d-477f-b0f3-1091d2a42a04,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,San Antonio Silver Stars,Washington Mystics,2017-07-25T16:30:00+00:00,76,85,Tue Jul 25 2017
 534,534,74bac765-4067-4460-97d8-41f947eecba6,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Atlanta Dream,Phoenix Mercury,2017-07-25T23:00:00+00:00,99,91,Tue Jul 25 2017
 535,535,f878b6c4-972b-4454-8580-6c7d6c26e733,a015b02d-845c-40c1-8ef4-844984f47e4d,3c409388-ab73-4c7f-953d-3a71062240f6,Connecticut Sun,Chicago Sky,2017-07-25T23:00:00+00:00,93,72,Tue Jul 25 2017
 536,536,63c222d5-470b-4a7a-8b2b-b90dd44a177f,6f017f37-be96-4bdc-b6d3-0a0429c72e89,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Minnesota Lynx,New York Liberty,2017-07-26T00:00:00+00:00,76,75,Wed Jul 26 2017
@@ -541,24 +541,24 @@
 539,539,1a3e80f2-f05a-4978-8fb6-793e506acdd6,f073a15f-0486-4179-b0a3-dfd0294eb595,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Indiana Fever,New York Liberty,2017-07-28T23:00:00+00:00,84,85,Fri Jul 28 2017
 540,540,a1e04ae5-d466-4784-9eb9-0c64b1621286,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,a015b02d-845c-40c1-8ef4-844984f47e4d,Washington Mystics,Connecticut Sun,2017-07-28T23:00:00+00:00,na,na,Fri Jul 28 2017
 541,541,46758984-ad27-4e9b-a0c5-e6fe55d4a10b,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Atlanta Dream,Minnesota Lynx,2017-07-28T23:30:00+00:00,80,90,Fri Jul 28 2017
-542,542,627f68f0-0de2-4706-a9b5-69ac7f252427,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,San Antonio Stars,Los Angeles Sparks,2017-07-29T00:00:00+00:00,73,85,Sat Jul 29 2017
+542,542,627f68f0-0de2-4706-a9b5-69ac7f252427,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,San Antonio Silver Stars,Los Angeles Sparks,2017-07-29T00:00:00+00:00,73,85,Sat Jul 29 2017
 543,543,bd207d94-c73b-4f6b-ad80-663b2cd9d75d,3c409388-ab73-4c7f-953d-3a71062240f6,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Chicago Sky,Phoenix Mercury,2017-07-29T00:30:00+00:00,80,86,Sat Jul 29 2017
 544,544,5c681710-3dde-4543-adbb-0530653930e7,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,5f0b5caf-708b-4300-92f2-53b51d83ec06,Seattle Storm,Dallas Wings,2017-07-29T02:00:00+00:00,109,93,Sat Jul 29 2017
 545,545,10bcaf17-5fd0-4d56-841b-0dfb66de8f89,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Atlanta Dream,Washington Mystics,2017-07-30T19:00:00+00:00,70,77,Sun Jul 30 2017
 546,546,e1d7cceb-a553-442c-a9d0-4cdd1e4bcd3a,a015b02d-845c-40c1-8ef4-844984f47e4d,f073a15f-0486-4179-b0a3-dfd0294eb595,Connecticut Sun,Indiana Fever,2017-07-30T19:00:00+00:00,89,73,Sun Jul 30 2017
 547,547,2f83cb68-b3d0-486c-b243-4f70a42a89d3,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,5f0b5caf-708b-4300-92f2-53b51d83ec06,Los Angeles Sparks,Dallas Wings,2017-07-30T21:00:00+00:00,95,74,Sun Jul 30 2017
 548,548,19f5c0c5-9059-4b48-bc6c-a0427a01fea1,3c409388-ab73-4c7f-953d-3a71062240f6,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Chicago Sky,New York Liberty,2017-07-30T22:00:00+00:00,82,86,Sun Jul 30 2017
-549,549,b35a6417-bd22-4611-acf7-42e8e9be56ac,0699edf3-5993-4182-b9b4-ec935cbd4fcc,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Phoenix Mercury,San Antonio Stars,2017-07-30T22:00:00+00:00,81,64,Sun Jul 30 2017
+549,549,b35a6417-bd22-4611-acf7-42e8e9be56ac,0699edf3-5993-4182-b9b4-ec935cbd4fcc,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Phoenix Mercury,San Antonio Silver Stars,2017-07-30T22:00:00+00:00,81,64,Sun Jul 30 2017
 550,550,539b4719-9f7a-4bb7-af6d-447e2dbb4efa,6f017f37-be96-4bdc-b6d3-0a0429c72e89,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Minnesota Lynx,Seattle Storm,2017-07-30T23:00:00+00:00,93,82,Sun Jul 30 2017
-551,551,ee6324af-27df-429e-b6b3-e735cb375f80,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,08ed8274-e29f-4248-bc2e-83cc8ed18d75,San Antonio Stars,New York Liberty,2017-08-02T00:00:00+00:00,93,81,Wed Aug 2 2017
+551,551,ee6324af-27df-429e-b6b3-e735cb375f80,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,08ed8274-e29f-4248-bc2e-83cc8ed18d75,San Antonio Silver Stars,New York Liberty,2017-08-02T00:00:00+00:00,93,81,Wed Aug 2 2017
 552,552,9f65147b-270a-4c8f-8092-128111bf345e,6f017f37-be96-4bdc-b6d3-0a0429c72e89,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Minnesota Lynx,Atlanta Dream,2017-08-04T00:00:00+00:00,69,54,Fri Aug 4 2017
 553,553,4041f530-a0b8-462a-b225-1c4cbd9c8ba1,a015b02d-845c-40c1-8ef4-844984f47e4d,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Connecticut Sun,Phoenix Mercury,2017-08-04T23:00:00+00:00,93,92,Fri Aug 4 2017
 554,554,7fd4841a-f4d8-4e5c-9c6a-2be76126dba7,f073a15f-0486-4179-b0a3-dfd0294eb595,3c409388-ab73-4c7f-953d-3a71062240f6,Indiana Fever,Chicago Sky,2017-08-04T23:00:00+00:00,70,81,Fri Aug 4 2017
-555,555,4cbd1391-7f93-434f-a002-a0a908f930e0,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,San Antonio Stars,Washington Mystics,2017-08-05T00:00:00+00:00,76,74,Sat Aug 5 2017
+555,555,4cbd1391-7f93-434f-a002-a0a908f930e0,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,San Antonio Silver Stars,Washington Mystics,2017-08-05T00:00:00+00:00,76,74,Sat Aug 5 2017
 556,556,726ed7d6-3327-4dd5-b24c-fd9aea0a8db4,5f0b5caf-708b-4300-92f2-53b51d83ec06,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Dallas Wings,Seattle Storm,2017-08-05T00:00:00+00:00,93,80,Sat Aug 5 2017
 557,557,7870518e-4046-4ac1-a33f-51fa88fe446d,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Los Angeles Sparks,New York Liberty,2017-08-05T02:30:00+00:00,87,74,Sat Aug 5 2017
 558,558,1347a0d5-819b-4c36-acf3-6a65385ca6de,3c409388-ab73-4c7f-953d-3a71062240f6,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Chicago Sky,Atlanta Dream,2017-08-06T00:00:00+00:00,91,86,Sun Aug 6 2017
-559,559,8cdd5d1a-aa6b-4abe-b006-8cbbbee96727,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,San Antonio Stars,Seattle Storm,2017-08-06T00:00:00+00:00,87,80,Sun Aug 6 2017
+559,559,8cdd5d1a-aa6b-4abe-b006-8cbbbee96727,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,San Antonio Silver Stars,Seattle Storm,2017-08-06T00:00:00+00:00,87,80,Sun Aug 6 2017
 560,560,050d4ac2-9040-4478-9f5c-433b6a91099d,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Washington Mystics,Phoenix Mercury,2017-08-06T19:00:00+00:00,85,80,Sun Aug 6 2017
 561,561,9574c4b5-036e-47d3-87b8-2e1f1e0608d5,5f0b5caf-708b-4300-92f2-53b51d83ec06,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Dallas Wings,Los Angeles Sparks,2017-08-06T20:30:00+00:00,85,79,Sun Aug 6 2017
 562,562,91ba3775-75e3-4b13-bc61-2aaf7cdd50b0,f073a15f-0486-4179-b0a3-dfd0294eb595,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Indiana Fever,Minnesota Lynx,2017-08-06T22:00:00+00:00,84,82,Sun Aug 6 2017
@@ -566,12 +566,12 @@
 564,564,9feb3ca7-cd66-4f1d-b8aa-176c6722f8c2,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Atlanta Dream,Minnesota Lynx,2017-08-08T23:00:00+00:00,72,81,Tue Aug 8 2017
 565,565,e28a2599-3111-47c1-8f4a-7a4d6e57ca90,08ed8274-e29f-4248-bc2e-83cc8ed18d75,f073a15f-0486-4179-b0a3-dfd0294eb595,New York Liberty,Indiana Fever,2017-08-08T23:00:00+00:00,81,76,Tue Aug 8 2017
 566,566,9cb70290-9ea1-4c39-b8e7-728060fa6b78,5f0b5caf-708b-4300-92f2-53b51d83ec06,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Dallas Wings,Phoenix Mercury,2017-08-11T00:00:00+00:00,100,101,Fri Aug 11 2017
-567,567,d9fb58d7-d4cd-4593-bf5d-08182e5b2ca1,3c409388-ab73-4c7f-953d-3a71062240f6,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Chicago Sky,San Antonio Stars,2017-08-11T00:00:00+00:00,94,74,Fri Aug 11 2017
+567,567,d9fb58d7-d4cd-4593-bf5d-08182e5b2ca1,3c409388-ab73-4c7f-953d-3a71062240f6,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Chicago Sky,San Antonio Silver Stars,2017-08-11T00:00:00+00:00,94,74,Fri Aug 11 2017
 568,568,bd4d121d-3616-49f5-b976-1de035611ef1,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Atlanta Dream,New York Liberty,2017-08-11T23:30:00+00:00,77,83,Fri Aug 11 2017
 569,569,aeccf377-b4d5-425b-9434-890f63b3e5ac,6f017f37-be96-4bdc-b6d3-0a0429c72e89,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Minnesota Lynx,Los Angeles Sparks,2017-08-12T00:00:00+00:00,64,70,Sat Aug 12 2017
 570,570,22726fa7-ea4d-4370-b700-d39c6a2bc422,a015b02d-845c-40c1-8ef4-844984f47e4d,5f0b5caf-708b-4300-92f2-53b51d83ec06,Connecticut Sun,Dallas Wings,2017-08-12T23:00:00+00:00,96,88,Sat Aug 12 2017
 571,571,9ae7e56b-6a0c-4d0c-a25b-2949c67e7d65,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,f073a15f-0486-4179-b0a3-dfd0294eb595,Washington Mystics,Indiana Fever,2017-08-12T23:30:00+00:00,100,80,Sat Aug 12 2017
-572,572,f775fed1-692f-4350-b1c7-e2c4a75374da,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,San Antonio Stars,Atlanta Dream,2017-08-13T00:00:00+00:00,84,68,Sun Aug 13 2017
+572,572,f775fed1-692f-4350-b1c7-e2c4a75374da,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,San Antonio Silver Stars,Atlanta Dream,2017-08-13T00:00:00+00:00,84,68,Sun Aug 13 2017
 573,573,ae2bc1a5-9868-4e46-b85b-9425da2c6ddc,0699edf3-5993-4182-b9b4-ec935cbd4fcc,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Phoenix Mercury,Seattle Storm,2017-08-13T02:00:00+00:00,89,98,Sun Aug 13 2017
 574,574,8dd9dfb3-c8d9-444b-b681-9e44342eb208,08ed8274-e29f-4248-bc2e-83cc8ed18d75,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,New York Liberty,Los Angeles Sparks,2017-08-13T19:00:00+00:00,83,69,Sun Aug 13 2017
 575,575,4f61fae8-3467-488b-ac7c-0eed25b093ba,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,a015b02d-845c-40c1-8ef4-844984f47e4d,Atlanta Dream,Connecticut Sun,2017-08-15T23:00:00+00:00,75,96,Tue Aug 15 2017
@@ -581,19 +581,19 @@
 579,579,7005ddfb-5a9f-4cb7-b500-8eeabaa59ccf,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Washington Mystics,Phoenix Mercury,2017-08-18T23:00:00+00:00,79,89,Fri Aug 18 2017
 580,580,02367b87-5930-4df4-b06f-7843afdaa45f,6f017f37-be96-4bdc-b6d3-0a0429c72e89,f073a15f-0486-4179-b0a3-dfd0294eb595,Minnesota Lynx,Indiana Fever,2017-08-19T00:00:00+00:00,111,52,Sat Aug 19 2017
 581,581,8988fec4-9ec7-479d-ba30-ccd4a9a97ebb,3c409388-ab73-4c7f-953d-3a71062240f6,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Chicago Sky,Los Angeles Sparks,2017-08-19T00:30:00+00:00,106,115,Sat Aug 19 2017
-582,582,ae9ac86a-8461-4f3e-8fa1-df5dc0df3c57,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Seattle Storm,San Antonio Stars,2017-08-19T02:00:00+00:00,79,78,Sat Aug 19 2017
+582,582,ae9ac86a-8461-4f3e-8fa1-df5dc0df3c57,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Seattle Storm,San Antonio Silver Stars,2017-08-19T02:00:00+00:00,79,78,Sat Aug 19 2017
 583,583,8239e663-18c5-4adc-8261-dc49f14c60ec,5f0b5caf-708b-4300-92f2-53b51d83ec06,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Dallas Wings,Atlanta Dream,2017-08-20T00:00:00+00:00,90,86,Sun Aug 20 2017
 584,584,467be162-dd90-4971-aae8-f19a32fb438a,a015b02d-845c-40c1-8ef4-844984f47e4d,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Connecticut Sun,Phoenix Mercury,2017-08-20T19:00:00+00:00,94,66,Sun Aug 20 2017
 585,585,ffb01a2c-ab23-4f40-bfe4-6f3976e2e288,08ed8274-e29f-4248-bc2e-83cc8ed18d75,6f017f37-be96-4bdc-b6d3-0a0429c72e89,New York Liberty,Minnesota Lynx,2017-08-20T19:00:00+00:00,70,61,Sun Aug 20 2017
 586,586,0902cf57-be49-424d-8f32-507ed2b89561,f073a15f-0486-4179-b0a3-dfd0294eb595,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,Indiana Fever,Washington Mystics,2017-08-20T21:00:00+00:00,82,87,Sun Aug 20 2017
 587,587,a096c861-3351-4cd0-9b35-00bac9d64d00,3c409388-ab73-4c7f-953d-3a71062240f6,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Chicago Sky,Seattle Storm,2017-08-20T22:00:00+00:00,66,103,Sun Aug 20 2017
 588,588,c5d28e36-e00f-4210-9f70-ed1c567ca911,6f017f37-be96-4bdc-b6d3-0a0429c72e89,0699edf3-5993-4182-b9b4-ec935cbd4fcc,Minnesota Lynx,Phoenix Mercury,2017-08-23T00:00:00+00:00,105,69,Wed Aug 23 2017
-589,589,471984da-3f53-491c-bb20-21c03b5af2ec,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Los Angeles Sparks,San Antonio Stars,2017-08-23T02:30:00+00:00,75,55,Wed Aug 23 2017
+589,589,471984da-3f53-491c-bb20-21c03b5af2ec,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Los Angeles Sparks,San Antonio Silver Stars,2017-08-23T02:30:00+00:00,75,55,Wed Aug 23 2017
 590,590,27fb02fb-22a9-487b-9a96-57d46eb837b3,f073a15f-0486-4179-b0a3-dfd0294eb595,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Indiana Fever,New York Liberty,2017-08-23T23:00:00+00:00,50,71,Wed Aug 23 2017
 591,591,a3fd09cf-5e34-40d9-919b-c0cabf19e474,a015b02d-845c-40c1-8ef4-844984f47e4d,5f0b5caf-708b-4300-92f2-53b51d83ec06,Connecticut Sun,Dallas Wings,2017-08-23T23:00:00+00:00,93,87,Wed Aug 23 2017
 592,592,c47357a1-9a83-4da0-b690-53a4628abc49,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Atlanta Dream,Seattle Storm,2017-08-23T23:00:00+00:00,89,83,Wed Aug 23 2017
 593,593,de5cc8ab-2940-4927-aaeb-663b4a835d22,0699edf3-5993-4182-b9b4-ec935cbd4fcc,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,Phoenix Mercury,Los Angeles Sparks,2017-08-25T01:00:00+00:00,67,82,Fri Aug 25 2017
-594,594,3b9df0ee-62ca-4d72-a203-eb9101a8ee65,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,6f017f37-be96-4bdc-b6d3-0a0429c72e89,San Antonio Stars,Minnesota Lynx,2017-08-25T23:00:00+00:00,70,89,Fri Aug 25 2017
+594,594,3b9df0ee-62ca-4d72-a203-eb9101a8ee65,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,6f017f37-be96-4bdc-b6d3-0a0429c72e89,San Antonio Silver Stars,Minnesota Lynx,2017-08-25T23:00:00+00:00,70,89,Fri Aug 25 2017
 595,595,6186ed94-809d-47bd-bf12-0330c69d2445,a015b02d-845c-40c1-8ef4-844984f47e4d,3c409388-ab73-4c7f-953d-3a71062240f6,Connecticut Sun,Chicago Sky,2017-08-25T23:00:00+00:00,83,96,Fri Aug 25 2017
 596,596,6a41a894-2aa8-4f2b-9ea4-7a7ae82cdf3a,08ed8274-e29f-4248-bc2e-83cc8ed18d75,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,New York Liberty,Washington Mystics,2017-08-25T23:30:00+00:00,74,66,Fri Aug 25 2017
 597,597,14a4248a-3633-486e-9970-76521b4013da,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,f073a15f-0486-4179-b0a3-dfd0294eb595,Atlanta Dream,Indiana Fever,2017-08-26T22:00:00+00:00,79,74,Sat Aug 26 2017
@@ -605,11 +605,11 @@
 603,603,c283c781-ef20-40b0-82dc-9ecbf8551c47,f073a15f-0486-4179-b0a3-dfd0294eb595,6f017f37-be96-4bdc-b6d3-0a0429c72e89,Indiana Fever,Minnesota Lynx,2017-08-30T23:00:00+00:00,69,80,Wed Aug 30 2017
 604,604,93950c1b-2e32-4d19-b4c0-ebc82bb988fd,3c409388-ab73-4c7f-953d-3a71062240f6,5f0b5caf-708b-4300-92f2-53b51d83ec06,Chicago Sky,Dallas Wings,2017-08-31T00:00:00+00:00,96,99,Thu Aug 31 2017
 605,605,0c5b5244-85d0-4045-b685-3595984309f2,5c0d47fe-8539-47b0-9f36-d0b3609ca89b,d6a012ed-84aa-48d3-8265-2d3f3ff2199a,Washington Mystics,Seattle Storm,2017-09-01T23:00:00+00:00,110,106,Fri Sep 1 2017
-606,606,02f7edf1-16d5-4399-8d2f-06318ff6b7b2,08ed8274-e29f-4248-bc2e-83cc8ed18d75,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,New York Liberty,San Antonio Stars,2017-09-01T23:30:00+00:00,81,69,Fri Sep 1 2017
+606,606,02f7edf1-16d5-4399-8d2f-06318ff6b7b2,08ed8274-e29f-4248-bc2e-83cc8ed18d75,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,New York Liberty,San Antonio Silver Stars,2017-09-01T23:30:00+00:00,81,69,Fri Sep 1 2017
 607,607,bd00def1-b986-463c-9524-0775f2547377,6f017f37-be96-4bdc-b6d3-0a0429c72e89,3c409388-ab73-4c7f-953d-3a71062240f6,Minnesota Lynx,Chicago Sky,2017-09-02T00:00:00+00:00,110,87,Sat Sep 2 2017
 608,608,0a4488be-e5de-4cc9-ad49-2f57dbdd6766,0699edf3-5993-4182-b9b4-ec935cbd4fcc,a015b02d-845c-40c1-8ef4-844984f47e4d,Phoenix Mercury,Connecticut Sun,2017-09-02T02:00:00+00:00,86,66,Sat Sep 2 2017
 609,609,ce044ddf-c1e6-4262-98d7-c27409e60f85,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Los Angeles Sparks,Atlanta Dream,2017-09-02T02:30:00+00:00,81,56,Sat Sep 2 2017
-610,610,5e9234c4-1e17-47df-b256-edadae331d64,f073a15f-0486-4179-b0a3-dfd0294eb595,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Indiana Fever,San Antonio Stars,2017-09-02T23:00:00+00:00,71,75,Sat Sep 2 2017
+610,610,5e9234c4-1e17-47df-b256-edadae331d64,f073a15f-0486-4179-b0a3-dfd0294eb595,e6bc56cc-9dad-43aa-8ccb-ee9d499fea28,Indiana Fever,San Antonio Silver Stars,2017-09-02T23:00:00+00:00,71,75,Sat Sep 2 2017
 611,611,ae4e6c35-c712-40f2-ac3b-1217e833d7df,5f0b5caf-708b-4300-92f2-53b51d83ec06,08ed8274-e29f-4248-bc2e-83cc8ed18d75,Dallas Wings,New York Liberty,2017-09-03T18:00:00+00:00,81,82,Sun Sep 3 2017
 612,612,025b2dcd-3fe6-42d9-a5e7-70cab7d86dd3,0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9,a015b02d-845c-40c1-8ef4-844984f47e4d,Los Angeles Sparks,Connecticut Sun,2017-09-03T20:00:00+00:00,81,70,Sun Sep 3 2017
 613,613,c977e053-03ff-445f-b796-71c28cab9c53,0699edf3-5993-4182-b9b4-ec935cbd4fcc,5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4,Phoenix Mercury,Atlanta Dream,2017-09-03T20:00:00+00:00,84,70,Sun Sep 3 2017
