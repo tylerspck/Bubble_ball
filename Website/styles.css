@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,500&display=swap");
 
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+
 @font-face {
     font-family: "BOOTERFF.ttf";
     src: url("Fonts/BOOTERFF.ttf") format("ttf"),
@@ -13,12 +23,19 @@
     font-family: Raleway;
     color: #777;
 }
-
-html, body {
-    margin: 0;
-    padding: 0;
+body {
+    padding: 2em;
+    text-align: center;
+} 
+h1 {
+    margin-bottom: 1em;
+}  
+  select {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
-
 .nav ul{
     margin: 0;
 }
