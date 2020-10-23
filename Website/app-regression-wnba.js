@@ -4,7 +4,7 @@ var url_top50 = "https://raw.githubusercontent.com/tylerspck/Final_Project/main/
 function init() {
     d3.csv(url_top50).then((player_data) => {
         var name = []    
-        console.log(player_data)
+        // console.log(player_data)
         player_data.forEach( data => {
             name.push(data.PLAYER)
         }); 
@@ -35,7 +35,7 @@ function init() {
         });
 
         var init_id = name[0];
-        console.log(init_id)
+        // console.log(init_id)
         
         scatterplot(init_id)
         player_info(init_id)
@@ -55,7 +55,7 @@ d3.select("#selDataset").on("change", function() {
         demo_data = demo_data.filter(function(row) {
                 return row['PLAYER'] ===  selected_id
             });
-        console.log(demo_data[0])
+        // console.log(demo_data[0])
         var metadata_index = d3.select("#sample-metadata")
         metadata_index.html('');
         Object.entries(demo_data[0]).forEach(([k, v]) => {
@@ -74,14 +74,15 @@ function scatterplot(selected_id) {
         precovid = precovid.filter(function(row) {
             return row['Crowd'] !==  'Covid' || row['Crowd'] !==  0
         });
-        
+        console.log(precovid)
         covid_playoffs = data.filter(function(row) {
             return row['player_name'] ===  selected_id
         });
+        console.log(covid_playoffs)
         covid_playoffs = covid_playoffs.filter(function(row) {
-            return rrow['Crowd'] ===  'Covid' || row['Crowd'] ===  0
+            return row['Crowd'] ==  'Covid' || row['Crowd'] ==  0
         });
-
+        console.log(covid_playoffs)
         
         // console.log(precovid)
         // console.log(covid_playoffs)
