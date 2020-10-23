@@ -6,4 +6,5 @@ config.py
 api_keys*
 config.py
 config.js
-data_files
+WNBAconfig.py
+
