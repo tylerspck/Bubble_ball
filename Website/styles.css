@@ -23,6 +23,11 @@
     font-family: Raleway;
     color: #777;
 }
+
+video {
+    pointer-events: none;
+}
+
 body {
     padding: 2em;
     text-align: center;
