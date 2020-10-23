@@ -1,12 +1,12 @@
-var url_allstats = "https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/FinalDataFiles/WBNAfullplayerstatslist.csv"
+var url_allstats = "https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/WBNAfullplayerstatslist.csv"
 // var url_covid = 'https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/covid_dropped.csv'
 var url_top50 = "https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/FinalDataFiles/Top50WNBA.csv"
 function init() {
     d3.csv(url_top50).then((player_data) => {
         var name = []    
-        // console.log(player_data)
+        console.log(player_data)
         player_data.forEach( data => {
-            name.push(data.Player_Name)
+            name.push(data.PLAYER)
         }); 
         
         // console.log(name)
@@ -51,9 +51,9 @@ d3.select("#selDataset").on("change", function() {
 });
 
  function player_info(selected_id) {
-    d3.csv(url).then((demo_data) => {
+    d3.csv(url_top50).then((demo_data) => {
         demo_data = demo_data.filter(function(row) {
-                return row['Player_Name'] ===  selected_id
+                return row['PLAYER'] ===  selected_id
             });
         console.log(demo_data[0])
         var metadata_index = d3.select("#sample-metadata")
@@ -66,93 +66,98 @@ d3.select("#selDataset").on("change", function() {
 
 
 function scatterplot(selected_id) {
-    d3.csv(url_precovid).then((precovid) => {
-        d3.csv(url_covid).then((covid_playoffs) =>{
-            precovid = precovid.filter(function(row) {
-                return row['player_name'] ===  selected_id
-            });
-
-            covid_playoffs = covid_playoffs.filter(function(row) {
-                return row['player_name'] ===  selected_id
-            });
-
-            
-            // console.log(precovid)
-            // console.log(covid_playoffs)
-
-            points =[]
-            time_played =[]
-
-            points_covid = []
-            time_played_covid = []
-            
-            precovid.forEach( item => {
-            pts = item.Points
-            points.push(pts)
-            time_in_game = item.total_sec_played
-            time_played.push(time_in_game)
-            });
-
-            covid_playoffs.forEach( item => {
-            pts = item.Points
-            points_covid.push(pts)
-            time_in_game = item.total_sec_played
-            time_played_covid.push(time_in_game)
-            });
-
-            // console.log(points)
-            // console.log(time_played)
-            // console.log('----------------------')
-            // console.log(points_covid)
-            // console.log(time_played_covid)
+    d3.csv(url_allstats).then((data) => {
+        console.log(data)
+        precovid = data.filter(function(row) {
+            return row['player_name'] ===  selected_id
+        });
+        precovid = precovid.filter(function(row) {
+            return row['Crowd'] !==  'Covid' || row['Crowd'] !==  0
+        });
         
-            var bubble_index = d3.select("#bubble")
-            bubble_index.html('');
+        covid_playoffs = data.filter(function(row) {
+            return row['player_name'] ===  selected_id
+        });
+        covid_playoffs = covid_playoffs.filter(function(row) {
+            return rrow['Crowd'] ===  'Covid' || row['Crowd'] ===  0
+        });
 
-            var trace1 = {
-            x: time_played,
-            y: points,
+        
+        // console.log(precovid)
+        // console.log(covid_playoffs)
+
+        points =[]
+        time_played =[]
+
+        points_covid = []
+        time_played_covid = []
+        
+        precovid.forEach( item => {
+        pts = item.Points
+        points.push(pts)
+        time_in_game = item.total_sec_played
+        time_played.push(time_in_game)
+        });
+
+        covid_playoffs.forEach( item => {
+        pts = item.Points
+        points_covid.push(pts)
+        time_in_game = item.total_sec_played
+        time_played_covid.push(time_in_game)
+        });
+
+        // console.log(points)
+        // console.log(time_played)
+        // console.log('----------------------')
+        // console.log(points_covid)
+        // console.log(time_played_covid)
+    
+        var bubble_index = d3.select("#bubble")
+        bubble_index.html('');
+
+        var trace1 = {
+        x: time_played,
+        y: points,
+        mode: 'markers',
+        type: 'scatter'
+        };
+
+        linear = findLineByLeastSquares(time_played,points)
+        linear_covid = findLineByLeastSquares(time_played_covid, points_covid)
+
+        var trace2 = {
+            x: time_played_covid,
+            y: points_covid,
             mode: 'markers',
             type: 'scatter'
-            };
+        }
 
-            linear = findLineByLeastSquares(time_played,points)
-            linear_covid = findLineByLeastSquares(time_played_covid, points_covid)
-   
-            var trace2 = {
-                x: time_played_covid,
-                y: points_covid,
-                mode: 'markers',
-                type: 'scatter'
-            }
+        var trace3 = {
+        x: linear[0],
+        y: linear[1],
+        type: 'line'
+        };
 
-            var trace3 = {
-            x: linear[0],
-            y: linear[1],
-            type: 'line'
-            };
-
-            var trace4 = {
-            x: linear_covid[0],
-            y: linear_covid[1],
-            type: 'line'
-            };
+        var trace4 = {
+        x: linear_covid[0],
+        y: linear_covid[1],
+        type: 'line'
+        };
 
 
-            var databubble = [trace1, trace2, trace3, trace4];
+        var databubble = [trace1, trace2, trace3, trace4];
 
-            var bubble_Layout = {
-                xaxis:{
-                    title: {text:"Seconds Played Vs. Points Scored"}
-                },
-                showlegend: false,
-                autosize: true
-            };
+        var bubble_Layout = {
+            xaxis:{
+                title: {text:"Seconds Played Vs. Points Scored"}
+            },
+            showlegend: false,
+            autosize: true
+        };
 
-            var config = { responsive: true }
+        var config = { responsive: true }
 
-            Plotly.newPlot('bubble', databubble, bubble_Layout, config)
-        });
+        Plotly.newPlot('bubble', databubble, bubble_Layout, config)
     });
 };
 
