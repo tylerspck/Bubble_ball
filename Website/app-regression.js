@@ -1,12 +1,12 @@
 var url_precovid = "https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/df_dropped.csv"
 var url_covid = 'https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/covid_dropped.csv'
-var url = "https://raw.githubusercontent.com/tylerspck/D3-Challenge/master/assets/data/data.csv "
+var url = "https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/FinalDataFiles/Top50NBA_Final.csv"
 function init() {
-    d3.csv(url_precovid).then((player_data) => {
-        var name = ['Damian Lillard', 'Russell Westbrook', 'Giannis Antetokounmpo', 'Anthony Davis', 'LeBron James', 'Bradley Beal', 'DeMar DeRozan', 'James Harden', 'Kemba Walker', 'Karl-Anthony Towns']    
+    d3.csv(url).then((player_data) => {
+        var name = []    
         // console.log(player_data)
         player_data.forEach( data => {
-        
+            name.push(data.Player_Name)
         }); 
         
         // console.log(name)
@@ -38,7 +38,7 @@ function init() {
         console.log(init_id)
         
         scatterplot(init_id)
-    
+        player_info(init_id)
     });
 };
 
@@ -47,9 +47,22 @@ d3.select("#selDataset").on("change", function() {
     var newSelection = d3.select("#selDataset").property("value")
     // console.log(newSelection)
     scatterplot(newSelection)
+    player_info(newSelection)
 });
 
-
+ function player_info(selected_id) {
+    d3.csv(url).then((demo_data) => {
+        demo_data = demo_data.filter(function(row) {
+                return row['Player_Name'] ===  selected_id
+            });
+        console.log(demo_data[0])
+        var metadata_index = d3.select("#sample-metadata")
+        metadata_index.html('');
+        Object.entries(demo_data[0]).forEach(([k, v]) => {
+            metadata_index.append("p").text(`${k.toUpperCase()}: ${v}`)
+        });
+    });
+};
 
 
 function scatterplot(selected_id) {
@@ -163,26 +176,26 @@ function findLineByLeastSquares(values_x, values_y) {
         sum_xy += x*y;
         count++;
     }
-    console.log(sum_x)
-    console.log(sum_y)
-    console.log(sum_xx)
-    console.log(sum_xy)
-    console.log(count)
+    // console.log(sum_x)
+    // console.log(sum_y)
+    // console.log(sum_xx)
+    // console.log(sum_xy)
+    // console.log(count)
     var m = (count*sum_xy - sum_x*sum_y) / (count*sum_xx - sum_x*sum_x);
     var b = (sum_y/count) - (m*sum_x)/count;
 
     var result_values_x = [];
     var result_values_y = [];
-    console.log(m)
-    console.log(b)
+    // console.log(m)
+    // console.log(b)
     for (var v = 0; v < values_length; v++) {
         x = values_x[v];
         y = x * m + b;
         result_values_x.push(x);
         result_values_y.push(y);
     }
-    console.log(result_values_x)
-    console.log(result_values_y)
+    // console.log(result_values_x)
+    // console.log(result_values_y)
     return [result_values_x, result_values_y];
     
 }
