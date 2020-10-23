@@ -35,12 +35,12 @@ body {
 h1 {
     margin-bottom: 1em;
 }  
-  select {
+/* select {
     display: none;
     position: absolute;
     top: 10px;
     left: 10px;
-}
+} */
 .nav ul{
     margin: 0;
 }
