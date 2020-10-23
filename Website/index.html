@@ -6,6 +6,14 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> />
         <title> For The Love of Basketball</title>
     </head>
+    <header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">For The Love of Basketball</h1>
+              <img src="header-basketball.jpg" class="img-fluid" alt="Header Image">
+            </div>
+          </div>
+    </header>
     <body>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -43,7 +51,7 @@
         <body>
             <section>
             <h2>
-                <button type="button" class="btn btn-primary btn-lg btn-block">The Layup</button>
+                <span class="d-block p-2 bg-primary text-white">The Layup</span>
             </h2>
                 <p>The NBA and WBNA have led the sports world in many ways this year -- from announcing a shutdown of their seasons due to Covid-19, to deliversing a virtual live draft (WNBA) to standing up for racial justice. In 2020, the NBA/WNBA have been first to put dynamic strategies in place when they were needed most.
                 <br> Even after a successful bubble (/wubble) season and post-season for both leagues, the global pandemic continues to threaten what their 2021 season will look like. 
@@ -51,64 +59,82 @@
                 </p>
             <br>
                 <h2>
-                    <button type="button" class="btn btn-primary btn-lg btn-block">Get in the Game</button>
+                    <span class="d-block p-2 bg-primary text-white">Get In The Game</span>
                 </h2>
                     <p>Select a player's name in the box below to see an overview of that player.</p>
                 </section>
-
-            <!--Insert dropdown Select bar-->
+                <br>
+                <br>
+                <section class= "content-section container">
+                    <h2 class="section-header">PLAYERS</h2>
+                    <div>
+                        <div class="game-row">
+                           <span class="game-item game-date"> JUL 16</span> 
+                            <span class="game-item game-team-name"> NEW YORK KNICKS</span>
+                            <span class="game-item game-score"> LAST GAME</span>
+                            <button type="button" class="btn game-item game-btn btn-primary">LEAGUE PASS</button>
+                        </div>
+                        <div class="game-row">
+                            <span class="game-item game-date"> JUL 19</span> 
+                             <span class="game-item game-team-name"> MIAMI HEAT</span>
+                             <span class="game-item game-score"> LAST GAME</span>
+                             <button type="button" class="btn game-item game-btn btn-primary">LEAGUE PASS</button>
+                         </div>
+                         <div class="game-row">
+                            <span class="game-item game-date"> AUG 10</span> 
+                             <span class="game-item game-team-name"> LOS ANGELES LAKERS</span>
+                             <span class="game-item game-score"> LAST GAME</span>
+                             <button type="button" class="btn game-item game-btn btn-primary">LEAGUE PASS</button>
+                         </div>
+                         <div class="game-row">
+                            <span class="game-item game-date"> AUG 15</span> 
+                             <span class="game-item game-team-name"> BOSTON CELTICS</span>
+                             <span class="game-item game-score"> LAST GAME</span>
+                             <button type="button" class="btn game-item game-btn btn-primary">LEAGUE PASS</button>
+                             
+                         </div>
+                    </div>
+                </section>
+        <br>
+        <br>
         <section>
-            <div class="card mb-3">
-                <h3 class="card-header">COVID Impact Report: NBA</h3>
-                <img style="height: 200px; width: 100%; display: block;" src="IMAGE LINK" alt="Card image">
-                  <a href="#" class="card-link">Card link</a>
-            </div>
-            <div class="card mb-3">
-                <h3 class="card-header">COVID Impact Report: WNBA</h3>
-                <img style="height: 200px; width: 100%; display: block;" src="IMAGE LINK" alt="Card image">
-                  <a href="#" class="card-link">Card link</a>
-            </div>
-            <div class="card mb-3">
-                <h3 class="card-header">Top 50 Player Analysis: NBA</h3>
-                <img style="height: 200px; width: 100%; display: block;" src="IMAGE LINK" alt="Card image">
-                  <a href="#" class="card-link">Card link</a>
-            </div>
-            <div class="card mb-3">
-                <h3 class="card-header">Top 50 Player Analysis: WNBA</h3>
-                <img style="height: 200px; width: 100%; display: block;" src="IMAGE LINK" alt="Card image">
-                  <a href="#" class="card-link">Card link</a>
-            </div>
-        </section>
-        <section class= "content-section container">
-            <h2 class="section-header">PLAYERS</h2>
-            <div>
-                <div class="game-row">
-                   <span class="game-item game-date"> JUL 16</span> 
-                    <span class="game-item game-team-name"> NEW YORK KNICKS</span>
-                    <span class="game-item game-score"> LAST GAME</span>
-                    <button type="button" class="btn game-item game-btn btn-primary">LEAGUE PASS</button>
+            <div class="card-deck">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">COVID Impact Report: NBA</h5>
+                  </div>
                 </div>
-                <div class="game-row">
-                    <span class="game-item game-date"> JUL 19</span> 
-                     <span class="game-item game-team-name"> MIAMI HEAT</span>
-                     <span class="game-item game-score"> LAST GAME</span>
-                     <button type="button" class="btn game-item game-btn btn-primary">LEAGUE PASS</button>
-                 </div>
-                 <div class="game-row">
-                    <span class="game-item game-date"> AUG 10</span> 
-                     <span class="game-item game-team-name"> LOS ANGELES LAKERS</span>
-                     <span class="game-item game-score"> LAST GAME</span>
-                     <button type="button" class="btn game-item game-btn btn-primary">LEAGUE PASS</button>
-                 </div>
-                 <div class="game-row">
-                    <span class="game-item game-date"> AUG 15</span> 
-                     <span class="game-item game-team-name"> BOSTON CELTICS</span>
-                     <span class="game-item game-score"> LAST GAME</span>
-                     <button type="button" class="btn game-item game-btn btn-primary">LEAGUE PASS</button>
-                     
-                 </div>
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">COVID Impact Report: WNBA</h5>
+                  </div>
+                </div>
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Top 50 Player Analysis: NBA</h5>
+                    </div>
+                  </div>
+                <div class="card">
+                  <img src="WNBA.jpeg" class="card-img-top" alt="WNBA">
+                  <div class="card-body">
+                    <h5 class="card-title">Top 50 Player Analysis: WNBA</h5>
+                  </div>
+                </div>
+              </div>              
+        <br>
+                <h2>
+                    <span class="d-block p-2 bg-primary text-white">Data Sources</span>
+                </h2>
+        <div class="container">
+            <div class="row border">
+              <div class="col">
+                  <p>Website, data analysis, machine learning model, and visualizations created for a final project for the Data Science Bootcamp at Columbia University in New York by the following team members.</p>
+              <div class="w-100"></div>
             </div>
-        </section>
+        </div>
         <footer class="main-footer">
             <div class="container main-footer-container">
                 <h3 class="team-name">NBA & WNBA</h3>
