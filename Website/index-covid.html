@@ -15,9 +15,6 @@
           </div>
     </header>
     <body>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <header class="main-header">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">Home</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,50 +44,53 @@
 
         </header>
             <section>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-12 jumbotron text-center">
-                          <h1>NBA Linear Regression </h1>
-                          <p>Use the interactive charts below to explore the dataset</p>
-                        </div>
-                      </div> 
-                      <div class="row">
-                        <div class="col-md-2">
-                          <div class="well">
-                            <h5>Player Name:</h5>
-                            <select id="selDataset"></select>
-                          </div>
-                          <div class="panel panel-primary">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">2019 Season Stats</h3>
-                            </div>
-                            <div id="sample-metadata" class="panel-body"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-10">
-                          <div id="bubble"></div>
-                        </div>
+              <h2>
+                <span class="d-block p-2 btn-primary text-white" style="text-align:center">NBA Linear Regression</span>
+              </h2>
+              <div class="col">
+                <p>Select a player name to explore the dataset</p>
+              </div>
+                    <!-- <div class="container"> -->
+                      <!-- <div class="row">
+                      </div>  -->
+                      <!-- <div class="row"> -->
+                        <!-- <div class="col-md-2"> -->
+                      <div class="well">
+                        <h5>Player Name:</h5>
+                        <select id="selDataset"></select>
                       </div>
+                      <br>
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">
+                        <h5 class="panel-title">2019/2020 Season Stats</h5>
+                      </div>
+                        <div id="sample-metadata" class="panel-body"></div>
+                    </div>
+                    <!-- </div> -->
+                      <div class="col-md-10">
+                        <div id="bubble"></div>
+                      </div>
+                      <!-- </div> -->
                     </div>
         </section>
         <br>
         <section>
-                <div class="container">
+          <h2>
+            <span class="d-block p-2 btn-primary text-white" style="text-align:center">WNBA Linear Regression</span>
+          </h2>
+          <div class="col">
+            <p>Select a player name to explore the dataset</p>
+          </div>
                   <div class="row">
-                    <div class="col-md-12 jumbotron text-center">
-                      <h1>WNBA Linear Regression </h1>
-                      <p>Use the interactive charts below to explore the dataset</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-lg-2">
                       <div class="well">
                         <h5>Player Name:</h5>
                         <select id="selDataset-wnba"></select>
                       </div>
+                      <br>
                       <div class="panel panel-primary">
                         <div class="panel-heading">
-                          <h3 class="panel-title">2019 Season Stats</h3>
+                          <h5 class="panel-title">2019 Season Stats</h5>
                         </div>
                         <div id="sample-metadata-wnba" class="panel-body"></div>
                       </div>
@@ -102,11 +102,25 @@
                 </div>
             </body>
         </section>
+        <br>
+        <h2>
+            <span class="d-block p-2 btn-primary text-white">Data Sources</span>
+        </h2>
+        <footer class="main-footer">
+          <div class="container main-footer-container">
+            <div class="col">
+                <p>Website, data analysis, machine learning model, and visualizations created for a final project for the Data Science Bootcamp at Columbia University in New York using the below data sources:</p>
+            <div class="w-100">
+              <a href="https://developer.sportradar.com/" class="btn btn-lg active" role="button" aria-pressed="true">SportRadar API</a>
+              <a href="https://www.basketball-reference.com/" class="btn btn-lg active" role="button" aria-pressed="true">Basketball-Reference.com</a>
+           </div>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+           <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+           <script src="app-regression.js"></script>
+           <script src="app-regression-wnba.js"></script>
+        </footer>
         <footer>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-            <script src="app-regression.js"></script>
-            <script src="app-regression-wnba.js"></script>
+           
             <!-- <script src="./static/js/bonus.js"></script> -->
             <!-- <script src="data/samples.json"></script> -->
         </footer>
