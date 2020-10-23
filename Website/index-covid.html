@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title> For The Love of Basketball</title>
+    </head>
+    <header>
+        <div class="jumbotron jumbotron-fluid main-header">
+            <div class="container">
+              <h1 class="display-4" style="text-align:center">For The Love of Basketball</h1>
+            </div>
+          </div>
+    </header>
+    <body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index-ml.html">Machine Learning<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index-covid.html">COVID Analysis</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index-nba.html">NBA Top 50</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index-wnba.html">WNBA Top 50</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-about.html">About</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>   
+
+        </header>
+            <section>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12 jumbotron text-center">
+                          <h1>NBA Linear Regression </h1>
+                          <p>Use the interactive charts below to explore the dataset</p>
+                        </div>
+                      </div> 
+                      <div class="row">
+                        <div class="col-md-2">
+                          <div class="well">
+                            <h5>Player Name:</h5>
+                            <select id="selDataset"></select>
+                          </div>
+                          <div class="panel panel-primary">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">2019 Season Stats</h3>
+                            </div>
+                            <div id="sample-metadata" class="panel-body"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-10">
+                          <div id="bubble"></div>
+                        </div>
+                      </div>
+                    </div>
+        </section>
+        <br>
+        <section>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 jumbotron text-center">
+                      <h1>WNBA Linear Regression </h1>
+                      <p>Use the interactive charts below to explore the dataset</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="well">
+                        <h5>Player Name:</h5>
+                        <select id="selDataset-wnba"></select>
+                      </div>
+                      <div class="panel panel-primary">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">2019 Season Stats</h3>
+                        </div>
+                        <div id="sample-metadata-wnba" class="panel-body"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-10">
+                      <div id="bubble-wnba"></div>
+                    </div>
+                  </div>
+                </div>
+            </body>
+        </section>
+        <footer>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+            <script src="app-regression.js"></script>
+            <script src="app-regression-wnba.js"></script>
+            <!-- <script src="./static/js/bonus.js"></script> -->
+            <!-- <script src="data/samples.json"></script> -->
+        </footer>
+</html>
