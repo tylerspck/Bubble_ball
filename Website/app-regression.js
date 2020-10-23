@@ -4,7 +4,7 @@ var url = "https://raw.githubusercontent.com/tylerspck/D3-Challenge/master/asset
 function init() {
     d3.csv(url_precovid).then((player_data) => {
         var name = ['Damian Lillard', 'Russell Westbrook', 'Giannis Antetokounmpo', 'Anthony Davis', 'LeBron James', 'Bradley Beal', 'DeMar DeRozan', 'James Harden', 'Kemba Walker', 'Karl-Anthony Towns']    
-        console.log(player_data)
+        // console.log(player_data)
         player_data.forEach( data => {
         
         }); 
@@ -103,6 +103,9 @@ function scatterplot(selected_id) {
             type: 'scatter'
             };
 
+            linear = findLineByLeastSquares(time_played,points)
+            linear_covid = findLineByLeastSquares(time_played_covid, points_covid)
+   
             var trace2 = {
                 x: time_played_covid,
                 y: points_covid,
@@ -110,11 +113,24 @@ function scatterplot(selected_id) {
                 type: 'scatter'
             }
 
-            var databubble = [trace1, trace2];
+            var trace3 = {
+            x: linear[0],
+            y: linear[1],
+            type: 'line'
+            };
+
+            var trace4 = {
+            x: linear_covid[0],
+            y: linear_covid[1],
+            type: 'line'
+            };
+
+
+            var databubble = [trace1, trace2, trace3, trace4];
 
             var bubble_Layout = {
                 xaxis:{
-                    title: {text:"OTU ID"}
+                    title: {text:"Seconds Played Vs. Points Scored"}
                 },
                 showlegend: false,
                 autosize: true
@@ -126,5 +142,49 @@ function scatterplot(selected_id) {
         });
     });
 };
+
+function findLineByLeastSquares(values_x, values_y) {
+    var sum_x = 0;
+    var sum_y = 0;
+    var sum_xy = 0;
+    var sum_xx = 0;
+    var count = 0;
+
+    var x = 0;
+    var y = 0;
+    var values_length = values_x.length;
+
+    for (var i = 0; i < values_length; i++) {
+        x = parseFloat(values_x[i]);
+        y = parseFloat(values_y[i]);
+        sum_x += x;
+        sum_y += y;
+        sum_xx += x*x;
+        sum_xy += x*y;
+        count++;
+    }
+    console.log(sum_x)
+    console.log(sum_y)
+    console.log(sum_xx)
+    console.log(sum_xy)
+    console.log(count)
+    var m = (count*sum_xy - sum_x*sum_y) / (count*sum_xx - sum_x*sum_x);
+    var b = (sum_y/count) - (m*sum_x)/count;
+
+    var result_values_x = [];
+    var result_values_y = [];
+    console.log(m)
+    console.log(b)
+    for (var v = 0; v < values_length; v++) {
+        x = values_x[v];
+        y = x * m + b;
+        result_values_x.push(x);
+        result_values_y.push(y);
+    }
+    console.log(result_values_x)
+    console.log(result_values_y)
+    return [result_values_x, result_values_y];
+    
+}
 
 init()
