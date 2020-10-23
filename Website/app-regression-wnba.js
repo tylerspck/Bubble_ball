@@ -1,7 +1,7 @@
 var url_allstats = "https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/WBNAfullplayerstatslist.csv"
 // var url_covid = 'https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/covid_dropped.csv'
 var url_top50 = "https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/FinalDataFiles/Top50WNBA.csv"
-function init() {
+function initwnba() {
     d3.csv(url_top50).then((player_data) => {
         var name = []    
         // console.log(player_data)
@@ -26,7 +26,7 @@ function init() {
         // var samples = json_data.samples;
         // console.log(samples)
 
-        var dropdown = d3.select("#selDataset");
+        var dropdown = d3.select("#selDataset-wnba");
 
         name.forEach((item) => {
             dropdown.append("option")
@@ -37,26 +37,26 @@ function init() {
         var init_id = name[0];
         // console.log(init_id)
         
-        scatterplot(init_id)
-        player_info(init_id)
+        scatterplotwnba(init_id)
+        player_infownba(init_id)
     });
 };
 
 
-d3.select("#selDataset").on("change", function() {
-    var newSelection = d3.select("#selDataset").property("value")
+d3.select("#selDataset-wnba").on("change", function() {
+    var newSelection = d3.select("#selDataset-wnba").property("value")
     // console.log(newSelection)
-    scatterplot(newSelection)
-    player_info(newSelection)
+    scatterplotwnba(newSelection)
+    player_infownba(newSelection)
 });
 
- function player_info(selected_id) {
+ function player_infownba(selected_id) {
     d3.csv(url_top50).then((demo_data) => {
         demo_data = demo_data.filter(function(row) {
                 return row['PLAYER'] ===  selected_id
             });
         // console.log(demo_data[0])
-        var metadata_index = d3.select("#sample-metadata")
+        var metadata_index = d3.select("#sample-metadata-wnba")
         metadata_index.html('');
         Object.entries(demo_data[0]).forEach(([k, v]) => {
             metadata_index.append("p").text(`${k.toUpperCase()}: ${v}`)
@@ -65,7 +65,7 @@ d3.select("#selDataset").on("change", function() {
 };
 
 
-function scatterplot(selected_id) {
+function scatterplotwnba(selected_id) {
     d3.csv(url_allstats).then((data) => {
         console.log(data)
         precovid = data.filter(function(row) {
@@ -113,7 +113,7 @@ function scatterplot(selected_id) {
         // console.log(points_covid)
         // console.log(time_played_covid)
     
-        var bubble_index = d3.select("#bubble")
+        var bubble_index = d3.select("#bubble-wnba")
         bubble_index.html('');
 
         var trace1 = {
@@ -158,7 +158,7 @@ function scatterplot(selected_id) {
 
         var config = { responsive: true }
 
-        Plotly.newPlot('bubble', databubble, bubble_Layout, config)
+        Plotly.newPlot('bubble-wnba', databubble, bubble_Layout, config)
     });
 };
 
@@ -206,4 +206,4 @@ function findLineByLeastSquares(values_x, values_y) {
     
 }
 
-init()
+initwnba()
