@@ -1,6 +1,6 @@
 var url_precovid = "https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/df_dropped.csv"
 var url_covid = 'https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/covid_dropped.csv'
-var url = "https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/FinalDataFiles/Top50NBA_Final.csv"
+var url = "https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/FinalDataFiles/Top50NBA_forweb.csv"
 function init() {
     d3.csv(url).then((player_data) => {
         var name = []    
