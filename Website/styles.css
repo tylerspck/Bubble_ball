@@ -78,6 +78,7 @@ left: 10px; */
 .nav a:hover {
     background-color: rgba(255,255,255,.3);
 }
+
 .main-header{
     background-color: white;
     background-image: url("Image/header-basketball.jpg");
@@ -238,4 +239,9 @@ left: 10px; */
     color: white;
     font-family: "Impact";
     letter-spacing: 5px;
+}
+
+.content-section p {
+    text-indent: 1em;
+    text-align: left;
 }
