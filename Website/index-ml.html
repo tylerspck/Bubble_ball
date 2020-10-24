@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <title> For The Love of Basketball</title>
+    <link href="https://nbviewer.jupyter.org/static/build/notebook.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Machine Learning in the NBA</title>
 </head>
 <header>
   <div class="jumbotron jumbotron-fluid main-header">
@@ -45,6 +46,1811 @@
       </ul>
     </div>
   </nav>
+  <!-- Start Notebook -->
+  <div id="notebook">
+    <div id="notebook-container">
+      <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Machine-Learning-the-NBA">Machine Learning the NBA<a class="anchor-link" href="#Machine-Learning-the-NBA">&#182;</a></h1><h2 id="Let's-predict-wins-and-see-if-the-model-holds-up-without-fans">Let's predict wins and see if the model holds up without fans<a class="anchor-link" href="#Let's-predict-wins-and-see-if-the-model-holds-up-without-fans">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Our group wanted to know fans (and the lack of fans) affect player performance. We were also required to use machine learning, so here we are.</p>
+<p>We decided to train two models on pre-COVID player stats to predict the outcome of the game: win or loss. This is our "performance with fans" baseline.</p>
+<p>Next we run the fanless player game stats into the trained model to quantify the impact of missing fans on our predictions.</p>
+<p>We pulled player stats per game from 2015 through 2020 via the SportRadar API, first Schedule per year then looping through the games to get Game Summary per player stats.</p>
+<p>The two models are Random Forrest and Sequential with hidden layers.</p>
+<p>On to the code!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># get the latest and greatest sklearn for your models!</span>
+<span class="o">!</span>pip install sklearn --upgrade
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Requirement already up-to-date: sklearn in c:\programdata\anaconda3\lib\site-packages (0.0)
+Requirement already satisfied, skipping upgrade: scikit-learn in c:\programdata\anaconda3\lib\site-packages (from sklearn) (0.22.1)
+Requirement already satisfied, skipping upgrade: numpy&gt;=1.11.0 in c:\programdata\anaconda3\lib\site-packages (from scikit-learn-&gt;sklearn) (1.18.1)
+Requirement already satisfied, skipping upgrade: scipy&gt;=0.17.0 in c:\programdata\anaconda3\lib\site-packages (from scikit-learn-&gt;sklearn) (1.4.1)
+Requirement already satisfied, skipping upgrade: joblib&gt;=0.11 in c:\programdata\anaconda3\lib\site-packages (from scikit-learn-&gt;sklearn) (0.14.1)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># next import dependencies for data preprocessing</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span> <span class="k">as</span> <span class="n">dt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">config</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Preprocess-the-data!">Preprocess the data!<a class="anchor-link" href="#Preprocess-the-data!">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># pull in the per game player stats with fans, conveniently saved as a csv</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data_files/fullplayerstatslist.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># here&#39;s a peak at the raw data</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[5]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>Unnamed: 0.1</th>
+      <th>First_Name</th>
+      <th>Last_Name</th>
+      <th>player_id</th>
+      <th>Position</th>
+      <th>Points</th>
+      <th>Free_Throw_Percent</th>
+      <th>Two_Pt_Percent</th>
+      <th>Three_Pt_Percent</th>
+      <th>...</th>
+      <th>Turnovers</th>
+      <th>Team</th>
+      <th>Home_Away</th>
+      <th>win</th>
+      <th>Team_points</th>
+      <th>Min_played</th>
+      <th>Crowd</th>
+      <th>Stadium_Cap</th>
+      <th>game_id</th>
+      <th>game_date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0</td>
+      <td>LeBron</td>
+      <td>James</td>
+      <td>0afbe608-940a-4d5d-a1f7-468718c67d91</td>
+      <td>F</td>
+      <td>19</td>
+      <td>50.0</td>
+      <td>81.818</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>4</td>
+      <td>Cavaliers</td>
+      <td>1</td>
+      <td>1</td>
+      <td>117</td>
+      <td>32:23</td>
+      <td>20562</td>
+      <td>20562</td>
+      <td>0da78f13-73ac-4465-8e31-ecc3029a5dc6</td>
+      <td>2016-10-25T23:30:00+00:00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>1</td>
+      <td>James</td>
+      <td>Jones</td>
+      <td>09d25155-c3be-4246-a986-55921a1b5e61</td>
+      <td>G-F</td>
+      <td>5</td>
+      <td>100.0</td>
+      <td>0.000</td>
+      <td>100.0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>Cavaliers</td>
+      <td>1</td>
+      <td>1</td>
+      <td>117</td>
+      <td>5:30</td>
+      <td>20562</td>
+      <td>20562</td>
+      <td>0da78f13-73ac-4465-8e31-ecc3029a5dc6</td>
+      <td>2016-10-25T23:30:00+00:00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>2</td>
+      <td>J.R.</td>
+      <td>Smith</td>
+      <td>5934134d-0d27-42ea-a554-4b0e3e85ce56</td>
+      <td>G-F</td>
+      <td>8</td>
+      <td>0.0</td>
+      <td>20.000</td>
+      <td>25.0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>Cavaliers</td>
+      <td>1</td>
+      <td>1</td>
+      <td>117</td>
+      <td>25:14</td>
+      <td>20562</td>
+      <td>20562</td>
+      <td>0da78f13-73ac-4465-8e31-ecc3029a5dc6</td>
+      <td>2016-10-25T23:30:00+00:00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>3</td>
+      <td>Kay</td>
+      <td>Felder</td>
+      <td>8d3acdd5-9b5a-4d69-9912-de42d979c31a</td>
+      <td>G</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>0.000</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>Cavaliers</td>
+      <td>1</td>
+      <td>1</td>
+      <td>117</td>
+      <td>00:00</td>
+      <td>20562</td>
+      <td>20562</td>
+      <td>0da78f13-73ac-4465-8e31-ecc3029a5dc6</td>
+      <td>2016-10-25T23:30:00+00:00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>4</td>
+      <td>Mike</td>
+      <td>Dunleavy</td>
+      <td>4ec1bff7-ec1b-488b-8a24-aed83e62b4ce</td>
+      <td>G-F</td>
+      <td>4</td>
+      <td>0.0</td>
+      <td>100.000</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>Cavaliers</td>
+      <td>1</td>
+      <td>1</td>
+      <td>117</td>
+      <td>22:32</td>
+      <td>20562</td>
+      <td>20562</td>
+      <td>0da78f13-73ac-4465-8e31-ecc3029a5dc6</td>
+      <td>2016-10-25T23:30:00+00:00</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 27 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let&#39;s trim the data down to our X factors...</span>
+<span class="n">df_dropped</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Min_played&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;00:00&quot;</span><span class="p">]</span>
+<span class="n">df_dropped</span> <span class="o">=</span> <span class="n">df_dropped</span><span class="p">[</span><span class="n">df_dropped</span><span class="p">[</span><span class="s1">&#39;Crowd&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;Covid&#39;</span><span class="p">]</span>
+<span class="n">df_dropped</span> <span class="o">=</span> <span class="n">df_dropped</span><span class="p">[</span><span class="n">df_dropped</span><span class="p">[</span><span class="s1">&#39;Crowd&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;0&#39;</span><span class="p">]</span>
+<span class="n">df_dropped</span><span class="o">=</span> <span class="n">df_dropped</span><span class="p">[[</span><span class="s2">&quot;Points&quot;</span><span class="p">,</span> <span class="s2">&quot;Free_Throw_Percent&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Two_Pt_Percent&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Three_Pt_Percent&quot;</span><span class="p">,</span> <span class="s2">&quot;Assists&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Rebounds&quot;</span><span class="p">,</span> <span class="s2">&quot;Offensive_Rebounds&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Steals&quot;</span><span class="p">,</span> <span class="s2">&quot;Personal_Fouls&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Flagrant_Fouls&quot;</span><span class="p">,</span> <span class="s2">&quot;Tech_Fouls&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Turnovers&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Home_Away&quot;</span><span class="p">,</span> <span class="s2">&quot;win&quot;</span>
+                  <span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">df_dropped</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[6]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Points</th>
+      <th>Free_Throw_Percent</th>
+      <th>Two_Pt_Percent</th>
+      <th>Three_Pt_Percent</th>
+      <th>Assists</th>
+      <th>Rebounds</th>
+      <th>Offensive_Rebounds</th>
+      <th>Steals</th>
+      <th>Personal_Fouls</th>
+      <th>Flagrant_Fouls</th>
+      <th>Tech_Fouls</th>
+      <th>Turnovers</th>
+      <th>Home_Away</th>
+      <th>win</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>19</td>
+      <td>50.0</td>
+      <td>81.818</td>
+      <td>0.0</td>
+      <td>14</td>
+      <td>11</td>
+      <td>3</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5</td>
+      <td>100.0</td>
+      <td>0.000</td>
+      <td>100.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>8</td>
+      <td>0.0</td>
+      <td>20.000</td>
+      <td>25.0</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>0.0</td>
+      <td>100.000</td>
+      <td>0.0</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>23</td>
+      <td>75.0</td>
+      <td>44.444</td>
+      <td>33.3</td>
+      <td>2</td>
+      <td>12</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># grab every stat except the &#39;win&#39; column as your X features</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df_dropped</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;win&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(120384, 13)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># set your y to predict to &#39;win&#39;</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_dropped</span><span class="p">[</span><span class="s1">&#39;win&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(120384,)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># now import the tools to train and scale</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span><span class="p">,</span> <span class="n">MinMaxScaler</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras.utils</span> <span class="kn">import</span> <span class="n">to_categorical</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># split X and y into train and test groups</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># now scale the X data to keep everything reasonable</span>
+<span class="n">X_scaler</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">X_train_scaled</span> <span class="o">=</span> <span class="n">X_scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">X_test_scaled</span> <span class="o">=</span> <span class="n">X_scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now our stats are X features and our y to predict is wins. Aside from a little more y preprocessing for the Sequential model, let's start making models!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Into-the-Random-Forrest">Into the Random Forrest<a class="anchor-link" href="#Into-the-Random-Forrest">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># we tried a few n_estimator settings (100, 1000) and landed on the sweet spot through trial and error: 200</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+
+<span class="c1"># define the model</span>
+<span class="n">modelRF</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+
+<span class="c1"># train on training data</span>
+<span class="n">modelRF</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[13]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion=&#39;gini&#39;, max_depth=None, max_features=&#39;auto&#39;,
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=200,
+                       n_jobs=None, oob_score=False, random_state=None,
+                       verbose=0, warm_start=False)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let&#39;s see how our Random Forrest did!</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Training Data Score: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">modelRF</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Testing Data Score: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">modelRF</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Training Data Score: 95.29%
+Testing Data Score: 69.43%
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># last since we&#39;re running Random Forrest let&#39;s rank the top features</span>
+<span class="n">feature_names</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">preSelected_features</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">modelRF</span><span class="o">.</span><span class="n">feature_importances_</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ranked_features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">preSelected_features</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Score&#39;</span><span class="p">,</span> <span class="s1">&#39;Feature&#39;</span><span class="p">])</span>
+<span class="n">ranked_features</span> <span class="o">=</span> <span class="n">ranked_features</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Feature&#39;</span><span class="p">)</span>
+<span class="n">ranked_features</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[17]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Score</th>
+    </tr>
+    <tr>
+      <th>Feature</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Points</th>
+      <td>0.138204</td>
+    </tr>
+    <tr>
+      <th>Rebounds</th>
+      <td>0.133824</td>
+    </tr>
+    <tr>
+      <th>Two_Pt_Percent</th>
+      <td>0.123946</td>
+    </tr>
+    <tr>
+      <th>Assists</th>
+      <td>0.110833</td>
+    </tr>
+    <tr>
+      <th>Personal_Fouls</th>
+      <td>0.098869</td>
+    </tr>
+    <tr>
+      <th>Three_Pt_Percent</th>
+      <td>0.079086</td>
+    </tr>
+    <tr>
+      <th>Turnovers</th>
+      <td>0.072240</td>
+    </tr>
+    <tr>
+      <th>Free_Throw_Percent</th>
+      <td>0.069879</td>
+    </tr>
+    <tr>
+      <th>Offensive_Rebounds</th>
+      <td>0.067301</td>
+    </tr>
+    <tr>
+      <th>Steals</th>
+      <td>0.063770</td>
+    </tr>
+    <tr>
+      <th>Home_Away</th>
+      <td>0.030521</td>
+    </tr>
+    <tr>
+      <th>Tech_Fouls</th>
+      <td>0.009222</td>
+    </tr>
+    <tr>
+      <th>Flagrant_Fouls</th>
+      <td>0.002305</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Random Forrest gets us to 69% accuracy predicting win/loss based on per player game stats - not bad!</p>
+<p>Unsurprisingly Points, Rebounds, Shooting Percentage, and Assists have the greatest impact.</p>
+<p>So pre-COVID Random Forrest model is ready to go. Let's get Sequential with a few hidden layers next.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Create-a-Sequential-Deep-Learning-Model">Create a Sequential Deep Learning Model<a class="anchor-link" href="#Create-a-Sequential-Deep-Learning-Model">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Sequential Deep learning picked because the model predicted male/female voices in our class exercise. Looking for the same binary decision: win or loss</span>
+
+<span class="c1"># also our Sequential model threw an error the first time out so we added LabelEncoder to y (and it worked!)</span>
+<span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">label_encoder</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
+<span class="n">encoded_y_train</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
+<span class="n">encoded_y_test</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
+
+<span class="c1"># Then we need to convert y labels to one-hot-encoding</span>
+<span class="n">y_train_categorical</span> <span class="o">=</span> <span class="n">to_categorical</span><span class="p">(</span><span class="n">encoded_y_train</span><span class="p">)</span>
+<span class="n">y_test_categorical</span> <span class="o">=</span> <span class="n">to_categorical</span><span class="p">(</span><span class="n">encoded_y_test</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import the Sequential model and Dense for the hidden layers</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras.layers</span> <span class="kn">import</span> <span class="n">Dense</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create model and add layers</span>
+<span class="c1"># tried increasing units by 100 per layer (ex 100, 200, 300, 400); less accurate</span>
+<span class="c1"># tried fewer and more hidden layers but best accuracy was three additional layers, 100 units, 100 epochs</span>
+<span class="c1"># input_dim set to 13 because we have 13 X factors!</span>
+<span class="c1"># layer activation set to relu because the X factors are all over the place and we want a relative model</span>
+<span class="c1"># last the final 2 until layer to find wins/losses set to softmax as it&#39;s a binary decision and we want to make it softly</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">input_dim</span><span class="o">=</span><span class="mi">13</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Compile and fit the model</span>
+<span class="c1"># optimizer, loss, and metrics set same as the male/female vocal predictions - keeping it binary</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span>
+              <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">,</span>
+              <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let&#39;s summarize and make sure we&#39;re ready to train!</span>
+<span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Model: &#34;sequential_1&#34;
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_5 (Dense)              (None, 100)               1400      
+_________________________________________________________________
+dense_6 (Dense)              (None, 100)               10100     
+_________________________________________________________________
+dense_7 (Dense)              (None, 100)               10100     
+_________________________________________________________________
+dense_8 (Dense)              (None, 100)               10100     
+_________________________________________________________________
+dense_9 (Dense)              (None, 2)                 202       
+=================================================================
+Total params: 31,902
+Trainable params: 31,902
+Non-trainable params: 0
+_________________________________________________________________
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ok time to train our Sequential model</span>
+<span class="c1"># tried fewer epochs but we had computer processing power to spare and the accuracy went up until we hit 100</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span>
+    <span class="n">X_train_scaled</span><span class="p">,</span>
+    <span class="n">y_train_categorical</span><span class="p">,</span>
+    <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+    <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">verbose</span><span class="o">=</span><span class="mi">2</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Epoch 1/100
+2822/2822 - 2s - loss: 0.6715 - accuracy: 0.5880
+Epoch 2/100
+2822/2822 - 2s - loss: 0.6672 - accuracy: 0.5950
+Epoch 3/100
+2822/2822 - 2s - loss: 0.6663 - accuracy: 0.5969
+Epoch 4/100
+2822/2822 - 1s - loss: 0.6654 - accuracy: 0.5986
+Epoch 5/100
+2822/2822 - 1s - loss: 0.6646 - accuracy: 0.5986
+Epoch 6/100
+2822/2822 - 2s - loss: 0.6641 - accuracy: 0.5993
+Epoch 7/100
+2822/2822 - 1s - loss: 0.6637 - accuracy: 0.5999
+Epoch 8/100
+2822/2822 - 1s - loss: 0.6635 - accuracy: 0.6005
+Epoch 9/100
+2822/2822 - 1s - loss: 0.6627 - accuracy: 0.6021
+Epoch 10/100
+2822/2822 - 1s - loss: 0.6627 - accuracy: 0.6015
+Epoch 11/100
+2822/2822 - 1s - loss: 0.6621 - accuracy: 0.6014
+Epoch 12/100
+2822/2822 - 1s - loss: 0.6617 - accuracy: 0.6024
+Epoch 13/100
+2822/2822 - 1s - loss: 0.6615 - accuracy: 0.6019
+Epoch 14/100
+2822/2822 - 1s - loss: 0.6610 - accuracy: 0.6029
+Epoch 15/100
+2822/2822 - 1s - loss: 0.6606 - accuracy: 0.6041
+Epoch 16/100
+2822/2822 - 1s - loss: 0.6600 - accuracy: 0.6034
+Epoch 17/100
+2822/2822 - 1s - loss: 0.6595 - accuracy: 0.6042
+Epoch 18/100
+2822/2822 - 1s - loss: 0.6591 - accuracy: 0.6055
+Epoch 19/100
+2822/2822 - 1s - loss: 0.6583 - accuracy: 0.6060
+Epoch 20/100
+2822/2822 - 1s - loss: 0.6577 - accuracy: 0.6055
+Epoch 21/100
+2822/2822 - 1s - loss: 0.6570 - accuracy: 0.6050
+Epoch 22/100
+2822/2822 - 1s - loss: 0.6569 - accuracy: 0.6070
+Epoch 23/100
+2822/2822 - 1s - loss: 0.6558 - accuracy: 0.6076
+Epoch 24/100
+2822/2822 - 1s - loss: 0.6550 - accuracy: 0.6096
+Epoch 25/100
+2822/2822 - 1s - loss: 0.6545 - accuracy: 0.6091
+Epoch 26/100
+2822/2822 - 1s - loss: 0.6536 - accuracy: 0.6097
+Epoch 27/100
+2822/2822 - 1s - loss: 0.6527 - accuracy: 0.6117
+Epoch 28/100
+2822/2822 - 1s - loss: 0.6522 - accuracy: 0.6124
+Epoch 29/100
+2822/2822 - 1s - loss: 0.6509 - accuracy: 0.6126
+Epoch 30/100
+2822/2822 - 1s - loss: 0.6499 - accuracy: 0.6144
+Epoch 31/100
+2822/2822 - 1s - loss: 0.6487 - accuracy: 0.6152
+Epoch 32/100
+2822/2822 - 1s - loss: 0.6481 - accuracy: 0.6152
+Epoch 33/100
+2822/2822 - 1s - loss: 0.6467 - accuracy: 0.6162
+Epoch 34/100
+2822/2822 - 1s - loss: 0.6461 - accuracy: 0.6175
+Epoch 35/100
+2822/2822 - 1s - loss: 0.6451 - accuracy: 0.6175
+Epoch 36/100
+2822/2822 - 1s - loss: 0.6438 - accuracy: 0.6195
+Epoch 37/100
+2822/2822 - 1s - loss: 0.6436 - accuracy: 0.6196
+Epoch 38/100
+2822/2822 - 1s - loss: 0.6421 - accuracy: 0.6214
+Epoch 39/100
+2822/2822 - 1s - loss: 0.6409 - accuracy: 0.6226
+Epoch 40/100
+2822/2822 - 1s - loss: 0.6404 - accuracy: 0.6248
+Epoch 41/100
+2822/2822 - 1s - loss: 0.6386 - accuracy: 0.6248
+Epoch 42/100
+2822/2822 - 1s - loss: 0.6376 - accuracy: 0.6259
+Epoch 43/100
+2822/2822 - 1s - loss: 0.6365 - accuracy: 0.6274
+Epoch 44/100
+2822/2822 - 1s - loss: 0.6350 - accuracy: 0.6291
+Epoch 45/100
+2822/2822 - 1s - loss: 0.6341 - accuracy: 0.6291
+Epoch 46/100
+2822/2822 - 1s - loss: 0.6323 - accuracy: 0.6320
+Epoch 47/100
+2822/2822 - 1s - loss: 0.6315 - accuracy: 0.6310
+Epoch 48/100
+2822/2822 - 1s - loss: 0.6298 - accuracy: 0.6328
+Epoch 49/100
+2822/2822 - 1s - loss: 0.6284 - accuracy: 0.6345
+Epoch 50/100
+2822/2822 - 1s - loss: 0.6275 - accuracy: 0.6346
+Epoch 51/100
+2822/2822 - 1s - loss: 0.6263 - accuracy: 0.6347
+Epoch 52/100
+2822/2822 - 1s - loss: 0.6241 - accuracy: 0.6383
+Epoch 53/100
+2822/2822 - 1s - loss: 0.6235 - accuracy: 0.6384
+Epoch 54/100
+2822/2822 - 1s - loss: 0.6228 - accuracy: 0.6398
+Epoch 55/100
+2822/2822 - 1s - loss: 0.6221 - accuracy: 0.6392
+Epoch 56/100
+2822/2822 - 1s - loss: 0.6192 - accuracy: 0.6417
+Epoch 57/100
+2822/2822 - 1s - loss: 0.6188 - accuracy: 0.6423
+Epoch 58/100
+2822/2822 - 1s - loss: 0.6183 - accuracy: 0.6443
+Epoch 59/100
+2822/2822 - 1s - loss: 0.6157 - accuracy: 0.6460
+Epoch 60/100
+2822/2822 - 1s - loss: 0.6152 - accuracy: 0.6462
+Epoch 61/100
+2822/2822 - 1s - loss: 0.6120 - accuracy: 0.6488
+Epoch 62/100
+2822/2822 - 1s - loss: 0.6125 - accuracy: 0.6471
+Epoch 63/100
+2822/2822 - 1s - loss: 0.6102 - accuracy: 0.6497
+Epoch 64/100
+2822/2822 - 1s - loss: 0.6091 - accuracy: 0.6501
+Epoch 65/100
+2822/2822 - 1s - loss: 0.6085 - accuracy: 0.6511
+Epoch 66/100
+2822/2822 - 1s - loss: 0.6065 - accuracy: 0.6536
+Epoch 67/100
+2822/2822 - 1s - loss: 0.6054 - accuracy: 0.6527
+Epoch 68/100
+2822/2822 - 1s - loss: 0.6038 - accuracy: 0.6539
+Epoch 69/100
+2822/2822 - 1s - loss: 0.6018 - accuracy: 0.6557
+Epoch 70/100
+2822/2822 - 1s - loss: 0.6022 - accuracy: 0.6570
+Epoch 71/100
+2822/2822 - 1s - loss: 0.6007 - accuracy: 0.6558
+Epoch 72/100
+2822/2822 - 1s - loss: 0.5987 - accuracy: 0.6597
+Epoch 73/100
+2822/2822 - 1s - loss: 0.5976 - accuracy: 0.6597
+Epoch 74/100
+2822/2822 - 1s - loss: 0.5959 - accuracy: 0.6604
+Epoch 75/100
+2822/2822 - 1s - loss: 0.5974 - accuracy: 0.6608
+Epoch 76/100
+2822/2822 - 1s - loss: 0.5939 - accuracy: 0.6636
+Epoch 77/100
+2822/2822 - 1s - loss: 0.5926 - accuracy: 0.6626
+Epoch 78/100
+2822/2822 - 1s - loss: 0.5912 - accuracy: 0.6647
+Epoch 79/100
+2822/2822 - 1s - loss: 0.5912 - accuracy: 0.6652
+Epoch 80/100
+2822/2822 - 1s - loss: 0.5891 - accuracy: 0.6650
+Epoch 81/100
+2822/2822 - 1s - loss: 0.5892 - accuracy: 0.6665
+Epoch 82/100
+2822/2822 - 1s - loss: 0.5888 - accuracy: 0.6671
+Epoch 83/100
+2822/2822 - 1s - loss: 0.5868 - accuracy: 0.6679
+Epoch 84/100
+2822/2822 - 1s - loss: 0.5845 - accuracy: 0.6689
+Epoch 85/100
+2822/2822 - 1s - loss: 0.5834 - accuracy: 0.6696
+Epoch 86/100
+2822/2822 - 1s - loss: 0.5842 - accuracy: 0.6691
+Epoch 87/100
+2822/2822 - 1s - loss: 0.5824 - accuracy: 0.6720
+Epoch 88/100
+2822/2822 - 1s - loss: 0.5820 - accuracy: 0.6713
+Epoch 89/100
+2822/2822 - 1s - loss: 0.5781 - accuracy: 0.6737
+Epoch 90/100
+2822/2822 - 1s - loss: 0.5785 - accuracy: 0.6738
+Epoch 91/100
+2822/2822 - 1s - loss: 0.5768 - accuracy: 0.6745
+Epoch 92/100
+2822/2822 - 1s - loss: 0.5771 - accuracy: 0.6755
+Epoch 93/100
+2822/2822 - 1s - loss: 0.5756 - accuracy: 0.6754
+Epoch 94/100
+2822/2822 - 1s - loss: 0.5746 - accuracy: 0.6753
+Epoch 95/100
+2822/2822 - 1s - loss: 0.5743 - accuracy: 0.6772
+Epoch 96/100
+2822/2822 - 1s - loss: 0.5715 - accuracy: 0.6793
+Epoch 97/100
+2822/2822 - 1s - loss: 0.5712 - accuracy: 0.6799
+Epoch 98/100
+2822/2822 - 1s - loss: 0.5714 - accuracy: 0.6794
+Epoch 99/100
+2822/2822 - 1s - loss: 0.5700 - accuracy: 0.6788
+Epoch 100/100
+2822/2822 - 1s - loss: 0.5698 - accuracy: 0.6812
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[30]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;tensorflow.python.keras.callbacks.History at 0x24c026c3248&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let&#39;s see how our Sequential model did!</span>
+<span class="n">model_loss</span><span class="p">,</span> <span class="n">model_accuracy</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span>
+    <span class="n">X_test_scaled</span><span class="p">,</span> <span class="n">y_test_categorical</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span>
+    <span class="sa">f</span><span class="s2">&quot;Normal Neural Network - Loss: </span><span class="si">{</span><span class="n">model_loss</span><span class="si">}</span><span class="s2">, Accuracy: </span><span class="si">{</span><span class="n">model_accuracy</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>941/941 - 0s - loss: 0.8607 - accuracy: 0.6030
+Normal Neural Network - Loss: 0.8607043027877808, Accuracy: 0.6029704809188843
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># last since we&#39;re running Sequential let&#39;s lay out the predictions against the actuals</span>
+<span class="n">encoded_predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict_classes</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">)</span>
+<span class="n">prediction_labels</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">encoded_predictions</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>WARNING:tensorflow:From &lt;ipython-input-33-ee58f50ea8ca&gt;:2: Sequential.predict_classes (from tensorflow.python.keras.engine.sequential) is deprecated and will be removed after 2021-01-01.
+Instructions for updating:
+Please use instead:* `np.argmax(model.predict(x), axis=-1)`,   if your model does multi-class classification   (e.g. if it uses a `softmax` last-layer activation).* `(model.predict(x) &gt; 0.5).astype(&#34;int32&#34;)`,   if your model does binary classification   (e.g. if it uses a `sigmoid` last-layer activation).
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;First 10 Predictions:   </span><span class="si">{</span><span class="n">prediction_labels</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;First 10 Actual labels: </span><span class="si">{</span><span class="n">y_test</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>First 10 Predictions:   [1 1 1 1 1 1 0 0 1 1]
+First 10 Actual labels: [0, 1, 0, 0, 0, 1, 0, 1, 1, 1]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># we can even put them all together into a data frame</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;Prediction&quot;</span><span class="p">:</span> <span class="n">prediction_labels</span><span class="p">,</span> <span class="s2">&quot;Actual&quot;</span><span class="p">:</span> <span class="n">y_test</span><span class="p">})</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[35]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Prediction</th>
+      <th>Actual</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>30091</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>30092</th>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>30093</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>30094</th>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>30095</th>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>30096 rows × 2 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sequential comes in at 60% accuracy (and up to 68% accuracy in epoch 100). Again not bad!</p>
+<p>Also don't forget to save your model with: model.save('models/deepLearningSequential.h5')</p>
+<p>Now it's time to see how our pre-COVID models perform with fanless player game stats.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Preprocess-the-fanless-data!">Preprocess the fanless data!<a class="anchor-link" href="#Preprocess-the-fanless-data!">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># pull in the postCovid player data</span>
+<span class="n">covidDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data_files/player_stats_2019_pst.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># dropping unwanted fields to match preCovid columns</span>
+<span class="c1"># don&#39;t drop Covid games obviously!</span>
+<span class="n">covidDF_dropped</span> <span class="o">=</span> <span class="n">covidDF</span><span class="p">[</span><span class="n">covidDF</span><span class="p">[</span><span class="s1">&#39;Min_played&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;00:00&quot;</span><span class="p">]</span>
+<span class="n">covidDF_dropped</span><span class="o">=</span> <span class="n">covidDF_dropped</span><span class="p">[[</span><span class="s2">&quot;Points&quot;</span><span class="p">,</span> <span class="s2">&quot;Free_Throw_Percent&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Two_Pt_Percent&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Three_Pt_Percent&quot;</span><span class="p">,</span> <span class="s2">&quot;Assists&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Rebounds&quot;</span><span class="p">,</span> <span class="s2">&quot;Offensive_Rebounds&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Steals&quot;</span><span class="p">,</span> <span class="s2">&quot;Personal_Fouls&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Flagrant_Fouls&quot;</span><span class="p">,</span> <span class="s2">&quot;Tech_Fouls&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Turnovers&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Home_Away&quot;</span><span class="p">,</span> <span class="s2">&quot;win&quot;</span>
+                  <span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">covidDF_dropped</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[37]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Points</th>
+      <th>Free_Throw_Percent</th>
+      <th>Two_Pt_Percent</th>
+      <th>Three_Pt_Percent</th>
+      <th>Assists</th>
+      <th>Rebounds</th>
+      <th>Offensive_Rebounds</th>
+      <th>Steals</th>
+      <th>Personal_Fouls</th>
+      <th>Flagrant_Fouls</th>
+      <th>Tech_Fouls</th>
+      <th>Turnovers</th>
+      <th>Home_Away</th>
+      <th>win</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>11</td>
+      <td>0.0</td>
+      <td>50.0</td>
+      <td>60.0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>2</td>
+      <td>0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>2</td>
+      <td>6</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>19</td>
+      <td>87.5</td>
+      <td>50.0</td>
+      <td>40.0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>14</td>
+      <td>0.0</td>
+      <td>66.7</td>
+      <td>66.7</td>
+      <td>4</td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>13</td>
+      <td>0.0</td>
+      <td>33.3</td>
+      <td>42.9</td>
+      <td>1</td>
+      <td>8</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># same X features</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">covidDF_dropped</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;win&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1689, 13)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># same y goal</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">covidDF_dropped</span><span class="p">[</span><span class="s1">&#39;win&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1689,)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># scale the X features to predict</span>
+<span class="n">X_predict_scaled</span> <span class="o">=</span> <span class="n">X_scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Random-Forest-pre-COVID-trained-VS-Fanless-Data">Random Forest pre-COVID trained VS Fanless Data<a class="anchor-link" href="#Random-Forest-pre-COVID-trained-VS-Fanless-Data">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;COVID Data Score: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">modelRF</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_predict_scaled</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>COVID Data Score: 54.0%
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><b>Playing without fans drops our Random Forrest prediction by 15% (down to 54% vs fan data prediction of 69%)</b></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Sequential-pre-COVID-trained-VS-Fanless-Data">Sequential pre-COVID trained VS Fanless Data<a class="anchor-link" href="#Sequential-pre-COVID-trained-VS-Fanless-Data">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># encode and one-hot-encoding as with the trained model y</span>
+<span class="n">label_encoder</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="n">encoded_y_actual</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="n">y_actual_categorical</span> <span class="o">=</span> <span class="n">to_categorical</span><span class="p">(</span><span class="n">encoded_y_actual</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_loss</span><span class="p">,</span> <span class="n">model_accuracy</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span>
+    <span class="n">X_predict_scaled</span><span class="p">,</span> <span class="n">y_actual_categorical</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span>
+    <span class="sa">f</span><span class="s2">&quot;Normal Neural Network - Loss: </span><span class="si">{</span><span class="n">model_loss</span><span class="si">}</span><span class="s2">, Accuracy: </span><span class="si">{</span><span class="n">model_accuracy</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>53/53 - 0s - loss: 1.1353 - accuracy: 0.5240
+Normal Neural Network - Loss: 1.1353408098220825, Accuracy: 0.5239787101745605
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><b>Playing without fans drops our Sequential prediction by 8% (down to 52% from 60%)</b></p>
+
+</div>
+</div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+  <!-- End Notebook -->
   <div>
     <h2>
       <span class="d-block p-2 btn-primary text-white">Sources</span>
