@@ -36,11 +36,19 @@ h1 {
     margin-bottom: 1em;
 }  
 /* select {
+<<<<<<< HEAD
+display: none;
+position: absolute;
+top: 10px;
+left: 10px; */
+}
+=======
     display: none;
     position: absolute;
     top: 10px;
     left: 10px;
 } */
+>>>>>>> e5302f4cfbf5e58ab5e0c0958f9f083b4d7c634c
 .nav ul{
     margin: 0;
 }
