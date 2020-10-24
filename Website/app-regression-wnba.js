@@ -1,12 +1,12 @@
 var url_allstats = "https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/WBNAfullplayerstatslist.csv"
 // var url_covid = 'https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/covid_dropped.csv'
-var url_top50 = "https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/FinalDataFiles/Top50WNBA.csv"
+var url_top50 = "https://raw.githubusercontent.com/tylerspck/Final_Project/main/data_files/FinalDataFiles/Top50WNBA_forweb.csv"
 function initwnba() {
     d3.csv(url_top50).then((player_data) => {
         var name = []    
         // console.log(player_data)
         player_data.forEach( data => {
-            name.push(data.PLAYER)
+            name.push(data.Player)
         }); 
         
         // console.log(name)
@@ -53,7 +53,7 @@ d3.select("#selDataset-wnba").on("change", function() {
  function player_infownba(selected_id) {
     d3.csv(url_top50).then((demo_data) => {
         demo_data = demo_data.filter(function(row) {
-                return row['PLAYER'] ===  selected_id
+                return row['Player'] ===  selected_id
             });
         // console.log(demo_data[0])
         var metadata_index = d3.select("#sample-metadata-wnba")
@@ -120,29 +120,33 @@ function scatterplotwnba(selected_id) {
         x: time_played,
         y: points,
         mode: 'markers',
-        type: 'scatter'
+        type: 'scatter',
+        name: "Pre-COVID Games"
         };
 
         linear = findLineByLeastSquares(time_played,points)
         linear_covid = findLineByLeastSquares(time_played_covid, points_covid)
 
         var trace2 = {
-            x: time_played_covid,
-            y: points_covid,
-            mode: 'markers',
-            type: 'scatter'
+        x: time_played_covid,
+        y: points_covid,
+        mode: 'markers',
+        type: 'scatter',
+        name: "Playoff Bubble Games"
         }
 
         var trace3 = {
         x: linear[0],
         y: linear[1],
-        type: 'line'
-        };
+        type: 'line',
+        name: "Pre-COVID Linear Regression"
+            };
 
         var trace4 = {
         x: linear_covid[0],
         y: linear_covid[1],
-        type: 'line'
+        type: 'line',
+        name: "Playoff Bubble Linear Regression"
         };
 
 
@@ -152,7 +156,7 @@ function scatterplotwnba(selected_id) {
             xaxis:{
                 title: {text:"Seconds Played Vs. Points Scored"}
             },
-            showlegend: false,
+            showlegend: true,
             autosize: true
         };
 

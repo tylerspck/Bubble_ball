@@ -35,12 +35,20 @@ body {
 h1 {
     margin-bottom: 1em;
 }  
-  select {
+/* select {
+<<<<<<< HEAD
+display: none;
+position: absolute;
+top: 10px;
+left: 10px; */
+}
+=======
     display: none;
     position: absolute;
     top: 10px;
     left: 10px;
-}
+} */
+>>>>>>> e5302f4cfbf5e58ab5e0c0958f9f083b4d7c634c
 .nav ul{
     margin: 0;
 }
@@ -70,6 +78,7 @@ h1 {
 .nav a:hover {
     background-color: rgba(255,255,255,.3);
 }
+
 .main-header{
     background-color: white;
     background-image: url("Image/header-basketball.jpg");
@@ -230,4 +239,9 @@ h1 {
     color: white;
     font-family: "Impact";
     letter-spacing: 5px;
+}
+
+.content-section p {
+    text-indent: 1em;
+    text-align: left;
 }
