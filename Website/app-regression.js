@@ -113,7 +113,8 @@ function scatterplot(selected_id) {
             x: time_played,
             y: points,
             mode: 'markers',
-            type: 'scatter'
+            type: 'scatter',
+            name: "Pre-COVID Games"
             };
 
             linear = findLineByLeastSquares(time_played,points)
@@ -123,19 +124,22 @@ function scatterplot(selected_id) {
                 x: time_played_covid,
                 y: points_covid,
                 mode: 'markers',
-                type: 'scatter'
+                type: 'scatter',
+                name: "Playoff Bubble Games"
             }
 
             var trace3 = {
             x: linear[0],
             y: linear[1],
-            type: 'line'
+            type: 'line',
+            name: "Pre-COVID Linear Regression"
             };
 
             var trace4 = {
             x: linear_covid[0],
             y: linear_covid[1],
-            type: 'line'
+            type: 'line',
+            name: "Playoff Bubble Linear Regression"
             };
 
 
@@ -145,7 +149,7 @@ function scatterplot(selected_id) {
                 xaxis:{
                     title: {text:"Seconds Played Vs. Points Scored"}
                 },
-                showlegend: false,
+                showlegend: true,
                 autosize: true
             };
 
