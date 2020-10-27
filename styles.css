@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,500&display=swap");
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+
+@font-face {
+    font-family: "BOOTERFF.ttf";
+    src: url("Fonts/BOOTERFF.ttf") format("ttf"),
+         url("Fonts/BOOTEROF.ttf") format("ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: black;
+}
+
+video {
+    pointer-events: none;
+}
+
+body {
+    padding: 2em;
+    text-align: center;
+} 
+h1 {
+    margin-bottom: 1em;
+}  
+/* select {
+<<<<<<< HEAD
+display: none;
+position: absolute;
+top: 10px;
+left: 10px; */
+}
+=======
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+} */
+>>>>>>> e5302f4cfbf5e58ab5e0c0958f9f083b4d7c634c
+.nav ul{
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255,255,255,.3);
+}
+
+.main-header{
+    background-color: white;
+    background-image: url("Image/header-basketball.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+    font-weight:bold;
+    color: white;
+}
+
+.team-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "BOOTERFF.ttf";
+    font-weight: normal;
+    color: white;
+}
+.team-name-large {
+    font-size: 6em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 1;
+    padding: 0 ;
+}
+
+.section-header {
+    font-family: "Piazzolla";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+}
+
+.about-team-image {
+    float: left;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: #FED8B1;
+    color: black;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+    font-family: "Sans-serif";
+    color:  hsl(27, 89%, 48%);
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 0;
+    font-size: 1em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover{
+    background-color: rgba(255,255,255,.3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.game-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.game-row:last-child {
+    border-bottom : none;
+}
+
+.game-item {
+    display: inline-block;
+    padding-right: .5em;
+
+}
+
+.game-date {
+    color: #555;
+    font-weight: bold;
+    width: 11%
+}
+
+.game-team-name {
+    width: 24%;
+}
+
+.game-score {
+    width: 42%;
+}
+
+.game-btn {
+    max-width:19%;
+}
+
+.btn-primary {
+    color: white;
+    background-color: hsl(27, 89%, 48%);
+    border: none;
+    border-radius: .3em;
+    font-weight: normal;
+    font-family: "Impact";
+    letter-spacing: 1px;
+}
+.btn-primary:hover{
+    background-color: hsl(27, 89%, 48%);
+}
+
+.display-4 {
+    font-weight: bolder;
+    color: white;
+    font-family: "Impact";
+    letter-spacing: 5px;
+}
+
+.content-section p {
+    text-indent: 1em;
+    text-align: left;
+}
